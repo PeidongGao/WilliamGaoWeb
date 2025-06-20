@@ -21,20 +21,20 @@ repository               : "academicpages/academicpages.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "William (Peidong) Gao"
-  pronouns         : # example: "he/him"  
+  avatar     : "profile.png"
+  name       : "William (Peidong) Gao"
+  pronouns   : # example: "he/him"
   bio: |
-  👋 Hi, I'm William, a Ph.D. candidate in Genetics at Case Western Reserve University.
-  🔬 I specialize in bioinformatics and multi-omics analysis.
-  🧬 My work focuses on human islet cells and diabetes.
+    👋 Hi, I'm William, a Ph.D. candidate in Genetics at Case Western Reserve University.
+    🔬 I specialize in bioinformatics and multi-omics analysis.
+    🧬 My work focuses on human islet cells and diabetes.
   location   : |
     2109 Adelbert Rd
     Cleveland, OH 44106
-  employer         : "Case Western Reserve University School of Medicine"
-  uri              : "https://peidonggao.github.io/WilliamGaoWeb/"
-  email            : "pxg353@case.edu" 
+  employer   : "Case Western Reserve University School of Medicine"
+  uri        : "https://peidonggao.github.io/WilliamGaoWeb/"
+  email      : "pxg353@case.edu"
+
 
   # Academic websites
   academia         : # URL
