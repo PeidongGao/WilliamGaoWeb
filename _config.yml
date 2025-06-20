@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "William Gao / From Cells to Code"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -23,13 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  name             : "William (Peidong) Gao"
+  pronouns         : # example: "he/him"  
+  bio              : "👋 Hi, I'm William, a Ph.D. candidate in Geneticsn at Case Western Reserve University. 🔬 I specialize in bioinformatics and multi-omics analysis"
+  location         : "2109 Adelbert Rd, Cleveland, OH 44106"
+  employer         : "Case Western Reserve University School of Medicine"
+  uri              : "https://peidonggao.github.io/WilliamGaoWeb/"
+  email            : "pxg353@case.edu" 
 
   # Academic websites
   academia         : # URL
