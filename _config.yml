@@ -25,8 +25,13 @@ author:
   avatar           : "profile.png"
   name             : "William (Peidong) Gao"
   pronouns         : # example: "he/him"  
-  bio              : "👋 Hi, I'm William, a Ph.D. candidate in Geneticsn at Case Western Reserve University. 🔬 I specialize in bioinformatics and multi-omics analysis"
-  location         : "2109 Adelbert Rd, Cleveland, OH 44106"
+  bio: |
+  👋 Hi, I'm William, a Ph.D. candidate in Genetics at Case Western Reserve University.
+  🔬 I specialize in bioinformatics and multi-omics analysis.
+  🧬 My work focuses on human islet cells and diabetes.
+  location   : |
+    2109 Adelbert Rd
+    Cleveland, OH 44106
   employer         : "Case Western Reserve University School of Medicine"
   uri              : "https://peidonggao.github.io/WilliamGaoWeb/"
   email            : "pxg353@case.edu" 
