@@ -11,26 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'  # Specify the Python version you need
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
-        pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
+        pip install jupyter pandas requests beautifulsoup4 geopy
         pip install getorg --upgrade
 
-    - name: Run Jupyter Notebook
+    - name: Execute Jupyter Notebook
       run: |
         jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
 
-    - name: Commit changes
+    - name: Commit and push changes
+      env:
+        GH_TOKEN: ${{ secrets.GH_PAT }}
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
+        git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}
         git add .
         git commit -m "Automated update of talk locations" || echo "No changes to commit"
-        git push
+        git push origin HEAD:${{ github.ref }}
