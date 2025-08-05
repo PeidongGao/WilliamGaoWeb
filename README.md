@@ -1,28 +1,27 @@
-# [William Gao] – Personal Website
+# William Gao – From Cells to Code
 
-Welcome to my personal website! This site is built with the Academic Pages Jekyll theme and hosted via GitHub Pages. Here you’ll find information about my professional background, current projects, publications, and personal interests.
+Welcome to my personal academic website, “From Cells to Code.” This site is built with the Academic Pages Jekyll theme and hosted on GitHub Pages. Here you’ll find my research highlights, publications, teaching activities, project portfolio, blog posts, and a copy of my CV.
 
 ## About Me
 
-I’m **[William Gao]**, a **[profession or field]** with a focus on **[specific interests or specialties]**. Through this website, I aim to share my work, document my learning journey, and connect with others in the community.
+I’m **William (Peidong) Gao**, a **Ph.D. candidate in Genetics at Case Western Reserve University**. I specialize in **bioinformatics and multi‑omics analysis**, and my research focuses on **human islet cells and diabetes**:contentReference[oaicite:0]{index=0}. Through this website, I share my academic journey, document my work, and connect with others interested in genomics, computational biology and data‑driven science.
 
-- **Research/Work:** Briefly mention your current role, research interests, or the projects you’re working on.
-- **Education:** Outline your degrees or certifications.
-- **Hobbies:** Include any personal interests or volunteer activities you’d like to share.
+## Site Overview
 
-## What’s on This Site?
+- **Publications:** Links to journal articles, conference papers and preprints.
+- **Talks:** Slides and recordings from presentations and seminars.
+- **Teaching:** Resources from courses and workshops I have taught or assisted.
+- **Portfolio:** Selected projects showcasing my research and coding work.
+- **Blog Posts:** Short articles on topics that interest me—ranging from computational techniques to insights on complex diseases.
+- **CV:** A downloadable copy of my résumé/CV, along with a concise summary of my experience.
+- **Contact:** How to reach me via email or through professional networks.
 
-- **Blog:** Articles on topics that excite me, including **[topic 1]**, **[topic 2]**, and more.
-- **Projects:** A showcase of my coding projects, research outputs, or creative work.
-- **CV/Resume:** A downloadable copy of my résumé/CV, along with a summary of my experience.
-- **Contact:** How to reach me on social platforms or via email.
+## Running This Site Locally
 
-## How to Build Locally
+If you’d like to work on the site locally (to preview changes before pushing them to GitHub), follow these steps:
 
-If you want to preview or edit this site on your own machine, you can set it up as follows:
-
-1. Clone the repository and install the dependencies:
+1. **Clone the repository and install dependencies:**
    ```bash
-   git clone https://github.com/[your-username]/[repository-name].git
-   cd [repository-name]
+   git clone https://github.com/PeidongGao/WilliamGaoWeb.git
+   cd WilliamGaoWeb
    bundle install
