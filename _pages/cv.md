@@ -11,54 +11,37 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. candidate in Genetics, Case Western Reserve University
 
-Work experience
+Research Focus
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Bioinformatics and multi-omics analysis
+* Human islet cells
+* Diabetes and complex disease biology
+* Reproducible computational workflows
 
 Publications
 ======
+{% if site.publications.size > 0 %}
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+{% else %}
+Publication records will be added here.
+{% endif %}
+
 Talks
 ======
+{% if site.talks.size > 0 %}
   <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+    {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
-Teaching
+{% else %}
+Talks and presentations will be added here.
+{% endif %}
+
+Links
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* [Google Scholar](https://scholar.google.com/citations?hl=en&user=j-UnGkAAAAAJ&view_op=list_works)
+* [ORCID](https://orcid.org/0009-0004-1467-7570)
+* [GitHub](https://github.com/PeidongGao)

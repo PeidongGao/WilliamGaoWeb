@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "William Gao / From Cells to Code"
 title_separator          : "-"
 name                     : &name "William (Peidong) Gao"
-description              : &description "personal description"
+description              : &description "Personal academic website for William (Peidong) Gao, Ph.D. candidate in Genetics at Case Western Reserve University."
 url                      : "https://peidonggao.github.io" # the base hostname & protocol for your site
 baseurl                  : "/WilliamGaoWeb" # the subpath of your site, e.g. "/blog"
 repository               : "PeidongGao/WilliamGaoWeb"
@@ -175,6 +175,7 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -185,6 +186,7 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - scripts
   - tmp
   - vendor
 keep_files:
@@ -214,7 +216,7 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
+# These settings control the site's content collections.
 collections:
   teaching:
     output: true

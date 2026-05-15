@@ -1,25 +1,22 @@
 {
-  "name": "academic-pages",
+  "name": "william-gao-web",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Asset build scripts for William Gao's personal academic website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/PeidongGao/WilliamGaoWeb"
   },
   "keywords": [
     "jekyll",
-    "theme",
-    "minimal"
+    "academic-website",
+    "personal-website"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/PeidongGao/WilliamGaoWeb/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://peidonggao.github.io/WilliamGaoWeb/",
   "engines": {
     "node": ">= 0.10.0"
   },
