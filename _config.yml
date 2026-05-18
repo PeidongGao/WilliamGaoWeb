@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "William Gao / From Cells to Code"
+title                    : "William Gao"
 title_separator          : "-"
 name                     : &name "William (Peidong) Gao"
-description              : &description "Personal academic website for William (Peidong) Gao, Ph.D. candidate in Genetics at Case Western Reserve University."
+description              : &description "William (Peidong) Gao is a Ph.D. candidate in Genetics at Case Western Reserve University working on bioinformatics, multi-omics, human islet biology, and diabetes."
 url                      : "https://peidonggao.github.io" # the base hostname & protocol for your site
 baseurl                  : "/WilliamGaoWeb" # the subpath of your site, e.g. "/blog"
 repository               : "PeidongGao/WilliamGaoWeb"
@@ -25,7 +25,7 @@ author:
   name       : "William (Peidong) Gao"
   pronouns   : # example: "he/him"
   bio: >
-    👋 Hi, I'm William, a Ph.D. candidate in Genetics at Case Western Reserve University. 🧬 I specialize in bioinformatics and multi-omics analysis. My work focuses on human islet cells and diabetes.
+    Ph.D. candidate in Genetics at Case Western Reserve University. Bioinformatics, multi-omics, human islet biology, and diabetes.
   location: 2109 Adelbert Rd, Cleveland, OH 44106
   employer: Case Western Reserve University School of Medicine
   uri        : "https://peidonggao.github.io/WilliamGaoWeb/"

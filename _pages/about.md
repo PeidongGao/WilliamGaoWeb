@@ -7,20 +7,58 @@ redirect_from:
   - /about.html
 ---
 
-## From Cells to Code
+<section class="home-hero">
+  <div class="home-hero__copy">
+    <p class="home-kicker">Genetics Ph.D. candidate · Bioinformatics · Multi-omics</p>
+    <h2>From cellular signals to interpretable disease biology.</h2>
+    <p class="home-hero__lead">I study human islet biology and diabetes with computational genomics, multi-omics integration, and reproducible analysis workflows.</p>
+    <div class="home-actions">
+      <a class="home-button" href="{{ '/research/' | relative_url }}">Research</a>
+      <a class="home-button home-button--secondary" href="{{ '/publications/' | relative_url }}">Publications</a>
+    </div>
+  </div>
+  <figure class="home-hero__media">
+    <img src="{{ '/images/profile.png' | relative_url }}" alt="Portrait of William Gao">
+  </figure>
+</section>
 
-I am William (Peidong) Gao, a Ph.D. candidate in Genetics at Case Western Reserve University. My work sits at the intersection of bioinformatics, multi-omics analysis, human islet biology, and diabetes research.
+<section class="research-panel" aria-label="Research focus">
+  <article>
+    <span>01</span>
+    <h3>Human islet biology</h3>
+    <p>Cell states, stress responses, and disease-associated heterogeneity in pancreatic islets.</p>
+  </article>
+  <article>
+    <span>02</span>
+    <h3>Multi-omics integration</h3>
+    <p>Single-cell, epigenomic, and functional genomic data connected into readable mechanisms.</p>
+  </article>
+  <article>
+    <span>03</span>
+    <h3>Reproducible analysis</h3>
+    <p>Clear computational workflows that make complex biological signals easier to inspect and reuse.</p>
+  </article>
+</section>
 
-This website is my home base for research updates, publications, talks, selected projects, and CV materials. I am especially interested in turning complex biological datasets into interpretable signals that can help explain cellular function and disease mechanisms.
+<section class="home-split">
+  <div>
+    <p class="home-kicker">About</p>
+    <h2>William (Peidong) Gao</h2>
+  </div>
+  <p>I am a Ph.D. candidate in Genetics at Case Western Reserve University. This site collects my research direction, publications, future resources, and CV materials.</p>
+</section>
 
-## Research Interests
-
-- Bioinformatics and computational biology
-- Multi-omics integration
-- Human islet cells
-- Diabetes and complex disease biology
-- Reproducible data analysis
-
-## Contact
-
-The best way to reach me is by email at [pxg353@case.edu](mailto:pxg353@case.edu). You can also find my work through the links in the sidebar, including GitHub, Google Scholar, and ORCID.
+<section class="home-link-grid" aria-label="Featured links">
+  <a href="{{ '/research/' | relative_url }}">
+    <strong>Research</strong>
+    <span>Questions, systems, and methods.</span>
+  </a>
+  <a href="{{ '/publications/' | relative_url }}">
+    <strong>Publications</strong>
+    <span>ORCID-sourced publication record.</span>
+  </a>
+  <a href="{{ '/resources/' | relative_url }}">
+    <strong>Resources</strong>
+    <span>Future notes, videos, and tools.</span>
+  </a>
+</section>

@@ -1,14 +1,29 @@
 ---
 layout: archive
-title: "Talks and presentations"
-permalink: /talks/
+title: "Resources"
+permalink: /resources/
 author_profile: true
+redirect_from:
+  - /talks/
 ---
 
-{% if site.talks.size == 0 %}
-  <p>Talks and presentations will be added here.</p>
-{% endif %}
+<section class="resources-hero">
+  <p class="home-kicker">Resources</p>
+  <h2>Notes, videos, and practical material will live here.</h2>
+  <p>This page is reserved for future research notes, tutorials, analysis resources, and YouTube channel material.</p>
+</section>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<section class="home-link-grid" aria-label="Planned resources">
+  <article>
+    <strong>Research notes</strong>
+    <span>Short explanations of methods, papers, and analysis decisions.</span>
+  </article>
+  <article>
+    <strong>Code walkthroughs</strong>
+    <span>Reproducible computational biology workflows and examples.</span>
+  </article>
+  <article>
+    <strong>Video channel</strong>
+    <span>Future YouTube content on bioinformatics and research practice.</span>
+  </article>
+</section>
