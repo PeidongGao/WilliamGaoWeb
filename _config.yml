@@ -13,8 +13,8 @@ title                    : "William Gao"
 title_separator          : "-"
 name                     : &name "William (Peidong) Gao"
 description              : &description "William (Peidong) Gao is a Ph.D. candidate in Genetics at Case Western Reserve University working on bioinformatics, multi-omics, human islet biology, and diabetes."
-url                      : "https://peidonggao.github.io" # the base hostname & protocol for your site
-baseurl                  : "/WilliamGaoWeb" # the subpath of your site, e.g. "/blog"
+url                      : "https://williampeidonggao.com" # the base hostname & protocol for your site
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "PeidongGao/WilliamGaoWeb"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -28,7 +28,7 @@ author:
     Ph.D. candidate in Genetics at Case Western Reserve University. Bioinformatics, multi-omics, human islet biology, and diabetes.
   location: 2109 Adelbert Rd, Cleveland, OH 44106
   employer: Case Western Reserve University School of Medicine
-  uri        : "https://peidonggao.github.io/WilliamGaoWeb/"
+  uri        : "https://williampeidonggao.com/"
   email      : "pxg353@case.edu"
 
 

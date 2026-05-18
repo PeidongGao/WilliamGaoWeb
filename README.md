@@ -1,8 +1,8 @@
-# William Gao / From Cells to Code
+# William Gao
 
 This repository contains the source code for my personal academic website:
 
-https://peidonggao.github.io/WilliamGaoWeb/
+https://williampeidonggao.com/
 
 I use this site to keep a public record of my research interests, publications, presentations, CV, and selected work in bioinformatics and multi-omics analysis.
 
@@ -33,7 +33,7 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 Then open:
 
 ```text
-http://127.0.0.1:4000/WilliamGaoWeb/
+http://127.0.0.1:4000/
 ```
 
 ## Publishing Workflow
