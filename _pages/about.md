@@ -26,17 +26,17 @@ redirect_from:
   <article>
     <span>01</span>
     <h3>Human islet biology</h3>
-    <p>Cell states, stress responses, and disease-associated heterogeneity in pancreatic islets.</p>
+    <p>Computational analysis of pancreatic islet cell states, stress responses, and diabetes-associated heterogeneity.</p>
   </article>
   <article>
     <span>02</span>
-    <h3>Multi-omics integration</h3>
-    <p>Single-cell, epigenomic, and functional genomic data connected into readable mechanisms.</p>
+    <h3>Reproducible analysis</h3>
+    <p>Clear computational workflows for multi-omics data, from quality control to interpretable biological signals.</p>
   </article>
   <article>
     <span>03</span>
-    <h3>Reproducible analysis</h3>
-    <p>Clear computational workflows that make complex biological signals easier to inspect and reuse.</p>
+    <h3>RNA and metabolism studies</h3>
+    <p>Wet-lab experience in molecular experiments, Northern and RNA-focused studies, and animal models of metabolism.</p>
   </article>
 </section>
 
