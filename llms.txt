@@ -1,0 +1,13 @@
+# William Gao
+
+Academic website of William (Peidong) Gao.
+
+Research areas:
+- Bioinformatics
+- Computational biology
+- Single-cell RNA sequencing
+- Multi-omics
+- Diabetes
+- Human islet biology
+- Computational genomics
+- Reproducible computational workflows
