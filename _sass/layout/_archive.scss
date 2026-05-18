@@ -66,6 +66,41 @@
   }
 }
 
+.publication-year {
+  margin-top: 2em;
+  margin-bottom: 0.9em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.publication-entry {
+  margin-bottom: 1.45em;
+}
+
+.publication-date {
+  margin-bottom: 0.15em;
+  color: var(--global-text-color-light);
+  font-size: $type-size-6;
+}
+
+.publication-title {
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  font-size: $type-size-5;
+  line-height: 1.35;
+}
+
+.publication-authors,
+.publication-meta {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.publication-self {
+  color: var(--global-link-color);
+  font-weight: bold;
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;

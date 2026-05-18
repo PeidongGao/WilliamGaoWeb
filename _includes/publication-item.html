@@ -1,0 +1,34 @@
+{% assign publication = include.publication %}
+{% assign month_day = publication.date | date: "%b %-d" %}
+
+<article class="publication-entry">
+  <p class="publication-date">{{ month_day }}</p>
+  <h3 class="publication-title">
+    {% if publication.paperurl %}
+      <a href="{{ publication.paperurl }}">{{ publication.title }}</a>
+    {% else %}
+      {{ publication.title }}
+    {% endif %}
+  </h3>
+
+  {% if publication.authors %}
+    <p class="publication-authors">
+      {% for author in publication.authors %}
+        {% assign compact_author = author | replace: " ", "" | downcase %}
+        {% if compact_author == "peidonggao" or compact_author == "williampeidonggao" %}
+          <strong class="publication-self">{{ author }}</strong>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          {{ author }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  <p class="publication-meta">
+    {% if publication.venue %}<em>{{ publication.venue }}</em>{% endif %}
+    {% if publication.doi %}
+      {% if publication.venue %} · {% endif %}DOI:
+      <a href="https://doi.org/{{ publication.doi }}">{{ publication.doi }}</a>
+    {% endif %}
+  </p>
+</article>
