@@ -18,7 +18,7 @@ redirect_from:
     </div>
   </div>
   <figure class="home-hero__media">
-    <img src="{{ '/images/profile.png' | relative_url }}" alt="Portrait of William Gao">
+    <img src="{{ '/images/profile.2.png' | relative_url }}" alt="Portrait of William Gao">
   </figure>
 </section>
 
