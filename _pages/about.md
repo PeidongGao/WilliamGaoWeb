@@ -2,20 +2,13 @@
 permalink: /
 title: "William Gao"
 author_profile: true
-redirect_from:
-  - /about/
-  - /about.html
 ---
 
 <section class="home-hero">
   <div class="home-hero__copy">
-    <p class="home-kicker">Genetics Ph.D. candidate · Bioinformatics · Multi-omics</p>
-    <h2>From cellular signals to interpretable disease biology.</h2>
-    <p class="home-hero__lead">I study human islet biology and diabetes with computational genomics, multi-omics integration, and reproducible analysis workflows.</p>
-    <div class="home-actions">
-      <a class="home-button" href="{{ '/research/' | relative_url }}">Research</a>
-      <a class="home-button home-button--secondary" href="{{ '/publications/' | relative_url }}">Publications</a>
-    </div>
+    <p class="home-kicker">Ph.D. candidate in Genetics</p>
+    <h2>William (Peidong) Gao</h2>
+    <p class="home-hero__lead">Bioinformatics / multi-omics / human islet biology / diabetes. Learning in public through WillGaoLab.</p>
   </div>
   <figure class="home-hero__media">
     <img src="{{ '/images/profile.2.png' | relative_url }}" alt="Portrait of William Gao">
@@ -42,23 +35,8 @@ redirect_from:
 
 <section class="home-split">
   <div>
-    <p class="home-kicker">About</p>
-    <h2>William (Peidong) Gao</h2>
+    <p class="home-kicker">Positioning</p>
+    <h2>Academic credibility and long-term public learning.</h2>
   </div>
-  <p>I am a Ph.D. candidate in Genetics at Case Western Reserve University. This site collects my research direction, publications, future resources, and CV materials.</p>
-</section>
-
-<section class="home-link-grid" aria-label="Featured links">
-  <a href="{{ '/research/' | relative_url }}">
-    <strong>Research</strong>
-    <span>Questions, systems, and methods.</span>
-  </a>
-  <a href="{{ '/publications/' | relative_url }}">
-    <strong>Publications</strong>
-    <span>ORCID-sourced publication record.</span>
-  </a>
-  <a href="{{ '/resources/' | relative_url }}">
-    <strong>Resources</strong>
-    <span>Future notes, videos, and tools.</span>
-  </a>
+  <p>williampeidonggao.com is my academic home page and the knowledge asset center for WillGaoLab. William Gao is the main academic identity. WillGaoLab is the content brand that carries long-term notes on statistics, papers, books, and scientific learning.</p>
 </section>

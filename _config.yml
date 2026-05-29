@@ -23,10 +23,10 @@ repository               : "PeidongGao/WilliamGaoWeb"
 author:
   avatar     : "profile.png"
   name       : "William (Peidong) Gao"
-  pronouns   : # example: "he/him"
+  pronouns   :
   bio: >
-    Ph.D. candidate in Genetics at Case Western Reserve University. Bioinformatics, multi-omics, human islet biology, and diabetes.
-  location: 2109 Adelbert Rd, Cleveland, OH 44106
+    Ph.D. candidate in Genetics at Case Western Reserve University. I work on bioinformatics, multi-omics, human islet biology, and diabetes.
+  location: Cleveland, OH
   employer: Case Western Reserve University School of Medicine
   uri        : "https://williampeidonggao.com/"
   email      : "william@williampeidonggao.com"
@@ -61,7 +61,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "peidong-gao-915b46369"
+  linkedin         : "williampeidonggao"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -93,7 +93,7 @@ words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
@@ -132,7 +132,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -142,14 +142,18 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "William (Peidong) Gao"
+  links:
+    - "https://orcid.org/0009-0004-1467-7570"
+    - "https://scholar.google.com/citations?hl=en&user=j-UnGkAAAAAJ&view_op=list_works"
+    - "https://github.com/PeidongGao"
+    - "https://www.linkedin.com/in/williampeidonggao/"
 
 
 # Analytics
 analytics:
-  provider               :  "custom" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  false #"custom" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 
@@ -244,7 +248,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false #true
       share: true
       related: true
   # _pages
@@ -262,7 +266,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false #true
   # _publications
   - scope:
       path: ""
@@ -271,7 +275,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false #true
   # _portfolio
   - scope:
       path: ""
@@ -280,7 +284,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comments: false #true
   # _talks
   - scope:
       path: ""
@@ -290,19 +294,12 @@ defaults:
       author_profile: true
       share: true
   # _resources
-
   - scope:
-
       path: ""
-
       type: resources
-
     values:
-
       layout: single
-
       author_profile: true
-
       share: true
 
 

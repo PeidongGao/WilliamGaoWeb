@@ -1,26 +1,25 @@
 ---
-layout: archive
+layout: single
 title: "Resources"
 permalink: /resources/
 author_profile: true
 ---
 
-## Resources
+Resources is the core asset area for WillGaoLab.
 
-This page collects selected resources related to bioinformatics, computational biology, multi-omics analysis, human islet biology, diabetes, and reproducible research workflows.
+William Gao provides the academic credibility. WillGaoLab carries the long-term content assets: statistics notes, paper reading notes, book notes, and scientific learning material.
 
-{% if site.resources.size > 0 %}
+## Statistics
 
-## Resource collection
+- [Statistics]({{ '/resources/statistics/' | relative_url }})
+- [Statistics Every Programmer Needs]({{ '/resources/statistics/statistics-every-programmer-needs/' | relative_url }})
 
-{% assign resources = site.resources | sort: "title" %}
+## Papers
 
-{% for resource in resources %}
-- [{{ resource.title }}]({{ resource.url | relative_url }})
-{% endfor %}
+- [Papers]({{ '/resources/papers/' | relative_url }})
+- [Read Papers with Will]({{ '/resources/papers/read-papers-with-will/' | relative_url }})
 
-{% else %}
+## Books
 
-Content will be added gradually.
-
-{% endif %}
+- [Books]({{ '/resources/books/' | relative_url }})
+- [Read Books with Will]({{ '/resources/books/read-books-with-will/' | relative_url }})

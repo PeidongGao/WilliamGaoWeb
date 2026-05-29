@@ -26,13 +26,8 @@
     "@type": "CollegeOrUniversity",
     "name": "Case Western Reserve University"
   },
-  "email": "mailto:pxg353@case.edu",
-  "sameAs": [
-    "https://orcid.org/0009-0004-1467-7570",
-    "https://scholar.google.com/citations?hl=en&user=j-UnGkAAAAAJ",
-    "https://github.com/PeidongGao",
-    "https://www.linkedin.com/in/peidong-gao-915b46369/"
-  ],
+  "email": "mailto:{{ site.author.email }}",
+  "sameAs": {{ site.social.links | jsonify }},
   "knowsAbout": [
     "Bioinformatics",
     "Computational biology",
@@ -54,7 +49,7 @@
   "name": "William Gao",
   "alternateName": "William (Peidong) Gao Academic Website",
   "url": "https://williampeidonggao.com",
-  "description": "Academic website of William (Peidong) Gao, a Ph.D. candidate in Genetics working on bioinformatics, computational biology, multi-omics analysis, human islet biology, and diabetes.",
+  "description": {{ site.description | jsonify }},
   "publisher": {
     "@type": "Person",
     "name": "William (Peidong) Gao",

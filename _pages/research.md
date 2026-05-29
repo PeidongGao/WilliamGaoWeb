@@ -6,26 +6,36 @@ author_profile: true
 ---
 
 <section class="research-page-hero">
-  <p class="home-kicker">Research overview</p>
-  <h2>Computational biology for human islet cells and diabetes.</h2>
-  <p>I work at the intersection of bioinformatics, multi-omics analysis, functional genomics, and disease biology. My goal is to make high-dimensional biological data explain cellular behavior rather than only describe it.</p>
+  <p class="home-kicker">Research</p>
+  <h2>Human islet biology, diabetes, and interpretable multi-omics.</h2>
+  <p>I work at the intersection of bioinformatics, multi-omics analysis, gene regulation, single-cell analysis, and disease biology. My goal is to make high-dimensional biological data explain cellular behavior rather than only describe it.</p>
 </section>
 
 <section class="research-panel research-panel--wide" aria-label="Research themes">
   <article>
-    <span>Theme I</span>
+    <span>01</span>
     <h3>Human islet biology</h3>
     <p>Studying pancreatic islet cell states, stress responses, and diabetes-associated heterogeneity through computational genomics.</p>
   </article>
   <article>
-    <span>Theme II</span>
-    <h3>Reproducible analysis</h3>
-    <p>Building readable workflows for single-cell and multi-omics data so complex signals can be checked, reused, and explained.</p>
+    <span>02</span>
+    <h3>Diabetes</h3>
+    <p>Connecting molecular and cellular signals to disease-relevant mechanisms in metabolic biology.</p>
   </article>
   <article>
-    <span>Theme III</span>
-    <h3>RNA and metabolism studies</h3>
-    <p>Bringing previous wet-lab training in molecular experiments, Northern and RNA studies, and animal metabolism research into computational biology.</p>
+    <span>03</span>
+    <h3>Bioinformatics</h3>
+    <p>Using reproducible computational workflows to turn complex biological datasets into interpretable evidence.</p>
+  </article>
+  <article>
+    <span>04</span>
+    <h3>Multi-omics</h3>
+    <p>Integrating complementary data modalities to study cell states, regulation, and disease-associated variation.</p>
+  </article>
+  <article>
+    <span>05</span>
+    <h3>Gene regulation / single-cell analysis</h3>
+    <p>Analyzing regulatory programs and single-cell heterogeneity to understand how cellular identity and disease states emerge.</p>
   </article>
 </section>
 
