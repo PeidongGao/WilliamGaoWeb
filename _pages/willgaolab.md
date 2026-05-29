@@ -5,23 +5,33 @@ layout: single
 author_profile: true
 ---
 
-WillGaoLab is my public learning archive for statistics, papers, books, and scientific learning.
+WillGaoLab
 
-I use it to organize and share notes over time. The goal is to make my learning process visible, reusable, and cumulative.
+Learning in public.
 
-## Main Channels
+---
 
-- YouTube: https://www.youtube.com/@WillGaoLab
-- GitHub: https://github.com/WillGaoLab
-- X / Twitter: https://x.com/WillGaoLab
-- Instagram: https://www.instagram.com/willgaolab/
-- Substack: https://willgaolab.substack.com
-- Bluesky: https://bsky.app/profile/willgaolab.bsky.social
-- Gmail: willgaolab@gmail.com
-- LinkedIn: https://www.linkedin.com/in/williampeidonggao/
+## Learn Statistics with Will
 
-## Core Topics
+Building intuition through notes and examples.
 
-- Learn Statistics with Will
-- Read Papers with Will
-- Read Books with Will
+---
+
+## Read Papers with Will
+
+Understanding papers as stories.
+
+---
+
+## Read Books with Will
+
+Ideas worth remembering.
+
+## Follow
+
+- [YouTube](https://www.youtube.com/@WillGaoLab)
+- [Substack](https://willgaolab.substack.com)
+- [GitHub](https://github.com/WillGaoLab)
+- [X](https://x.com/WillGaoLab)
+- [Instagram](https://www.instagram.com/willgaolab/)
+- [Bluesky](https://bsky.app/profile/willgaolab.bsky.social)
