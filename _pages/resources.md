@@ -23,3 +23,7 @@ William Gao provides the academic credibility. WillGaoLab carries the long-term 
 
 - [Books]({{ '/resources/books/' | relative_url }})
 - [Read Books with Will]({{ '/resources/books/read-books-with-will/' | relative_url }})
+
+## Tools
+
+- [Excel Pixel Art Generator]({{ '/tools/excel-pixel-art-generator/' | relative_url }})

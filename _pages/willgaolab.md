@@ -27,6 +27,14 @@ Understanding papers as stories.
 
 Ideas worth remembering.
 
+---
+
+## Tools
+
+Practical tools built under the WillGaoLab personal brand.
+
+- [Excel Pixel Art Generator]({{ '/tools/excel-pixel-art-generator/' | relative_url }})
+
 ## Follow
 
 - [YouTube](https://www.youtube.com/@WillGaoLab)
