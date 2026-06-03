@@ -10,6 +10,7 @@ author_profile: true
     <p class="home-kicker">Tool / Excel / Paint-by-number</p>
     <h2>Excel Pixel Art Generator</h2>
     <p class="home-hero__lead">Use the hosted Streamlit app to upload an image and generate an Excel workbook with a finished reference sheet, a paper-style numbered template, and a color index for manual coloring.</p>
+    <p>Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao.</p>
     <p><a class="btn btn--primary" href="https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/">Launch the app</a></p>
   </div>
   <figure class="home-hero__media">
@@ -101,6 +102,8 @@ Both examples use A4 landscape paper setup. Higher resolution and more indexed c
 The Great Wave sample image is sourced from [The Art Institute of Chicago collection record](https://www.artic.edu/artworks/89503/under-the-wave-off-kanagawa-kanagawa-oki-nami-ura-also-known-as-the-great-wave-from-the-series-thirty-six-views-of-mount-fuji-fugaku-sanjurokkei), where the work is identified as public domain / CC0. The landscape photo is a user-provided photograph taken by William and included for demo generation.
 
 ## Personal Use and Legal Notice
+
+Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao. The WillGaoLab name, project identity, documentation, source code organization, and product presentation are maintained by William (Peidong) Gao unless otherwise stated.
 
 This tool is provided for personal, educational, research, and non-commercial creative use only.
 
