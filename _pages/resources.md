@@ -26,4 +26,4 @@ William Gao provides the academic credibility. WillGaoLab carries the long-term 
 
 ## Tools
 
-- [Excel Pixel Art Generator]({{ '/tools/excel-pixel-art-generator/' | relative_url }})
+- [Excel Pixel Art Generator]({{ '/resources/excel-pixel-art-generator/' | relative_url }})

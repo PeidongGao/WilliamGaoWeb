@@ -1,6 +1,6 @@
 ---
 title: "Excel Pixel Art Generator"
-permalink: /tools/excel-pixel-art-generator/
+permalink: /resources/excel-pixel-art-generator/
 layout: single
 author_profile: true
 ---
