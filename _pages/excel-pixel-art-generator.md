@@ -9,7 +9,8 @@ author_profile: true
   <div class="home-hero__copy">
     <p class="home-kicker">Tool / Excel / Paint-by-number</p>
     <h2>Excel Pixel Art Generator</h2>
-    <p class="home-hero__lead">Upload an image and generate an Excel workbook with a finished reference sheet, a paper-style numbered template, and a color index for manual coloring.</p>
+    <p class="home-hero__lead">Use the hosted Streamlit app to upload an image and generate an Excel workbook with a finished reference sheet, a paper-style numbered template, and a color index for manual coloring.</p>
+    <p><a class="btn btn--primary" href="https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/">Launch the app</a></p>
   </div>
   <figure class="home-hero__media">
     <img src="{{ '/images/excel-pixel-art-wave.jpg' | relative_url }}" alt="Under the Wave off Kanagawa demo image">
@@ -20,7 +21,7 @@ author_profile: true
   <article>
     <span>01</span>
     <h3>Upload any image</h3>
-    <p>Use a Streamlit interface or command-line workflow to convert paintings, photos, and illustrations into Excel workbooks.</p>
+    <p>Use the hosted Streamlit interface to convert paintings, photos, and illustrations into Excel workbooks.</p>
   </article>
   <article>
     <span>02</span>
@@ -36,19 +37,31 @@ author_profile: true
 
 ## Project Links
 
+- [Launch the hosted app](https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/)
 - [GitHub repository](https://github.com/PeidongGao/excel-pixel-art-generator)
+- [Streamlit app repository](https://github.com/WillGaoLab/WillGaoLab)
 - [Demo workbooks](https://github.com/PeidongGao/excel-pixel-art-generator/tree/main/demos)
 - [Streamlit documentation](https://streamlit.io/#install)
+
+## Use Online
+
+Open:
+
+```text
+https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/
+```
+
+Upload an image, choose paper size, set exact resolution and color count, then download the workbook.
 
 ## Run Locally
 
 ```bash
-git clone https://github.com/PeidongGao/excel-pixel-art-generator.git
-cd excel-pixel-art-generator
+git clone https://github.com/WillGaoLab/WillGaoLab.git
+cd WillGaoLab
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e .
-excel-pixel-art-streamlit
+python -m pip install -r requirements.txt
+streamlit run streamlit_app.py
 ```
 
 Then open:
