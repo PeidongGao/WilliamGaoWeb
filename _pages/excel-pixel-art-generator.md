@@ -11,7 +11,7 @@ author_profile: true
     <h2>Excel Pixel Art Generator</h2>
     <p class="home-hero__lead">Upload an image and independently generate a Digital Excel paint-by-number workbook or Physical production outputs with material palettes, validated poster splitting, sharp vector printable pages, and color masks.</p>
     <p>Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao.</p>
-    <p><a class="btn btn--primary" href="https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/">Launch the app</a></p>
+    <p><a class="btn btn--primary" href="https://excelpixelartgenerator-8tq4k2vmpkxskubnxzrxeo.streamlit.app/">Launch the app</a></p>
   </div>
   <figure class="home-hero__media">
     <img src="{{ '/images/excel-pixel-art-wave.jpg' | relative_url }}" alt="Under the Wave off Kanagawa demo image">
@@ -38,7 +38,7 @@ author_profile: true
 
 ## Project Links
 
-- [Launch the hosted app](https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/)
+- [Launch the hosted app](https://excelpixelartgenerator-8tq4k2vmpkxskubnxzrxeo.streamlit.app/)
 - [Primary development repository](https://github.com/PeidongGao/excel-pixel-art-generator)
 - [WillGaoLab project repository](https://github.com/WillGaoLab/excel_pixel_art_generator)
 - [WillGaoLab profile and project index](https://github.com/WillGaoLab/WillGaoLab)
@@ -50,7 +50,7 @@ author_profile: true
 Open:
 
 ```text
-https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/
+https://excelpixelartgenerator-8tq4k2vmpkxskubnxzrxeo.streamlit.app/
 ```
 
 Upload an image, configure the independent Digital or Physical workflow, then download the generated workbook or Physical output ZIP.
