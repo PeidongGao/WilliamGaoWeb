@@ -40,7 +40,7 @@ author_profile: true
 
 - [Launch the hosted app](https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/)
 - [GitHub repository](https://github.com/PeidongGao/excel-pixel-art-generator)
-- [Streamlit app repository](https://github.com/WillGaoLab/WillGaoLab)
+- [Streamlit app repository](https://github.com/WillGaoLab/excel_pixel_art_generator)
 - [Demo workbooks](https://github.com/PeidongGao/excel-pixel-art-generator/tree/main/demos)
 - [Streamlit documentation](https://streamlit.io/#install)
 
@@ -90,7 +90,7 @@ To the maximum extent permitted by law, WillGaoLab and William (Peidong) Gao acc
 ## Run Locally
 
 ```bash
-git clone https://github.com/WillGaoLab/WillGaoLab.git
+git clone https://github.com/WillGaoLab/excel_pixel_art_generator.git
 cd WillGaoLab
 python3 -m venv .venv
 source .venv/bin/activate
