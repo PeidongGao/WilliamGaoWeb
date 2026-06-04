@@ -24,7 +24,7 @@ crawlers or automated harvesting systems.
 - [Primary development repository](https://github.com/PeidongGao/auto_paper_get_CNS)
 - [WillGaoLab brand mirror](https://github.com/WillGaoLab/auto_paper_get_CNS)
 - [Usage disclaimer](https://github.com/PeidongGao/auto_paper_get_CNS/blob/main/DISCLAIMER.md)
-- [WillGaoLab knowledge base](https://github.com/WillGaoLab/WillGaoLab)
+- [WillGaoLab profile and project index](https://github.com/WillGaoLab/WillGaoLab)
 
 ## Usage Disclaimer
 
