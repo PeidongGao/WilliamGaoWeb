@@ -34,8 +34,7 @@ redistributed publisher content.
 Users are responsible for complying with each publisher's current terms of
 use, institutional license agreements, robots/crawling policies, and
 applicable copyright law. A public webpage is not necessarily permission for
-automated retrieval. This project is not affiliated with or endorsed by the
-publishers named in its documentation.
+automated retrieval.
 
 ## Attribution and Affiliation
 
@@ -46,7 +45,7 @@ independent WillGaoLab research brand and the WilliamGaoWeb website.
 
 This project is not affiliated with, endorsed by, sponsored by, or officially
 associated with Cell Press, Elsevier, Springer Nature, AAAS, Crossref, or any
-other publisher, organization, or service referenced in the documentation.
+publisher, organization, or service referenced in this repository.
 
 All trademarks, service marks, journal titles, logos, and publisher names are
 the property of their respective owners and are used solely for identification
