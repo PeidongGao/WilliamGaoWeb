@@ -36,3 +36,18 @@ use, institutional license agreements, robots/crawling policies, and
 applicable copyright law. A public webpage is not necessarily permission for
 automated retrieval. This project is not affiliated with or endorsed by the
 publishers named in its documentation.
+
+## Attribution and Affiliation
+
+This is a WillGaoLab project created and maintained by William (Peidong) Gao.
+
+This project may be referenced, showcased, or documented through the
+independent WillGaoLab research brand and the WilliamGaoWeb website.
+
+This project is not affiliated with, endorsed by, sponsored by, or officially
+associated with Cell Press, Elsevier, Springer Nature, AAAS, Crossref, or any
+other publisher, organization, or service referenced in the documentation.
+
+All trademarks, service marks, journal titles, logos, and publisher names are
+the property of their respective owners and are used solely for identification
+and descriptive purposes.
