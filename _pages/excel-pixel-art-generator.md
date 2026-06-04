@@ -9,7 +9,7 @@ author_profile: true
   <div class="home-hero__copy">
     <p class="home-kicker">Tool / Excel / Paint-by-number</p>
     <h2>Excel Pixel Art Generator</h2>
-    <p class="home-hero__lead">Upload an image and independently generate a Digital Excel paint-by-number workbook or Physical production outputs with material palettes, printable pages, and color masks.</p>
+    <p class="home-hero__lead">Upload an image and independently generate a Digital Excel paint-by-number workbook or Physical production outputs with material palettes, validated poster splitting, sharp vector printable pages, and color masks.</p>
     <p>Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao.</p>
     <p><a class="btn btn--primary" href="https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/">Launch the app</a></p>
   </div>
@@ -32,7 +32,7 @@ author_profile: true
   <article>
     <span>03</span>
     <h3>Physical Layer</h3>
-    <p>Generate material-matched production outputs using Adaptive, LEGO, or Liquitex Basics 24 palettes, with optional poster splitting and color masks.</p>
+    <p>Generate material-matched production outputs using Adaptive, LEGO, or Liquitex Basics 24 palettes, with validated poster splitting, true-A4 vector PDFs, and color masks.</p>
   </article>
 </section>
 
@@ -54,14 +54,24 @@ https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/
 
 Upload an image, configure the independent Digital or Physical workflow, then download the generated workbook or Physical output ZIP.
 
-## Version 2
+## Version 3
 
-Version 2 separates the generator into two workflows:
+Version 3 preserves the independent Digital and Physical workflows while upgrading the Physical Poster Split and Printable PDF workflow:
 
 - **Digital Layer / Excel Mode** creates the familiar Excel pixel-art reference, numbered template, and color index.
-- **Physical Layer / Print Mode** uses an independent print canvas and material palette, with optional poster splitting, color masks, workbook output, printable PDF output, and mask output.
+- **Physical Layer / Print Mode** uses an independent print canvas and material palette, with validated poster splitting, color masks, workbook output, vector printable PDF output, and mask output.
 
-Both layers default to A4, `128 x 128`, and 48 colors. Physical material palette options include Adaptive, LEGO, and Liquitex Basics 24.
+Both layers now default to A4, `32 x 32`, and 24 colors. Physical material palette options include Adaptive, LEGO, and Liquitex Basics 24.
+
+Poster Split verifies that the master width and height divide evenly across the selected page split. Every tile uses global coordinates and the same global color index.
+
+Each poster PDF contains three true-A4 vector page sets:
+
+1. Colored numbered-grid tiles.
+2. Clean color-reference tiles.
+3. Blank numbered-template tiles.
+
+Cells, grid lines, numbers, and coordinates are vector PDF content, so printed pages remain sharp when zoomed or printed.
 
 Selected Physical outputs are packaged into one ZIP download.
 
