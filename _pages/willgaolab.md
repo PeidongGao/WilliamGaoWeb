@@ -34,6 +34,7 @@ Ideas worth remembering.
 Practical tools built under the WillGaoLab personal brand.
 
 - [Excel Pixel Art Generator V3]({{ '/resources/excel-pixel-art-generator/' | relative_url }}) - independent Digital Excel and Physical production workflows with validated poster splitting and true-A4 vector PDFs.
+- [Journal Harvester SOP]({{ '/resources/journal-harvester-sop/' | relative_url }}) - low-volume, user-initiated browser workflows for bibliographic metadata discovery.
 
 ## Follow
 
