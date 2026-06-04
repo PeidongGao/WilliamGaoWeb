@@ -15,14 +15,15 @@ crawlers or automated harvesting systems.
 
 ## SOPs
 
-- [Nature metadata export](https://github.com/PeidongGao/journal-harvester-sop/blob/main/nature/Nature_SOP_1.0.md)
-- [Science metadata export](https://github.com/PeidongGao/journal-harvester-sop/blob/main/science/Science_SOP_1.0.md)
-- [Cell metadata export](https://github.com/PeidongGao/journal-harvester-sop/blob/main/cell/Cell_SOP_1.0.md)
+- [Nature metadata export](https://github.com/PeidongGao/auto_paper_get_CNS/blob/main/nature/Nature_SOP_1.0.md)
+- [Science metadata export](https://github.com/PeidongGao/auto_paper_get_CNS/blob/main/science/Science_SOP_1.0.md)
+- [Cell metadata export](https://github.com/PeidongGao/auto_paper_get_CNS/blob/main/cell/Cell_SOP_1.0.md)
 
 ## Project Links
 
-- [Canonical repository](https://github.com/PeidongGao/journal-harvester-sop)
-- [Usage disclaimer](https://github.com/PeidongGao/journal-harvester-sop/blob/main/DISCLAIMER.md)
+- [Primary development repository](https://github.com/PeidongGao/auto_paper_get_CNS)
+- [WillGaoLab brand mirror](https://github.com/WillGaoLab/auto_paper_get_CNS)
+- [Usage disclaimer](https://github.com/PeidongGao/auto_paper_get_CNS/blob/main/DISCLAIMER.md)
 - [WillGaoLab knowledge base](https://github.com/WillGaoLab/WillGaoLab)
 
 ## Usage Disclaimer
@@ -38,10 +39,22 @@ automated retrieval.
 
 ## Attribution and Affiliation
 
-This is a WillGaoLab project created and maintained by William (Peidong) Gao.
+This is a WillGaoLab project created and maintained by
+William (Peidong) Gao.
 
-This project may be referenced, showcased, or documented through the
-independent WillGaoLab research brand and the WilliamGaoWeb website.
+- Project website: <https://williampeidonggao.com>
+- Brand: <https://github.com/WillGaoLab>
+- Personal GitHub: <https://github.com/PeidongGao>
+
+```text
+William (Peidong) Gao
+        |
+    WillGaoLab
+        |
+Open-source Projects
+        |
+   WilliamGaoWeb
+```
 
 This project is not affiliated with, endorsed by, sponsored by, or officially
 associated with Cell Press, Elsevier, Springer Nature, AAAS, Crossref, or any
