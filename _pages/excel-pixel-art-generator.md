@@ -9,7 +9,7 @@ author_profile: true
   <div class="home-hero__copy">
     <p class="home-kicker">Tool / Excel / Paint-by-number</p>
     <h2>Excel Pixel Art Generator</h2>
-    <p class="home-hero__lead">Use the hosted Streamlit app to upload an image and generate an Excel workbook with a finished reference sheet, a paper-style numbered template, and a color index for manual coloring.</p>
+    <p class="home-hero__lead">Upload an image and independently generate a Digital Excel paint-by-number workbook or Physical production outputs with material palettes, printable pages, and color masks.</p>
     <p>Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao.</p>
     <p><a class="btn btn--primary" href="https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/">Launch the app</a></p>
   </div>
@@ -26,13 +26,13 @@ author_profile: true
   </article>
   <article>
     <span>02</span>
-    <h3>Control the canvas</h3>
-    <p>Choose A4, Letter, B5, and other paper presets, or set exact Excel-cell resolution such as 240 x 170.</p>
+    <h3>Digital Layer</h3>
+    <p>Create an Excel workbook with Reference, Template, and Color Index sheets using an independent paper canvas, resolution, and indexed color count.</p>
   </article>
   <article>
     <span>03</span>
-    <h3>Paint by number</h3>
-    <p>Each workbook includes Reference, Template, and Color Index sheets. The template uses light gray numbers and no printed borders.</p>
+    <h3>Physical Layer</h3>
+    <p>Generate material-matched production outputs using Adaptive, LEGO, or Liquitex Basics 24 palettes, with optional poster splitting and color masks.</p>
   </article>
 </section>
 
@@ -52,7 +52,20 @@ Open:
 https://willgaolab-dvy5xga3u2xexllw7lei82.streamlit.app/
 ```
 
-Upload an image, choose paper size, set exact resolution and color count, then download the workbook.
+Upload an image, configure the independent Digital or Physical workflow, then download the generated workbook or Physical output ZIP.
+
+## Version 2
+
+Version 2 separates the generator into two workflows:
+
+- **Digital Layer / Excel Mode** creates the familiar Excel pixel-art reference, numbered template, and color index.
+- **Physical Layer / Print Mode** uses an independent print canvas and material palette, with optional poster splitting, color masks, workbook output, printable PDF output, and mask output.
+
+Both layers default to A4, `128 x 128`, and 48 colors. Physical material palette options include Adaptive, LEGO, and Liquitex Basics 24.
+
+Selected Physical outputs are packaged into one ZIP download.
+
+Physical material colors are screen approximations. Actual LEGO plastic and acrylic paint colors vary with lighting, surface, opacity, and drying.
 
 ## Run Locally
 

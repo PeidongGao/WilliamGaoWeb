@@ -33,7 +33,7 @@ Ideas worth remembering.
 
 Practical tools built under the WillGaoLab personal brand.
 
-- [Excel Pixel Art Generator]({{ '/resources/excel-pixel-art-generator/' | relative_url }})
+- [Excel Pixel Art Generator V2]({{ '/resources/excel-pixel-art-generator/' | relative_url }}) - independent Digital Excel and Physical production workflows.
 
 ## Follow
 
