@@ -28,3 +28,4 @@ William Gao provides the academic credibility. WillGaoLab carries the long-term 
 
 - [Excel Pixel Art Generator]({{ '/resources/excel-pixel-art-generator/' | relative_url }})
 - [Journal Harvester SOP]({{ '/resources/journal-harvester-sop/' | relative_url }})
+- [Market Tracker]({{ '/resources/market-tracker/' | relative_url }})

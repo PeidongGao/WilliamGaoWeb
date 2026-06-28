@@ -35,12 +35,14 @@ Practical tools built under the WillGaoLab personal brand.
 
 - [Excel Pixel Art Generator V3]({{ '/resources/excel-pixel-art-generator/' | relative_url }}) - independent Digital Excel and Physical production workflows with validated poster splitting and true-A4 vector PDFs.
 - [Journal Harvester SOP]({{ '/resources/journal-harvester-sop/' | relative_url }}) - low-volume, user-initiated browser workflows for bibliographic metadata discovery.
+- [Market Tracker]({{ '/resources/market-tracker/' | relative_url }}) - low-volume, user-initiated weekly ETF report generator with independent cross-validation.
 
 ## GitHub Projects
 
 - [WillGaoLab profile and project index](https://github.com/WillGaoLab/WillGaoLab)
 - [Excel Pixel Art Generator](https://github.com/WillGaoLab/excel_pixel_art_generator)
 - [auto_paper_get_CNS](https://github.com/WillGaoLab/auto_paper_get_CNS)
+- [MarketTrackingSystem](https://github.com/WillGaoLab/MarketTrackingSystem)
 
 ## Follow
 
