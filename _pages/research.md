@@ -46,3 +46,16 @@ author_profile: true
   </div>
   <p>My work combines computational genomics, single-cell analysis, reproducible workflow design, and prior wet-lab training to translate complex datasets into testable biological insight.</p>
 </section>
+
+<section class="home-section" aria-label="Latest publications">
+  <p class="home-kicker">Publications</p>
+  <h2 class="home-section__title">Latest publications</h2>
+  <div class="wg-card-grid">
+    {% assign recent_pubs = site.publications | sort: "date" | reverse %}
+    {% for pub in recent_pubs limit: 6 %}
+      {% assign pub_year = pub.date | date: "%Y" %}
+      {% include card.html href=pub.url accent="brand" eyebrow=pub_year title=pub.title desc=pub.venue cta="Read" %}
+    {% endfor %}
+  </div>
+  <p class="wg-hub__links"><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
+</section>

@@ -1,0 +1,29 @@
+{%- comment -%}
+  Topic index + per-topic sections, aggregated across resources, tool pages,
+  and publications via Liquid (no jekyll-archives; GitHub Pages safe).
+{%- endcomment -%}
+{%- assign tools = site.pages | where: "type", "tools" | where: "status", "published" -%}
+{%- assign pub_resources = site.resources | where: "status", "published" -%}
+{%- capture _topics -%}
+  {%- for r in pub_resources -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+  {%- for r in tools -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+  {%- for r in site.publications -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+{%- endcapture -%}
+{%- assign topics = _topics | split: "," | uniq | sort -%}
+
+<nav class="wg-topic-index" aria-label="All topics">
+  {%- for t in topics -%}{%- if t != "" -%}
+    <a class="wg-chip" href="#topic-{{ t | slugify }}">{{ t }}</a>
+  {%- endif -%}{%- endfor -%}
+</nav>
+
+{%- for t in topics -%}{%- if t != "" -%}
+<section class="wg-topic" id="topic-{{ t | slugify }}">
+  <h2 class="home-section__title">{{ t }}</h2>
+  <div class="wg-card-grid">
+    {%- for r in pub_resources -%}{%- if r.topics contains t -%}{% include resource-card.html item=r %}{%- endif -%}{%- endfor -%}
+    {%- for r in tools -%}{%- if r.topics contains t -%}{% include resource-card.html item=r %}{%- endif -%}{%- endfor -%}
+    {%- for r in site.publications -%}{%- if r.topics contains t -%}{% include resource-card.html item=r label="publication" %}{%- endif -%}{%- endfor -%}
+  </div>
+</section>
+{%- endif -%}{%- endfor -%}

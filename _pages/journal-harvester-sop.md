@@ -3,6 +3,12 @@ title: "Journal Harvester SOP"
 layout: single
 permalink: /resources/journal-harvester-sop/
 author_profile: true
+accent: lab
+type: tools
+topics: [metadata, automation, tools]
+date: 2026-06-28
+status: published
+summary: "Browser-console workflows for extracting bibliographic metadata from journal web pages."
 ---
 
 Journal Harvester SOP provides browser-based workflows and scripts for

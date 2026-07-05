@@ -3,29 +3,22 @@ layout: single
 title: "Resources"
 permalink: /resources/
 author_profile: true
+accent: lab
 ---
 
-Resources is the core asset area for WillGaoLab.
+The WillGaoLab knowledge base — learning notes and practical tools.
 
-William Gao provides the academic credibility. WillGaoLab carries the long-term content assets: statistics notes, paper reading notes, book notes, and scientific learning material.
+## Learning resources
 
-## Statistics
-
-- [Statistics]({{ '/resources/statistics/' | relative_url }})
-- [Statistics Every Programmer Needs]({{ '/resources/statistics/statistics-every-programmer-needs/' | relative_url }})
-
-## Papers
-
-- [Papers]({{ '/resources/papers/' | relative_url }})
-- [Read Papers with Will]({{ '/resources/papers/read-papers-with-will/' | relative_url }})
-
-## Books
-
-- [Books]({{ '/resources/books/' | relative_url }})
-- [Read Books with Will]({{ '/resources/books/read-books-with-will/' | relative_url }})
+<div class="wg-card-grid">
+  {% include card.html href="/resources/statistics/" accent="lab" eyebrow="Statistics" title="Learn Statistics with Will" desc="Building intuition through notes and examples." cta="Open" %}
+  {% include card.html href="/resources/papers/" accent="lab" eyebrow="Papers" title="Read Papers with Will" desc="Understanding papers as stories." cta="Open" %}
+  {% include card.html href="/resources/books/" accent="lab" eyebrow="Books" title="Read Books with Will" desc="Ideas worth remembering." cta="Open" %}
+</div>
 
 ## Tools
 
-- [Excel Pixel Art Generator]({{ '/resources/excel-pixel-art-generator/' | relative_url }})
-- [Journal Harvester SOP]({{ '/resources/journal-harvester-sop/' | relative_url }})
-- [Market Tracker]({{ '/resources/market-tracker/' | relative_url }})
+{% assign lab_tools = site.pages | where: "type", "tools" | where: "status", "published" | sort: "date" | reverse %}
+<div class="wg-card-grid">{% for it in lab_tools %}{% include resource-card.html item=it %}{% endfor %}</div>
+
+<p class="wg-hub__links">Looking for something specific? <a href="{{ '/search/' | relative_url }}">Search everything</a> or <a href="{{ '/topics/' | relative_url }}">browse by topic</a>.</p>

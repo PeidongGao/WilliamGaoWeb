@@ -3,39 +3,23 @@ title: "WillGaoLab"
 permalink: /willgaolab/
 layout: single
 author_profile: true
+accent: lab
 ---
 
-WillGaoLab
+## Learning
 
-Learning in public.
-
----
-
-## Learn Statistics with Will
-
-Building intuition through notes and examples.
-
----
-
-## Read Papers with Will
-
-Understanding papers as stories.
-
----
-
-## Read Books with Will
-
-Ideas worth remembering.
-
----
+<div class="wg-card-grid">
+  {% include card.html href="/resources/statistics/" accent="lab" eyebrow="Statistics" title="Learn Statistics with Will" desc="Building intuition through notes and examples." cta="Open" %}
+  {% include card.html href="/resources/papers/" accent="lab" eyebrow="Papers" title="Read Papers with Will" desc="Understanding papers as stories." cta="Open" %}
+  {% include card.html href="/resources/books/" accent="lab" eyebrow="Books" title="Read Books with Will" desc="Ideas worth remembering." cta="Open" %}
+</div>
 
 ## Tools
 
-Practical tools built under the WillGaoLab personal brand.
+Practical tools built under the WillGaoLab brand. New tools appear here automatically.
 
-- [Excel Pixel Art Generator V3]({{ '/resources/excel-pixel-art-generator/' | relative_url }}) - independent Digital Excel and Physical production workflows with validated poster splitting and true-A4 vector PDFs.
-- [Journal Harvester SOP]({{ '/resources/journal-harvester-sop/' | relative_url }}) - low-volume, user-initiated browser workflows for bibliographic metadata discovery.
-- [Market Tracker]({{ '/resources/market-tracker/' | relative_url }}) - low-volume, user-initiated weekly ETF report generator with independent cross-validation.
+{% assign lab_tools = site.pages | where: "type", "tools" | sort: "date" | reverse %}
+<div class="wg-card-grid">{% for it in lab_tools %}{% include resource-card.html item=it %}{% endfor %}</div>
 
 ## GitHub Projects
 

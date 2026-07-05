@@ -1,0 +1,397 @@
+/* ==========================================================================
+   COMPONENTS  (design-system-first, token-driven)
+   Buttons and cards used across the whole site. Accent follows the page
+   context token --accent (teal on academic pages, coral on WillGaoLab pages).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+.wg-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.wg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.55rem 1.15rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--accent-contrast) !important;
+  font-family: $sans-serif;
+  font-size: $type-size-5;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    color: var(--accent-contrast) !important;
+  }
+}
+
+.wg-btn--outline {
+  background: transparent;
+  color: var(--accent) !important;
+
+  &:hover,
+  &:focus {
+    background: var(--accent-tint);
+    border-color: var(--accent);
+    color: var(--accent) !important;
+  }
+}
+
+/* Force a specific accent regardless of page context */
+.wg-btn--brand { --accent: var(--brand); --accent-hover: var(--brand-hover); --accent-contrast: var(--brand-contrast); --accent-tint: var(--brand-tint); }
+.wg-btn--lab   { --accent: var(--lab);   --accent-hover: var(--lab-hover);   --accent-contrast: var(--lab-contrast);   --accent-tint: var(--lab-tint); }
+
+/* --------------------------------------------------------------------------
+   Accent context utilities — set the page/section identity in one place.
+   Applied to a wrapper (or <body>) so every token-driven child follows suit.
+   -------------------------------------------------------------------------- */
+.accent-brand { --accent: var(--brand); --accent-hover: var(--brand-hover); --accent-contrast: var(--brand-contrast); --accent-tint: var(--brand-tint); }
+.accent-lab   { --accent: var(--lab);   --accent-hover: var(--lab-hover);   --accent-contrast: var(--lab-contrast);   --accent-tint: var(--lab-tint); }
+
+/* --------------------------------------------------------------------------
+   WillGaoLab identity badge — the sub-brand lockup at the top of lab pages.
+   -------------------------------------------------------------------------- */
+.wg-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.7rem;
+  padding: 0.28rem 0.65rem;
+  border: 1px solid var(--lab);
+  border-radius: var(--radius-pill);
+  background: var(--lab-tint);
+  color: var(--lab);
+  font-family: $monospace;
+  font-size: $type-size-7;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.wg-badge__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--lab);
+}
+
+/* --------------------------------------------------------------------------
+   Callout band — a restrained bordered block used to introduce a section
+   (e.g. the WillGaoLab band on the homepage). Accent via .accent-* wrapper.
+   -------------------------------------------------------------------------- */
+.wg-band {
+  margin: 2.75rem 0;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+
+  > :first-child { margin-top: 0; }
+  > :last-child  { margin-bottom: 0; }
+
+  p { color: var(--color-text); font-size: var(--fs-lead); line-height: var(--lh-body); max-width: 60ch; }
+}
+
+/* --------------------------------------------------------------------------
+   Cards + card grid
+   -------------------------------------------------------------------------- */
+.wg-card-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+
+  @include breakpoint($small) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  &--2 { @include breakpoint($small) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  &--4 { @include breakpoint($medium) { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+}
+
+/* 2x2 navigation grid (homepage) — always two equal columns, single column on phones */
+.wg-nav-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+
+  @include breakpoint($small) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.wg-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.wg-card--link {
+  color: var(--color-text) !important;
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-1);
+  }
+}
+
+.wg-card__eyebrow {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  font-family: $monospace;
+  font-size: $type-size-6;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  &--brand { color: var(--brand); }
+  &--lab   { color: var(--lab); }
+}
+
+.wg-card__title {
+  margin: 0 0 0.55rem;
+  font-size: var(--fs-h3);
+  line-height: 1.2;
+}
+
+.wg-card__desc {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: $type-size-6;
+  line-height: var(--lh-body);
+}
+
+.wg-card__meta {
+  margin-top: 0.85rem;
+  color: var(--color-text-muted);
+  font-family: $monospace;
+  font-size: $type-size-7;
+}
+
+.wg-card__cta {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: $type-size-6;
+}
+
+/* --------------------------------------------------------------------------
+   Topic chips
+   -------------------------------------------------------------------------- */
+.wg-card__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.9rem;
+}
+
+.wg-chip {
+  display: inline-block;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+  font-family: $monospace;
+  font-size: $type-size-7;
+  line-height: 1.5;
+  text-decoration: none !important;
+}
+
+a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+/* --------------------------------------------------------------------------
+   Filter bar (Resources hub)
+   -------------------------------------------------------------------------- */
+.wg-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+
+  &--topics { margin-top: 0; }
+}
+
+.wg-filter__btn {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-family: $monospace;
+  font-size: $type-size-7;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+
+  &:hover { color: var(--accent); border-color: var(--accent); }
+  &.is-active { background: var(--accent); border-color: var(--accent); color: var(--accent-contrast); }
+}
+
+.wg-chip--btn {
+  cursor: pointer;
+  &.is-active { background: var(--accent); border-color: var(--accent); color: var(--accent-contrast); }
+}
+
+.wg-hub__links { margin-top: 1.75rem; font-family: $monospace; font-size: $type-size-6; }
+.wg-hub__empty,
+.wg-empty { color: var(--color-text-muted); font-style: italic; }
+
+/* --------------------------------------------------------------------------
+   Search
+   -------------------------------------------------------------------------- */
+.wg-search__input {
+  width: 100%;
+  max-width: 640px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: $sans-serif;
+  font-size: var(--fs-lead);
+
+  &:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+}
+
+.wg-search__results { margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.wg-search__item { margin: 0 0 0.75rem; }
+.wg-search__item a {
+  display: block;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text) !important;
+  text-decoration: none !important;
+
+  &:hover { border-color: var(--accent); box-shadow: var(--shadow-1); }
+}
+.wg-search__title { display: block; font-family: $serif; font-size: var(--fs-h3); line-height: 1.25; margin: 0.15rem 0; }
+.wg-search__summary { display: block; color: var(--color-text-muted); font-size: $type-size-6; }
+.wg-search__empty { color: var(--color-text-muted); font-style: italic; }
+
+/* --------------------------------------------------------------------------
+   Topics page
+   -------------------------------------------------------------------------- */
+.wg-topic-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.25rem 0 2.5rem;
+}
+.wg-topic { margin: 0 0 2.5rem; scroll-margin-top: 90px; }
+
+/* Topics index — name + count, links to each topic's own page */
+.wg-topic-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 1fr;
+
+  @include breakpoint($small)  { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @include breakpoint($medium) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text) !important;
+    text-decoration: none !important;
+    font-family: $monospace;
+    font-size: $type-size-6;
+    transition: border-color var(--transition), color var(--transition);
+
+    &:hover { border-color: var(--accent); color: var(--accent) !important; }
+  }
+}
+
+.wg-topic-list__count {
+  color: var(--color-text-muted);
+  font-size: $type-size-7;
+}
+.wg-topic-list a:hover .wg-topic-list__count { color: var(--accent); }
+
+/* Skip-to-content link — hidden until keyboard-focused */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  z-index: 1000;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--accent-contrast) !important;
+  font-family: $sans-serif;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: top var(--transition);
+
+  &:focus { top: 0.5rem; }
+}
+
+/* Screen-reader-only helper */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility + mobile safety nets
+   -------------------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Wide content tables scroll instead of breaking the mobile layout. */
+@media (max-width: 37.5em) {
+  .page__content table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

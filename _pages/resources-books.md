@@ -3,10 +3,9 @@ title: "Books"
 permalink: /resources/books/
 layout: single
 author_profile: true
+accent: lab
 ---
 
-Book notes from WillGaoLab.
+Book notes from WillGaoLab — ideas worth remembering.
 
-## Notes
-
-- [Read Books with Will]({{ '/resources/books/read-books-with-will/' | relative_url }})
+{% include resource-type.html type="books" %}

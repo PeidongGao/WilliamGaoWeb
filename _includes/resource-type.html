@@ -1,0 +1,13 @@
+{%- comment -%}
+  Auto-lists every resource of a given `type`, newest first, as cards.
+  Used by the typed sub-hubs (/resources/statistics/, /papers/, /books/).
+  Usage: {% include resource-type.html type="statistics" %}
+{%- endcomment -%}
+{%- assign items = site.resources | where: "type", include.type | where: "status", "published" | sort: "date" | reverse -%}
+{%- if items.size > 0 -%}
+<div class="wg-card-grid">
+  {%- for it in items %}{% include resource-card.html item=it %}{% endfor -%}
+</div>
+{%- else -%}
+<p class="wg-empty">No entries yet — check back soon.</p>
+{%- endif -%}

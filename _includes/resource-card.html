@@ -1,0 +1,14 @@
+{%- comment -%}
+  Renders one content item (from site.resources, a tool page, or a publication)
+  as a wg-card link. Pass the item object as `item`, optional `label` overrides
+  the eyebrow (defaults to the item's type).
+  Usage: {% include resource-card.html item=r %}
+{%- endcomment -%}
+{%- assign it = include.item -%}
+{%- assign label = include.label | default: it.type -%}
+<a class="wg-card wg-card--link" href="{{ it.url | relative_url }}"{% if it.type %} data-type="{{ it.type }}"{% endif %}{% if it.topics %} data-topics="{{ it.topics | join: ' ' }}"{% endif %}>
+  {%- if label %}<span class="wg-card__eyebrow wg-card__eyebrow--lab">{{ label }}</span>{% endif -%}
+  <h3 class="wg-card__title">{{ it.title }}</h3>
+  {%- if it.summary %}<p class="wg-card__desc">{{ it.summary }}</p>{% endif -%}
+  {%- if it.topics %}<span class="wg-card__topics">{% for t in it.topics %}<span class="wg-chip">{{ t }}</span>{% endfor %}</span>{% endif -%}
+</a>

@@ -7,36 +7,39 @@ author_profile: true
 <section class="home-hero">
   <div class="home-hero__copy">
     <p class="home-kicker">Ph.D. candidate in Genetics</p>
-    <h2>William (Peidong) Gao</h2>
-    <p class="home-hero__lead">Bioinformatics / multi-omics / human islet biology / diabetes. Learning in public through WillGaoLab.</p>
+    <h1 class="home-hero__title">William (Peidong) Gao</h1>
+    <p class="home-hero__lead">I study human islet biology and diabetes through bioinformatics and multi-omics analysis — and I learn in public through <strong>WillGaoLab</strong>.</p>
+    <p class="wg-actions">
+      {% include button.html href="/research/" text="View research" accent="brand" %}
+      {% include button.html href="/willgaolab/" text="Explore WillGaoLab" variant="outline" accent="lab" %}
+    </p>
   </div>
   <figure class="home-hero__media">
     <img src="{{ '/images/profile.2.png' | relative_url }}" alt="Portrait of William Gao">
   </figure>
 </section>
 
-<section class="research-panel" aria-label="Research focus">
-  <article>
-    <span>01</span>
-    <h3>Human islet biology</h3>
-    <p>Computational analysis of pancreatic islet cell states, stress responses, and diabetes-associated heterogeneity.</p>
-  </article>
-  <article>
-    <span>02</span>
-    <h3>Reproducible analysis</h3>
-    <p>Clear computational workflows for multi-omics data, from quality control to interpretable biological signals.</p>
-  </article>
-  <article>
-    <span>03</span>
-    <h3>RNA and metabolism studies</h3>
-    <p>Wet-lab experience in molecular experiments, Northern and RNA-focused studies, and animal models of metabolism.</p>
-  </article>
-</section>
+<nav class="wg-nav-grid" aria-label="Explore the site">
+  {% include card.html href="/research/" accent="brand" eyebrow="William Gao" title="Research" desc="Human islet biology, diabetes, and interpretable multi-omics." cta="Read more" %}
+  {% include card.html href="/publications/" accent="brand" eyebrow="William Gao" title="Publications" desc="Peer-reviewed work in genomics, gene regulation, and metabolism." cta="Browse" %}
+  {% include card.html href="/resources/" accent="lab" eyebrow="WillGaoLab" title="Resources" desc="Statistics notes, paper and book notes, and practical tools." cta="Explore" %}
+  {% include card.html href="/willgaolab/" accent="lab" eyebrow="WillGaoLab" title="The Lab" desc="Open notes, tools, and projects built in public." cta="Enter" %}
+</nav>
 
-<section class="home-split">
-  <div>
-    <p class="home-kicker">Positioning</p>
-    <h2>Academic credibility and long-term public learning.</h2>
+<section class="home-section accent-lab" aria-label="Latest from WillGaoLab">
+  <p class="home-kicker">WillGaoLab</p>
+  <h2 class="home-section__title">Latest from WillGaoLab</h2>
+  {%- comment -%}
+    Auto-generated showcase of the newest WillGaoLab content. For now this shows
+    the latest tools. To showcase the newest content across ALL types later,
+    replace the `lab_updates` assignment below with:
+      {% assign tools = site.pages | where: "type", "tools" %}
+      {% assign lab_updates = site.resources | concat: tools | sort: "date" | reverse %}
+    Nothing else needs to change — the grid and cards adapt automatically.
+  {%- endcomment -%}
+  {% assign lab_updates = site.pages | where: "type", "tools" | sort: "date" | reverse %}
+  <div class="wg-card-grid">
+    {% for it in lab_updates limit: 3 %}{% include resource-card.html item=it %}{% endfor %}
   </div>
-  <p>williampeidonggao.com is my academic home page and the knowledge asset center for WillGaoLab. William Gao is the main academic identity. WillGaoLab is the content brand that carries long-term notes on statistics, papers, books, and scientific learning.</p>
+  <p class="wg-hub__links"><a href="{{ '/willgaolab/' | relative_url }}">Explore WillGaoLab &rarr;</a></p>
 </section>

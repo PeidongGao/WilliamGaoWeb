@@ -17,7 +17,8 @@ div.highlighter-rouge, figure.highlight {
     top: 0;
     right: 0;
     padding: 0.5em;
-    background-color: mix(#fff, #7a8288, 90%);
+    background-color: var(--color-surface-2);
+    color: var(--color-text-muted);
     content: "\f121";
     font-family: "Font Awesome 6 Free" !important;
     font-size: $type-size-6;
@@ -122,3 +123,22 @@ div.highlighter-rouge, figure.highlight {
 .highlight .vg { color: #22b3eb } /* Name.Variable.Global */
 .highlight .vi { color: #22b3eb } /* Name.Variable.Instance */
 .highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
+
+/* ==========================================================================
+   Dark-mode readability
+   The palette above is Solarized *light*; its base01 tone (#586e75) used for
+   default text, names, punctuation and whitespace is unreadable on a dark
+   surface. Lift those to a light neutral; the accent hues stay legible as-is.
+   ========================================================================== */
+html[data-theme="dark"] {
+  .highlight { color: #c6d0d3; }                 /* plain / untokenized text */
+
+  .highlight .c, .highlight .cm, .highlight .c1,
+  .highlight .sb { color: #7f9198; }             /* comments / secondary */
+
+  .highlight .err, .highlight .g,  .highlight .l,  .highlight .n,
+  .highlight .p,   .highlight .ge, .highlight .go, .highlight .gp,
+  .highlight .gt,  .highlight .gs, .highlight .ld, .highlight .na,
+  .highlight .nl,  .highlight .nn, .highlight .nx, .highlight .py,
+  .highlight .w,   .highlight .sd, .highlight .sh { color: #c6d0d3; }
+}

@@ -1,0 +1,93 @@
+/* ==========================================================================
+   DESIGN TOKENS  (single source of truth)
+   --------------------------------------------------------------------------
+   Semantic CSS custom properties for the whole site, defined for both light
+   and dark. Component SCSS should reference these tokens — never raw hex.
+
+   Identity mapping:
+     --brand  = William Gao (academic)  -> teal
+     --lab    = WillGaoLab (builder)     -> coral
+   ========================================================================== */
+
+:root {
+  /* Brand — William Gao (academic) */
+  --brand:            #2f7f93;
+  --brand-hover:      #24606f;
+  --brand-contrast:   #ffffff;   /* text on a solid brand fill */
+  --brand-tint:       rgba(47, 127, 147, 0.08);
+
+  /* Sub-brand — WillGaoLab (builder) */
+  --lab:              #d55d4c;
+  --lab-hover:        #b8472f;
+  --lab-contrast:     #ffffff;
+  --lab-tint:         rgba(213, 93, 76, 0.08);
+
+  /* Surfaces / neutrals (light) */
+  --color-bg:         #ffffff;
+  --color-surface:    #f7f9f9;   /* cards, wells */
+  --color-surface-2:  #eef2f2;   /* elevated / hover */
+  --color-border:     #e2e6e6;
+  --color-text:       #1f2a2e;
+  --color-text-muted: #5c6a70;
+
+  /* Links (academic pages default to brand teal) */
+  --color-link:       var(--brand);
+  --color-link-hover: var(--brand-hover);
+
+  /* Radii / elevation / motion — kept restrained (see design principles) */
+  --radius:           10px;
+  --radius-sm:        6px;
+  --radius-pill:      999px;
+  --shadow-1:         0 1px 2px rgba(15, 20, 23, 0.05);
+  --shadow-2:         0 4px 20px rgba(15, 20, 23, 0.08);
+  --transition:       0.18s ease;
+
+  /* Fluid type scale (editorial, restrained) */
+  --fs-display:       clamp(2rem, 1.1rem + 3.4vw, 4rem);
+  --fs-h2:            clamp(1.7rem, 1.2rem + 1.8vw, 2.6rem);
+  --fs-h3:            clamp(1.2rem, 1.05rem + 0.6vw, 1.55rem);
+  --fs-lead:          clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
+  --fs-body:          1.0625rem;   /* 17px */
+  --fs-small:         0.8125rem;   /* 13px */
+  --lh-tight:         1.12;
+  --lh-body:          1.6;
+
+  /* Layout accent for the current page context; academic pages = brand.
+     WillGaoLab pages override this to --lab (see Phase 5). */
+  --accent:           var(--brand);
+  --accent-hover:     var(--brand-hover);
+  --accent-contrast:  var(--brand-contrast);
+  --accent-tint:      var(--brand-tint);
+}
+
+html[data-theme="dark"] {
+  /* Brand / sub-brand — lifted for contrast on dark surfaces */
+  --brand:            #57b7cf;
+  --brand-hover:      #82d2e6;
+  --brand-contrast:   #06222a;
+  --brand-tint:       rgba(87, 183, 207, 0.14);
+
+  --lab:              #ff8168;
+  --lab-hover:        #ffa088;
+  --lab-contrast:     #2a0d06;
+  --lab-tint:         rgba(255, 129, 104, 0.14);
+
+  /* Surfaces / neutrals (dark, layered) */
+  --color-bg:         #0f1417;
+  --color-surface:    #161c20;
+  --color-surface-2:  #1e262b;
+  --color-border:     #2b353b;
+  --color-text:       #e9eef0;
+  --color-text-muted: #9aa7ad;
+
+  --color-link:       var(--brand);
+  --color-link-hover: var(--brand-hover);
+
+  --shadow-1:         0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2:         0 6px 24px rgba(0, 0, 0, 0.5);
+
+  --accent:           var(--brand);
+  --accent-hover:     var(--brand-hover);
+  --accent-contrast:  var(--brand-contrast);
+  --accent-tint:      var(--brand-tint);
+}

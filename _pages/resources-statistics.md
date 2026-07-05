@@ -3,10 +3,9 @@ title: "Statistics"
 permalink: /resources/statistics/
 layout: single
 author_profile: true
+accent: lab
 ---
 
-Statistics resources from WillGaoLab.
+Statistics and probability notes from WillGaoLab — building intuition through concise, practical explanations.
 
-## Notes
-
-- [Statistics Every Programmer Needs]({{ '/resources/statistics/statistics-every-programmer-needs/' | relative_url }})
+{% include resource-type.html type="statistics" %}

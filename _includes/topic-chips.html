@@ -1,0 +1,14 @@
+{%- comment -%}
+  Compact chip cloud of all topics (published content), linking to topic pages.
+  Used on the search hub. GitHub Pages safe (Liquid).
+{%- endcomment -%}
+{%- assign tools = site.pages | where: "type", "tools" | where: "status", "published" -%}
+{%- assign pub_resources = site.resources | where: "status", "published" -%}
+{%- capture _topics -%}
+{%- for r in pub_resources -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+{%- for r in tools -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+{%- endcapture -%}
+{%- assign topics = _topics | split: "," | uniq | sort -%}
+<div class="wg-topic-index">
+{%- for t in topics -%}{%- if t != "" -%}<a class="wg-chip" href="{{ '/topics/' | relative_url }}{{ t | slugify }}/">{{ t }}</a>{%- endif -%}{%- endfor -%}
+</div>

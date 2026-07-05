@@ -1,0 +1,21 @@
+---
+layout: null
+sitemap: false
+---
+{% assign sep = "" -%}
+[
+{%- assign tools = site.pages | where: "type", "tools" | where: "status", "published" -%}
+{%- assign pub_resources = site.resources | where: "status", "published" -%}
+{%- for r in pub_resources -%}
+{{ sep }}{"title":{{ r.title | strip_html | jsonify }},"url":{{ r.url | relative_url | jsonify }},"type":{{ r.type | default: "notes" | jsonify }},"topics":{{ r.topics | jsonify }},"summary":{{ r.summary | default: "" | jsonify }}}
+{%- assign sep = "," -%}
+{%- endfor -%}
+{%- for r in tools -%}
+{{ sep }}{"title":{{ r.title | strip_html | jsonify }},"url":{{ r.url | relative_url | jsonify }},"type":"tools","topics":{{ r.topics | jsonify }},"summary":{{ r.summary | default: "" | jsonify }}}
+{%- assign sep = "," -%}
+{%- endfor -%}
+{%- for r in site.publications -%}
+{{ sep }}{"title":{{ r.title | strip_html | jsonify }},"url":{{ r.url | relative_url | jsonify }},"type":"publication","topics":{{ r.topics | jsonify }},"summary":{{ r.venue | default: "" | jsonify }}}
+{%- assign sep = "," -%}
+{%- endfor -%}
+]

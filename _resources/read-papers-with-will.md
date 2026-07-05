@@ -3,7 +3,11 @@ title: "Read Papers with Will"
 layout: single
 permalink: /resources/papers/read-papers-with-will/
 author_profile: true
-category: papers
+type: papers
+topics: [reading, methods, research-skills]
+date: 2026-06-20
+status: published
+summary: "Notes, summaries, and reusable frameworks for reading scientific papers as stories."
 ---
 
 Read Papers with Will is the paper reading area of WillGaoLab.

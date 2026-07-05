@@ -3,10 +3,9 @@ title: "Papers"
 permalink: /resources/papers/
 layout: single
 author_profile: true
+accent: lab
 ---
 
-Paper reading notes from WillGaoLab.
+Paper reading notes from WillGaoLab — understanding scientific papers as stories.
 
-## Notes
-
-- [Read Papers with Will]({{ '/resources/papers/read-papers-with-will/' | relative_url }})
+{% include resource-type.html type="papers" %}

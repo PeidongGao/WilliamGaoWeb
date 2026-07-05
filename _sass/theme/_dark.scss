@@ -33,22 +33,24 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
+/* Dark theme for the site.
+   Mapped onto the layered dark surfaces in _tokens.scss. Fixes the previous
+   flat #474747 (bg = surface = footer) and the light-on-light code blocks. */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$background-lighter};
+    --global-base-color                 : var(--color-surface);
+    --global-bg-color                   : var(--color-bg);
+    --global-footer-bg-color            : var(--color-surface);
+    --global-border-color               : var(--color-border);
+    --global-dark-border-color          : var(--color-surface-2);
+    --global-code-background-color      : var(--color-surface-2);
+    --global-code-text-color            : var(--color-text);
+    --global-fig-caption-color          : var(--color-text-muted);
+    --global-link-color                 : var(--color-link);
+    --global-link-color-hover           : var(--color-link-hover);
+    --global-link-color-visited         : var(--color-link-hover);
+    --global-masthead-link-color        : var(--color-text);
+    --global-masthead-link-color-hover  : var(--brand);
+    --global-text-color                 : var(--color-text);
+    --global-text-color-light           : var(--color-text-muted);
+    --global-thead-color                : var(--color-surface-2);
 }

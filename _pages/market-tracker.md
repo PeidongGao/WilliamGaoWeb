@@ -3,6 +3,12 @@ title: "Market Tracker"
 layout: single
 permalink: /resources/market-tracker/
 author_profile: true
+accent: lab
+type: tools
+topics: [investing, etf, tools]
+date: 2026-06-28
+status: published
+summary: "A weekly ETF report generator (VOO, QQQ, SMH) with independent cross-validation before every value."
 ---
 
 Market Tracker is a weekly market report generator for the ETFs `VOO`, `QQQ`,

@@ -1,0 +1,45 @@
+{%- comment -%}
+  The filterable, auto-listing Resources hub. Aggregates every resource note
+  (site.resources) and every tool page (site.pages where type == tools),
+  newest first, and renders client-side type + topic filters over them.
+  New content appears automatically — no manual index maintenance.
+{%- endcomment -%}
+{%- assign resources = site.resources | sort: "date" | reverse -%}
+{%- assign tools = site.pages | where: "type", "tools" | sort: "date" | reverse -%}
+{%- capture _topics -%}
+  {%- for it in resources -%}{%- for t in it.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+  {%- for it in tools -%}{%- for t in it.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+{%- endcapture -%}
+{%- assign topic_list = _topics | split: "," | uniq | sort -%}
+
+<div class="wg-filter" data-filter-types aria-label="Filter by type">
+  <button type="button" class="wg-filter__btn is-active" data-type="all">All</button>
+  <button type="button" class="wg-filter__btn" data-type="statistics">Statistics</button>
+  <button type="button" class="wg-filter__btn" data-type="papers">Papers</button>
+  <button type="button" class="wg-filter__btn" data-type="books">Books</button>
+  <button type="button" class="wg-filter__btn" data-type="notes">Notes</button>
+  <button type="button" class="wg-filter__btn" data-type="tools">Tools</button>
+</div>
+
+{%- if topic_list.size > 0 -%}
+<div class="wg-filter wg-filter--topics" data-filter-topics aria-label="Filter by topic">
+  {%- for t in topic_list -%}{%- if t != "" -%}
+    <button type="button" class="wg-chip wg-chip--btn" data-topic="{{ t }}">{{ t }}</button>
+  {%- endif -%}{%- endfor -%}
+</div>
+{%- endif -%}
+
+<div class="wg-card-grid" data-resource-grid>
+  {%- for it in resources %}{% include resource-card.html item=it %}{% endfor -%}
+  {%- for it in tools %}{% include resource-card.html item=it %}{% endfor -%}
+</div>
+
+<p class="wg-hub__empty" data-empty hidden>Nothing matches that filter.</p>
+
+<p class="wg-hub__links">
+  <a href="{{ '/topics/' | relative_url }}">Browse by topic &rarr;</a>
+  &nbsp;&middot;&nbsp;
+  <a href="{{ '/search/' | relative_url }}">Search everything &rarr;</a>
+</p>
+
+<script src="{{ '/assets/js/filter.js' | relative_url }}" defer></script>

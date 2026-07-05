@@ -3,6 +3,12 @@ title: "Excel Pixel Art Generator"
 permalink: /resources/excel-pixel-art-generator/
 layout: single
 author_profile: true
+accent: lab
+type: tools
+topics: [excel, pixel-art, tools]
+date: 2026-05-18
+status: published
+summary: "Turn any image into an Excel paint-by-number workbook or material-matched physical production outputs."
 ---
 
 <section class="home-hero">
@@ -11,7 +17,7 @@ author_profile: true
     <h2>Excel Pixel Art Generator</h2>
     <p class="home-hero__lead">Upload an image and independently generate a Digital Excel paint-by-number workbook or Physical production outputs with material palettes, validated poster splitting, sharp vector printable pages, and color masks.</p>
     <p>Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao.</p>
-    <p><a class="btn btn--primary" href="https://excelpixelartgenerator-8tq4k2vmpkxskubnxzrxeo.streamlit.app/">Launch the app</a></p>
+    <p class="wg-actions">{% include button.html href="https://excelpixelartgenerator-8tq4k2vmpkxskubnxzrxeo.streamlit.app/" text="Launch the app" accent="lab" external=true %}</p>
   </div>
   <figure class="home-hero__media">
     <img src="{{ '/images/excel-pixel-art-wave.jpg' | relative_url }}" alt="Under the Wave off Kanagawa demo image">

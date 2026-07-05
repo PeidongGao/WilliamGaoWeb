@@ -1,0 +1,21 @@
+{%- comment -%}
+  Index of topic pages (files with `layout: topic`), each with a count of the
+  published items tagged with it, linking to that topic's own page. Driven by the
+  topic pages that actually exist, so it never links to a missing page.
+  GitHub Pages safe (Liquid only).
+{%- endcomment -%}
+{%- assign topic_pages = site.pages | where: "layout", "topic" | sort: "title" -%}
+{%- assign tools = site.pages | where: "type", "tools" | where: "status", "published" -%}
+{%- assign pub_resources = site.resources | where: "status", "published" -%}
+{%- capture _topics -%}
+{%- for r in pub_resources -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+{%- for r in tools -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+{%- endcapture -%}
+{%- assign all_flat = _topics | split: "," -%}
+<ul class="wg-topic-list">
+{%- for tp in topic_pages -%}
+{%- assign t = tp.topic -%}
+{%- assign count = all_flat | where_exp: "x", "x == t" | size -%}
+<li><a href="{{ tp.url | relative_url }}"><span class="wg-topic-list__name">{{ tp.title }}</span><span class="wg-topic-list__count">{{ count }}</span></a></li>
+{%- endfor -%}
+</ul>

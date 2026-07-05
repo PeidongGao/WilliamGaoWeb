@@ -88,7 +88,7 @@ publication_category:
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
@@ -166,6 +166,8 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - DESIGN_UPGRADE_PLAN.md
+  - CONTRIBUTING-CONTENT.md
   - .asset-cache
   - .bundle
   - .github
@@ -301,6 +303,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      accent: lab
 
 
 # Sass/SCSS

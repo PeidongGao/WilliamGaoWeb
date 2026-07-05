@@ -1,0 +1,28 @@
+{%- comment -%}
+  Reusable card. Whole card is a link when `href` is given, else a static block.
+  Params:
+    title    (required)
+    desc     supporting text
+    eyebrow  small mono label (e.g. "01", "Tool", "Statistics")
+    meta     small footer text (e.g. a date)
+    href     makes the whole card a link
+    accent   brand | lab   (default: lab) — colors the eyebrow
+    cta      link-cue text shown with an arrow (only meaningful with href)
+  Usage: {% include card.html eyebrow="01" title="…" desc="…" accent="brand" %}
+{%- endcomment -%}
+{%- assign accent = include.accent | default: "lab" -%}
+{%- if include.href -%}
+<a class="wg-card wg-card--link" href="{{ include.href }}">
+{%- else -%}
+<article class="wg-card">
+{%- endif -%}
+  {%- if include.eyebrow %}<span class="wg-card__eyebrow wg-card__eyebrow--{{ accent }}">{{ include.eyebrow }}</span>{% endif -%}
+  <h3 class="wg-card__title">{{ include.title }}</h3>
+  {%- if include.desc %}<p class="wg-card__desc">{{ include.desc }}</p>{% endif -%}
+  {%- if include.meta %}<span class="wg-card__meta">{{ include.meta }}</span>{% endif -%}
+  {%- if include.href and include.cta %}<span class="wg-card__cta">{{ include.cta }}<span aria-hidden="true"> &rarr;</span></span>{% endif -%}
+{%- if include.href -%}
+</a>
+{%- else -%}
+</article>
+{%- endif -%}

@@ -3,7 +3,11 @@ title: "Statistics Every Programmer Needs"
 layout: single
 permalink: /resources/statistics/statistics-every-programmer-needs/
 author_profile: true
-category: statistics
+type: statistics
+topics: [statistics, probability, data-analysis]
+date: 2026-06-17
+status: published
+summary: "A practical, growing set of notes on the statistics and probability programmers and computational researchers use most."
 ---
 
 William Gao

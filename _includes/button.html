@@ -1,0 +1,11 @@
+{%- comment -%}
+  Reusable button. Params:
+    href      (required)  destination
+    text      (required)  label
+    variant   solid | outline        (default: solid)
+    accent    brand | lab            (default: inherits page --accent)
+    external  truthy -> opens in new tab
+  Usage: {% include button.html href="/x/" text="Go" variant="outline" accent="lab" %}
+{%- endcomment -%}
+{%- assign variant = include.variant | default: "solid" -%}
+<a class="wg-btn wg-btn--{{ variant }}{% if include.accent %} wg-btn--{{ include.accent }}{% endif %}" href="{{ include.href }}"{% if include.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ include.text }}</a>

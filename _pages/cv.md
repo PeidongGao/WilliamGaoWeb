@@ -9,19 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+## Education
 * Ph.D. candidate in Genetics, Case Western Reserve University
 
-Research Focus
-======
+## Research Focus
 * Bioinformatics and multi-omics analysis
 * Human islet cells
 * Diabetes and complex disease biology
 * Reproducible computational workflows
 
-Publications
-======
+## Publications
 {% if site.publications.size > 0 %}
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -30,8 +27,7 @@ Publications
 Publication records will be added here.
 {% endif %}
 
-Talks
-======
+## Talks
 {% if site.talks.size > 0 %}
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
@@ -40,8 +36,7 @@ Talks
 Talks and presentations will be added here.
 {% endif %}
 
-Links
-======
+## Links
 * [Google Scholar](https://scholar.google.com/citations?hl=en&user=j-UnGkAAAAAJ&view_op=list_works)
 * [ORCID](https://orcid.org/0009-0004-1467-7570)
 * [GitHub](https://github.com/PeidongGao)
