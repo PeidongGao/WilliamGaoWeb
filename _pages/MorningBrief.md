@@ -8,8 +8,12 @@ type: tools
 topics: [automation, learning, tools]
 date: 2026-07-06
 status: published
-summary: "A local Codex-based Morning Brief runner with saved Markdown reports and a read-only Streamlit reader."
+summary: "A personal Chief of Staff layer for Codex that turns your knowledge, priorities, and operating principles into decision-ready morning briefings."
 ---
+
+MorningBrief transforms Codex into your personal Chief of Staff. By combining
+your knowledge, priorities, and operating principles, it generates consistent,
+decision-ready morning briefings tailored to how you think and work.
 
 MorningBrief is a local CLI for running a configured Codex-based Morning Brief
 workflow and browsing saved reports through a read-only Streamlit interface.
