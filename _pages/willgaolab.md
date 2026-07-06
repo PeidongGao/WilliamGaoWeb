@@ -23,6 +23,7 @@ Practical tools built under the WillGaoLab brand. New tools appear here automati
 
 ## GitHub Projects
 
+- [MorningBrief](https://github.com/WillGaoLab/MorningBrief)
 - [WillGaoLab profile and project index](https://github.com/WillGaoLab/WillGaoLab)
 - [Excel Pixel Art Generator](https://github.com/WillGaoLab/excel_pixel_art_generator)
 - [auto_paper_get_CNS](https://github.com/WillGaoLab/auto_paper_get_CNS)
