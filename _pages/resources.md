@@ -16,6 +16,12 @@ The WillGaoLab knowledge base — learning notes and practical tools.
   {% include card.html href="/resources/books/" accent="lab" eyebrow="Books" title="Read Books with Will" desc="Ideas worth remembering." cta="Open" %}
 </div>
 
+## Market
+
+<div class="wg-card-grid">
+  {% include card.html href="/follow-the-market-with-will/" accent="lab" eyebrow="Weekly Market" title="Follow the Market with Will" desc="Weekly snapshots of broad equities, technology, and semiconductors." cta="View latest" %}
+</div>
+
 ## Tools
 
 {% assign lab_tools = site.pages | where: "type", "tools" | where: "status", "published" | sort: "date" | reverse %}

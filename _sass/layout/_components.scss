@@ -269,6 +269,47 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
 .wg-empty { color: var(--color-text-muted); font-style: italic; }
 
 /* --------------------------------------------------------------------------
+   Market page — latest labels and a compact archive disclosure.
+   -------------------------------------------------------------------------- */
+.wg-section-status {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--accent-tint);
+  color: var(--accent);
+  font-family: $monospace;
+  font-size: $type-size-7;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.wg-market-archive {
+  margin: 2.25rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+
+  summary {
+    padding: 1rem 1.2rem;
+    color: var(--color-text);
+    cursor: pointer;
+    font-family: $serif;
+    font-size: var(--fs-h3);
+    font-weight: 600;
+
+    &::marker { color: var(--accent); }
+  }
+
+  > :not(summary) { margin-left: 1.2rem; margin-right: 1.2rem; }
+}
+
+.wg-market-archive__empty { color: var(--color-text-muted); }
+
+/* --------------------------------------------------------------------------
    Search
    -------------------------------------------------------------------------- */
 .wg-search__input {

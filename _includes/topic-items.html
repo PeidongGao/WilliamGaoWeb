@@ -5,11 +5,13 @@
 {%- endcomment -%}
 {%- assign t = include.topic -%}
 {%- assign tools = site.pages | where: "type", "tools" | where: "status", "published" -%}
+{%- assign market_pages = site.pages | where: "type", "market" | where: "status", "published" -%}
 {%- assign pub_resources = site.resources | where: "status", "published" -%}
 {%- assign shown = 0 -%}
 {%- capture grid -%}
 {%- for r in pub_resources -%}{%- if r.topics contains t -%}{% include resource-card.html item=r %}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- for r in tools -%}{%- if r.topics contains t -%}{% include resource-card.html item=r %}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- for r in market_pages -%}{%- if r.topics contains t -%}{% include resource-card.html item=r %}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- for r in site.publications -%}{%- if r.topics contains t -%}{% include resource-card.html item=r label="publication" %}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- endcapture -%}
 {%- if shown > 0 -%}

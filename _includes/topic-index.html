@@ -6,10 +6,12 @@
 {%- endcomment -%}
 {%- assign topic_pages = site.pages | where: "layout", "topic" | sort: "title" -%}
 {%- assign tools = site.pages | where: "type", "tools" | where: "status", "published" -%}
+{%- assign market_pages = site.pages | where: "type", "market" | where: "status", "published" -%}
 {%- assign pub_resources = site.resources | where: "status", "published" -%}
 {%- capture _topics -%}
 {%- for r in pub_resources -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
 {%- for r in tools -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
+{%- for r in market_pages -%}{%- for t in r.topics -%}{{ t }},{%- endfor -%}{%- endfor -%}
 {%- endcapture -%}
 {%- assign all_flat = _topics | split: "," -%}
 <ul class="wg-topic-list">
