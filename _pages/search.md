@@ -29,6 +29,13 @@ Search across every note, tool, and publication — or explore the collections b
     </div>
   </section>
 
+  <section class="home-section" aria-label="Browse market">
+    <h2 class="home-section__title">Browse market</h2>
+    <div class="wg-card-grid">
+      {% include card.html href="/follow-the-market-with-will/" accent="lab" eyebrow="Weekly Market" title="Follow the Market with Will" desc="Weekly observations for VOO, QQQ, and SMH." cta="View latest" %}
+    </div>
+  </section>
+
   <section class="home-section" aria-label="Browse tools">
     <h2 class="home-section__title">Browse tools</h2>
     {% assign lab_tools = site.pages | where: "type", "tools" | where: "status", "published" | sort: "date" | reverse %}

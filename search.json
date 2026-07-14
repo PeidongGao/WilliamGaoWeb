@@ -5,6 +5,7 @@ sitemap: false
 {% assign sep = "" -%}
 [
 {%- assign tools = site.pages | where: "type", "tools" | where: "status", "published" -%}
+{%- assign market_pages = site.pages | where: "type", "market" | where: "status", "published" -%}
 {%- assign pub_resources = site.resources | where: "status", "published" -%}
 {%- for r in pub_resources -%}
 {{ sep }}{"title":{{ r.title | strip_html | jsonify }},"url":{{ r.url | relative_url | jsonify }},"type":{{ r.type | default: "notes" | jsonify }},"topics":{{ r.topics | jsonify }},"summary":{{ r.summary | default: "" | jsonify }}}
@@ -12,6 +13,10 @@ sitemap: false
 {%- endfor -%}
 {%- for r in tools -%}
 {{ sep }}{"title":{{ r.title | strip_html | jsonify }},"url":{{ r.url | relative_url | jsonify }},"type":"tools","topics":{{ r.topics | jsonify }},"summary":{{ r.summary | default: "" | jsonify }}}
+{%- assign sep = "," -%}
+{%- endfor -%}
+{%- for r in market_pages -%}
+{{ sep }}{"title":{{ r.title | strip_html | jsonify }},"url":{{ r.url | relative_url | jsonify }},"type":"market","topics":{{ r.topics | jsonify }},"summary":{{ r.summary | default: "" | jsonify }}}
 {%- assign sep = "," -%}
 {%- endfor -%}
 {%- for r in site.publications -%}
