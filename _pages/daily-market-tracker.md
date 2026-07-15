@@ -24,7 +24,7 @@ minimal Streamlit dashboard.
 The project is designed to observe market conditions consistently over time;
 it does not predict market direction or provide trading recommendations.
 
-<p class="wg-actions">{% include button.html href="https://dailymarkettracker-gpzrecaajkczjvnfqf42ku.streamlit.app/" text="Open the live dashboard" accent="lab" external=true %}</p>
+<p class="wg-actions">{% include button.html href="https://dailymarkettracker-mtklpsoauidwibgbij9xoq.streamlit.app/" text="Open the live dashboard" accent="lab" external=true %}</p>
 
 ## Daily Workflow
 
@@ -58,7 +58,7 @@ python scripts/daily_pipeline.py --date YYYY-MM-DD
 
 ## Project Links
 
-- [Live Streamlit dashboard](https://dailymarkettracker-gpzrecaajkczjvnfqf42ku.streamlit.app/)
+- [Live Streamlit dashboard](https://dailymarkettracker-mtklpsoauidwibgbij9xoq.streamlit.app/)
 - [WillGaoLab repository](https://github.com/WillGaoLab/Daily_Market_Tracker)
 - [Primary development repository](https://github.com/PeidongGao/Daily_Market_Tracker)
 - [Usage disclaimer](https://github.com/PeidongGao/Daily_Market_Tracker/blob/main/DISCLAIMER.md)
