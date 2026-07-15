@@ -20,6 +20,7 @@ The WillGaoLab knowledge base — learning notes and practical tools.
 
 <div class="wg-card-grid">
   {% include card.html href="/follow-the-market-with-will/" accent="lab" eyebrow="Weekly Market" title="Follow the Market with Will" desc="Weekly snapshots of broad equities, technology, and semiconductors." cta="View latest" %}
+  {% include card.html href="/resources/daily-market-tracker/" accent="lab" eyebrow="Daily Market" title="Daily Market Tracker" desc="Daily opening-gap observations, Market Fingerprints, and historical market-state records." cta="Explore" %}
 </div>
 
 ## Tools

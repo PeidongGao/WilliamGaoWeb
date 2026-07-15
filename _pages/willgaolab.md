@@ -18,6 +18,7 @@ accent: lab
 
 <div class="wg-card-grid">
   {% include card.html href="/follow-the-market-with-will/" accent="lab" eyebrow="Weekly Market" title="Follow the Market with Will" desc="Weekly snapshots of broad equities, technology, and semiconductors." cta="View latest" %}
+  {% include card.html href="/resources/daily-market-tracker/" accent="lab" eyebrow="Daily Market" title="Daily Market Tracker" desc="Daily opening-gap observations, Market Fingerprints, and historical market-state records." cta="Explore" %}
 </div>
 
 ## Tools
@@ -34,6 +35,7 @@ Practical tools built under the WillGaoLab brand. New tools appear here automati
 - [Excel Pixel Art Generator](https://github.com/WillGaoLab/excel_pixel_art_generator)
 - [auto_paper_get_CNS](https://github.com/WillGaoLab/auto_paper_get_CNS)
 - [MarketTrackingSystem](https://github.com/WillGaoLab/MarketTrackingSystem)
+- [Daily_Market_Tracker](https://github.com/WillGaoLab/Daily_Market_Tracker)
 
 ## Follow
 
