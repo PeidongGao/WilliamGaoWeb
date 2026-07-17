@@ -18,9 +18,9 @@ The WillGaoLab knowledge base — learning notes and practical tools.
 
 ## Market
 
-<div class="wg-card-grid">
-  {% include card.html href="/follow-the-market-with-will/" accent="lab" eyebrow="Weekly Market" title="Follow the Market with Will" desc="Weekly snapshots of broad equities, technology, and semiconductors." cta="View latest" %}
-  {% include card.html href="/resources/daily-market-tracker/" accent="lab" eyebrow="Daily Market" title="Daily Market Tracker" desc="Daily opening-gap observations, Market Fingerprints, and historical market-state records." cta="Explore" %}
+<div class="wg-market-card">
+  {% include card.html href="/market-fingerprint/" accent="lab" eyebrow="DAILY MARKET" title="Market Fingerprint" desc="Daily overnight market insights." cta="Open" %}
+  {% include card.html href="/follow-the-market-with-will/" accent="lab" eyebrow="WEEKLY MARKET" title="Follow the Market with Will" desc="Weekly snapshots of broad equities, technology, and semiconductors." cta="Open" %}
 </div>
 
 ## Tools
