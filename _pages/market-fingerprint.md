@@ -17,7 +17,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 <h2>Introduction</h2>
 
-<p class="wg-market-introduction">The Overnight Market Fingerprint summarizes pre-market pricing across equities, volatility, yields, the U.S. dollar, and oil before the U.S. cash session begins.</p>
+<p class="wg-market-introduction">The Overnight Market Fingerprint summarizes pre-market pricing across equities, risk &amp; sentiment, and macro conditions before the U.S. cash session begins.</p>
 
 <h2>Today's Fingerprint <span class="wg-section-status">Latest</span></h2>
 
@@ -77,7 +77,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 <h3>Radar Chart</h3>
 
-<p>The radar chart shows the six tracked indicators together. The dashed circle marks no overnight change; positions beyond or within it show the size and direction of each direction-adjusted move. Labels show the raw opening-gap percentage.</p>
+<p>The radar chart shows the nine tracked indicators together. The dashed circle marks no overnight change; positions beyond or within it show the size and direction of each direction-adjusted move. Labels show the raw opening-gap percentage.</p>
 
 <h3>Heatmap</h3>
 
@@ -85,7 +85,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 <h3>Overnight Indicators</h3>
 
-<p>The fingerprint follows the S&amp;P 500, Nasdaq-100, VIX, 10-year Treasury yield, U.S. dollar index, and WTI oil. Reading them together helps distinguish technology-specific weakness from broader changes in risk, liquidity, and macro conditions.</p>
+<p>The fingerprint tracks nine overnight indicators across equities, risk &amp; sentiment, and macro conditions: S&amp;P 500, Nasdaq-100, Dow Jones, VIX, Bitcoin, Gold, 10-year Treasury yield, U.S. dollar index, and WTI oil. Reading them together helps distinguish sector-specific weakness from broader changes in risk, liquidity, and macro conditions.</p>
 
 <h2>Methodology</h2>
 
@@ -94,8 +94,8 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 <p>Each U.S. trading day, the workflow:</p>
 
 <ol>
-  <li>Downloads Yahoo Finance daily open and close data for the six indicators.</li>
-  <li>Calculates each indicator's opening gap from the previous close.</li>
+  <li>Downloads Yahoo Finance market data for the tracked indicators, including daily open/close data for traditional market instruments and Bitcoin's UTC daily open plus current market price.</li>
+  <li>Calculates each indicator's overnight change using the appropriate baseline: previous close versus daily open for traditional market instruments, and Bitcoin's UTC daily open versus current market price.</li>
   <li>Validates and stores the daily record.</li>
   <li>Generates the fingerprint automatically.</li>
 </ol>
