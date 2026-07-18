@@ -1,3 +1,11 @@
+- date: "2026-07-17"
+  summary: "VIX surged +7.65% while the S&P 500 fell −1.14% and 10-year Treasury yields declined −1.05%, signaling a defensive shift in overnight market sentiment."
+  key_observation: "Market moved into a defensive mode, but further observation is needed to confirm whether this develops into broader risk aversion."
+  market_notes:
+    - "The combination of higher VIX, weaker equities, and lower Treasury yields suggested increased uncertainty and a shift toward defensive positioning."
+    - "However, stable Bitcoin, gold, the U.S. dollar, and oil indicated that the move was concentrated in equity volatility rather than a broad cross-asset panic."
+    - "The upgraded fingerprint now tracks three groups: Equities (S&P 500, Nasdaq-100 Futures, Dow Jones Industrial Average), Risk & Sentiment (VIX, Bitcoin, Gold Futures), and Macro (U.S. 10-Year Treasury Yield, U.S. Dollar Index, WTI Crude Oil)."
+
 - date: "2026-07-16"
   summary: "Nasdaq −1.69% led the overnight weakness, while the S&P 500 fell only −0.18%; yields rose and the U.S. dollar remained stable."
   key_observation: "Technology-led valuation repricing, not broad market panic."
