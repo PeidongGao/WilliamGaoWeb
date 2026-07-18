@@ -293,7 +293,7 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
   border-radius: var(--radius);
   background: var(--color-surface);
 
-  summary {
+  > summary {
     padding: 1rem 1.2rem;
     color: var(--color-text);
     cursor: pointer;
@@ -308,6 +308,89 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
 }
 
 .wg-market-archive__empty { color: var(--color-text-muted); }
+
+.wg-market-archive__entry {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--color-border);
+
+  > summary {
+    color: var(--color-text);
+    cursor: pointer;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+    font-weight: 600;
+  }
+
+  p { font-size: $type-size-6; }
+}
+
+.wg-market-card {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  @include breakpoint($small) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.wg-market-fingerprint-image {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0;
+
+  > a {
+    display: block;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    width: 125%;
+    max-width: none;
+    margin-right: -25%;
+  }
+}
+
+.wg-market-fingerprint-image[hidden] { display: none; }
+
+.wg-market-remote-state {
+  margin: 0.75rem 0;
+  color: var(--color-text-muted);
+  font-size: $type-size-6;
+}
+
+.wg-market-fingerprint-image + h2 {
+  margin-top: 0.5rem;
+}
+
+.wg-market-introduction {
+  margin-bottom: 0.8rem !important;
+  color: var(--color-text-muted);
+}
+
+.wg-market-introduction + h2 {
+  margin-top: 1.25em;
+}
+
+.wg-market-key-observation {
+  margin: 0 0 1.3em;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--color-text);
+  font-family: $serif;
+  font-size: var(--fs-lead) !important;
+  font-weight: 600;
+  line-height: var(--lh-body);
+}
 
 /* --------------------------------------------------------------------------
    Search

@@ -1,0 +1,21 @@
+- date: "2026-07-17"
+  summary: "VIX surged +7.65% while the S&P 500 fell −1.14% and 10-year Treasury yields declined −1.05%, signaling a defensive shift in overnight market sentiment."
+  key_observation: "Market moved into a defensive mode, but further observation is needed to confirm whether this develops into broader risk aversion."
+  market_notes:
+    - "The combination of higher VIX, weaker equities, and lower Treasury yields suggested increased uncertainty and a shift toward defensive positioning."
+    - "However, stable Bitcoin, gold, the U.S. dollar, and oil indicated that the move was concentrated in equity volatility rather than a broad cross-asset panic."
+    - "The upgraded fingerprint now tracks three groups: Equities (S&P 500, Nasdaq-100 Futures, Dow Jones Industrial Average), Risk & Sentiment (VIX, Bitcoin, Gold Futures), and Macro (U.S. 10-Year Treasury Yield, U.S. Dollar Index, WTI Crude Oil)."
+
+- date: "2026-07-16"
+  summary: "Nasdaq −1.69% led the overnight weakness, while the S&P 500 fell only −0.18%; yields rose and the U.S. dollar remained stable."
+  key_observation: "Technology-led valuation repricing, not broad market panic."
+  market_notes:
+    - "The relatively stable S&P 500 alongside the sharp Nasdaq decline pointed to a technology-specific correction rather than broad risk aversion."
+    - "Higher Treasury yields suggested liquidity remained healthy, while the stable dollar and modest oil decline indicated an otherwise steady macro backdrop."
+
+- date: "2026-07-15"
+  summary: "Overnight markets reflected a broadly constructive tone. The S&P 500 rose 0.37%, Nasdaq-100 edged up 0.05%, while VIX fell 1.82% and macro indicators remained largely unchanged."
+  key_observation: "Stable risk-on sentiment with improving investor confidence."
+  market_notes:
+    - "The 1.82% decline in VIX was the strongest overnight move, suggesting improving market sentiment, while both the S&P 500 (+0.37%) and Nasdaq-100 (+0.05%) remained broadly stable."
+    - "Treasury yields (+0.50%), the U.S. dollar (0.00%), and crude oil (+0.50%) showed little macro disruption, pointing to a calm risk-on opening."
