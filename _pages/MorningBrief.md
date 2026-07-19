@@ -21,16 +21,18 @@ workflows and browsing saved reports through a read-only Streamlit interface.
 Markdown, and records the run in an append-only history; `mb serve` opens a
 local reader for successful and failed runs.
 
-Version 2.0 makes the project easier to install, try, and operate as a complete
-application. It includes a zero-configuration public demo, portable
-configuration, setup diagnostics, private state initialization, atomic writes,
-and non-destructive same-day reruns.
+Version 2.1 expands the public sample into a complete, privacy-safe demo. You
+can validate the bundled workflow, generate a real briefing through the Codex
+CLI, and browse the result without providing private prompts, notes, memory, or
+configuration. Version 2.0 established the reliable application foundation:
+portable configuration, setup diagnostics, private state initialization,
+atomic writes, rollback on failed runs, and non-destructive same-day reruns.
 
 ## Install and Try the Demo
 
-The repository includes fictional sample data, so you can explore the complete
-reader without Codex, private files, or local configuration. Python 3.9 or newer
-is required.
+The repository includes fictional sample data, so you can explore the reader
+without Codex, private files, or local configuration. Python 3.9 or newer is
+required.
 
 ```bash
 git clone https://github.com/WillGaoLab/MorningBrief.git
@@ -42,9 +44,27 @@ mb serve --demo
 ```
 
 On Windows, activate the environment with `.venv\Scripts\activate` before
-installing. The demo opens the read-only MorningBrief app with a fictional
-report, run metadata, and scan statistics. Use **Close MorningBrief** in the
-sidebar when you are finished.
+installing. The command opens the read-only MorningBrief app with a
+pre-generated fictional report, run metadata, and scan statistics. Use
+**Close MorningBrief** in the sidebar when you are finished.
+
+## Run the Complete v2.1 Demo
+
+With the Codex CLI installed and available on `PATH`, you can exercise the
+entire workflow using only the repository's public fictional fixtures:
+
+```bash
+mb doctor --demo
+mb run --demo
+mb serve --demo
+```
+
+The full demo uses a bundled prompt, a 12-file Markdown vault, and seed
+operational memory. It ignores `.env` and writes mutable memory, generated
+reports, and history only under the Git-ignored
+`MorningBriefDataDemo/runtime/` directory. After a successful demo run,
+`mb serve --demo` automatically selects the generated runtime history instead
+of the pre-generated sample.
 
 ## Configure Your MorningBrief
 
@@ -97,9 +117,11 @@ repository directory.
 
 ```text
 mb run           Generate and save a new briefing
+mb run --demo    Generate from bundled fictional inputs
 mb serve         Browse reports from the configured output directory
-mb serve --demo  Browse the repository's public fictional sample report
+mb serve --demo  Browse sample or generated fictional demo runs
 mb doctor        Validate configuration without generating
+mb doctor --demo Validate the full fictional demo workflow
 mb init          Create private operational memory safely
 ```
 
@@ -119,12 +141,18 @@ directories. Before generation, it validates the configuration and snapshots
 operational memory. If generation or extraction fails, it restores the pre-run
 memory and records the failed run for diagnosis.
 
+The demo follows the same separation of source inputs, operational memory, and
+generated data as a private workflow. Its public fixtures remain unchanged;
+all locally generated demo state lives in the ignored `runtime/` directory.
+
 ## Project Links
 
 - [Install from the WillGaoLab repository](https://github.com/WillGaoLab/MorningBrief)
-- [MorningBrief v2.0.0 release](https://github.com/WillGaoLab/MorningBrief/releases/tag/v2.0.0)
+- [MorningBrief v2.1.0 release](https://github.com/WillGaoLab/MorningBrief/releases/tag/v2.1.0)
+- [Full demo guide](https://github.com/WillGaoLab/MorningBrief/tree/main/MorningBriefDataDemo)
+- [Changelog](https://github.com/WillGaoLab/MorningBrief/blob/main/CHANGELOG.md)
 - [Primary development repository](https://github.com/PeidongGao/MorningBrief)
-- [Primary v2.0.0 release](https://github.com/PeidongGao/MorningBrief/releases/tag/v2.0.0)
+- [Primary v2.1.0 release](https://github.com/PeidongGao/MorningBrief/releases/tag/v2.1.0)
 - [Usage disclaimer](https://github.com/PeidongGao/MorningBrief/blob/main/DISCLAIMER.md)
 - [MIT License](https://github.com/PeidongGao/MorningBrief/blob/main/LICENSE)
 - [WillGaoLab profile and project index](https://github.com/WillGaoLab/WillGaoLab)
