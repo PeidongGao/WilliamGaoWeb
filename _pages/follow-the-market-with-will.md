@@ -10,9 +10,14 @@ status: published
 summary: "A weekly ETF dashboard tracking VOO, QQQ, and SMH through drawdown analysis, week-over-week returns, and personal market notes."
 ---
 
-## Introduction
+{% assign weekly_entries = site.data.weekly_market_commentary | sort: "date" | reverse %}
+{% assign latest_week = weekly_entries | first %}
 
-Every Friday, I update the dashboard and record what I learned from that week's market movement.
+<div data-weekly-market data-commentary-date="{% if latest_week %}{{ latest_week.date }}{% endif %}" data-history-url="{{ '/assets/data/weekly-market-history.csv' | relative_url }}" data-image-url="{{ '/images/market/weekly-market-dashboard.png' | relative_url }}" markdown="1">
+
+<h2>Introduction</h2>
+
+<p class="wg-market-introduction">Every Friday, I update the dashboard and record what I learned from that week's market movement.</p>
 
 The dashboard focuses on three representative ETFs:
 
@@ -22,42 +27,75 @@ The dashboard focuses on three representative ETFs:
 
 Rather than predicting where the market will go next, my goal is to build a consistent framework for understanding market behavior over time.
 
-## Weekly Dashboard <span class="wg-section-status">Latest</span>
+<h2>Weekly Dashboard <span class="wg-section-status">Latest</span></h2>
 
-### Week ending July 10, 2026
+<h3>Week ending {% if latest_week %}<time data-weekly-dashboard-date datetime="{{ latest_week.date }}">{{ latest_week.date | date: "%B %-d, %Y" }}</time>{% else %}<time data-weekly-dashboard-date>data pending</time>{% endif %}</h3>
 
-![Weekly ETF dashboard showing drawdown from 52-week highs and week-over-week returns for VOO, QQQ, and SMH.]({{ '/images/market/weekly-market-summary-2026-07-10.png' | relative_url }})
+<p class="wg-market-remote-state" data-weekly-remote-state role="status" aria-live="polite">Latest weekly market data will load when JavaScript is available.</p>
 
-## Current Snapshot <span class="wg-section-status">Latest</span>
+<figure class="wg-market-fingerprint-image">
+  <a data-weekly-image-link href="{{ '/images/market/weekly-market-dashboard.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open the weekly ETF dashboard at full resolution">
+    <img data-weekly-image src="{{ '/images/market/weekly-market-dashboard.png' | relative_url }}" alt="Weekly ETF dashboard showing drawdown from 52-week highs and week-over-week returns for VOO, QQQ, and SMH.">
+  </a>
+</figure>
+
+<h2>Current Snapshot</h2>
 
 The chart above shows the historical trend. The table below summarizes the latest values for the current reporting week.
 
-| ETF | Current Drawdown | This Week's Return |
-| :---: | :---: | :---: |
-| VOO | -0.6% | +1.3% |
-| QQQ | -2.8% | +1.8% |
-| SMH | -8.7% | +3.2% |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">ETF</th>
+      <th style="text-align: center">Current Drawdown</th>
+      <th style="text-align: center">This Week's Return</th>
+    </tr>
+  </thead>
+  <tbody data-weekly-snapshot>
+    <tr>
+      <td colspan="3" style="text-align: center">Latest weekly snapshot will load when JavaScript is available.</td>
+    </tr>
+  </tbody>
+</table>
 
-## My Notes This Week <span class="wg-section-status">Latest</span>
+<h2>My Notes This Week</h2>
 
-### July 10, 2026
+{% if latest_week %}
+<h3><time datetime="{{ latest_week.date }}">{{ latest_week.date | date: "%B %-d, %Y" }}</time></h3>
 
-This week was the first time I learned how to interpret **drawdown** and **week-over-week return** together.
+<p>{{ latest_week.summary | escape }}</p>
 
-Before, I mostly focused on weekly returns. This week I realized that drawdown provides the long-term context that weekly performance alone cannot show.
+<h2>Key Observation</h2>
 
-- **VOO** and **QQQ** have recovered most of their previous declines and remain close to their 52-week highs. The broader market appears to have regained most of its previous weakness.
+<p class="wg-market-key-observation">{{ latest_week.key_observation | escape }}</p>
 
-- **SMH** posted the strongest weekly rebound, but it remains well below its previous high. The semiconductor sector is still in the recovery phase, and it is too early to tell whether this recovery will continue.
+<h2>Market Notes</h2>
 
-- Looking at these charts over time makes it much easier to identify trends. Instead of focusing on a single week's gain or loss, I can see whether each ETF is moving toward or away from its previous high.
+{% for note in latest_week.market_notes %}
+<p>{{ note | escape }}</p>
+{% endfor %}
+{% else %}
+<p class="wg-market-remote-state">Weekly notes are not yet published.</p>
+{% endif %}
 
-<details class="wg-market-archive">
-  <summary>Previous Weekly Notes</summary>
-  <p class="wg-market-archive__empty">Earlier weekly notes will appear here as the archive grows.</p>
-</details>
+{% if weekly_entries.size > 1 %}
+  <details class="wg-market-archive">
+    <summary>Previous Weekly Notes</summary>
+    {% for entry in weekly_entries offset: 1 %}
+      <details class="wg-market-archive__entry">
+        <summary>Week ending <time datetime="{{ entry.date }}">{{ entry.date | date: "%B %-d, %Y" }}</time></summary>
+        <p><strong>Summary:</strong> {{ entry.summary | escape }}</p>
+        <p><strong>Key observation:</strong> {{ entry.key_observation | escape }}</p>
+        <p><strong>Snapshot:</strong> <span data-weekly-archive-snapshot data-weekly-date="{{ entry.date }}">Market data will load when JavaScript is available.</span></p>
+        {% for note in entry.market_notes %}
+          <p>{{ note | escape }}</p>
+        {% endfor %}
+      </details>
+    {% endfor %}
+  </details>
+{% endif %}
 
-## Reading the Dashboard
+<h2>Reading the Dashboard</h2>
 
 This dashboard combines two complementary metrics.
 
@@ -94,8 +132,12 @@ Each week, the workflow:
 3. Validates the results.
 4. Generates the dashboard automatically.
 
-## Disclaimer
+<h2>Disclaimer</h2>
 
 This page reflects my personal learning process and observations of the financial markets.
 
 It is intended for educational purposes only and should not be interpreted as investment, financial, tax, legal, or trading advice.
+
+</div>
+
+<script src="{{ '/assets/js/weekly-market.js' | relative_url }}" defer></script>
