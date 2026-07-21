@@ -11,7 +11,7 @@ status: published
 summary: "A personal Chief of Staff layer for Codex that turns your knowledge, priorities, and operating principles into decision-ready morning briefings."
 ---
 
-MorningBrief transforms Codex into your personal Chief of Staff. By combining
+MorningBrief transforms GPT-5.6 and Codex into your personal Chief of Staff. By combining
 your knowledge, priorities, and operating principles, it generates consistent,
 decision-ready morning briefings tailored to how you think and work.
 
@@ -147,6 +147,7 @@ all locally generated demo state lives in the ignored `runtime/` directory.
 
 ## Project Links
 
+- [Video walkthrough](https://www.youtube.com/watch?v=SRhJr2AWbc0)
 - [Install from the WillGaoLab repository](https://github.com/WillGaoLab/MorningBrief)
 - [MorningBrief v2.1.0 release](https://github.com/WillGaoLab/MorningBrief/releases/tag/v2.1.0)
 - [Full demo guide](https://github.com/WillGaoLab/MorningBrief/tree/main/MorningBriefDataDemo)
