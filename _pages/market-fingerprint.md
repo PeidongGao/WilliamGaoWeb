@@ -19,6 +19,10 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 <p class="wg-market-introduction">The Overnight Market Fingerprint summarizes pre-market pricing across equities, risk &amp; sentiment, and macro conditions before the U.S. cash session begins.</p>
 
+<p class="wg-actions">
+{% include button.html href="https://dailymarkettracker-jrnxjbmkxitvegoascnxk4.streamlit.app/" text="Open the live dashboard" accent="lab" external=true %}
+</p>
+
 <h2>Today's Fingerprint <span class="wg-section-status">Latest</span></h2>
 
 {% if latest_commentary %}
