@@ -1,3 +1,12 @@
+- date: "2026-07-21"
+  summary: "Overnight market data suggested improving market sentiment. The Nasdaq-100 led the gains (+1.85%), followed by the S&P 500 (+0.63%) and Dow Jones (+0.15%). VIX fell 6.27%, while the 10-year Treasury yield (+0.04%) and the U.S. dollar (−0.01%) remained broadly stable. WTI crude oil rose 1.75%."
+  key_observation: "Market sentiment improved noticeably, with technology leading the advance. Unlike the previous session, the overnight strength was largely confirmed throughout the trading session."
+  market_notes:
+    - "The Nasdaq-100 led the overnight gains, driven by renewed strength in AI and semiconductor stocks, while the S&P 500 and Dow Jones also advanced."
+    - "Unlike the previous session, equities did not experience a meaningful fade after the open. The overnight fingerprint was largely confirmed by the full trading session."
+    - "Treasury yields and the U.S. dollar remained relatively stable, providing a neutral macro backdrop for equities."
+    - "Higher WTI crude oil prices reflected ongoing geopolitical concerns, but did not materially weaken overall market sentiment. Whether higher oil prices will become a broader headwind requires further observation."
+
 - date: "2026-07-20"
   summary: "Overnight market data showed a restoration trend after the previous defensive shift. The S&P 500 led the recovery with a +0.42% gap, while Nasdaq-100 (+0.02%) and Dow Jones (+0.02%) remained stable. Although VIX slightly increased (+0.69%), uncertainty did not prevent equity stabilization. Lower WTI crude oil (-0.08%), stronger U.S. dollar (+0.06%), and higher 10-year Treasury yields (+0.55%) suggested improving financial conditions and a more stable macro environment."
   key_observation: "Market entered a mild stabilization phase after the previous defensive shift. Equity markets showed resilience, but risk appetite remained limited and the recovery was not yet confirmed."
