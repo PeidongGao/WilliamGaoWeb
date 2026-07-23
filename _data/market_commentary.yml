@@ -1,3 +1,13 @@
+- date: "2026-07-22"
+  summary: "Overnight market data showed increasing risk perception. The Nasdaq-100 (-0.74%) and S&P 500 (-0.16%) moved lower, while Dow Jones (+0.12%) remained relatively stable. VIX increased (+2.17%), gold rose (+1.35%), and Bitcoin declined (-0.95%). WTI crude oil rose significantly (+3.31%), while the 10-year Treasury yield (+0.26%) and the U.S. dollar (+0.01%) remained broadly stable."
+  key_observation: "Market sentiment became more defensive overnight, with higher VIX and gold prices suggesting increased risk perception and stronger defensive positioning. Higher WTI crude oil prices reinforced the previous geopolitical risk concern, while limited equity weakness suggested investors remained cautious but not in broad risk-off mode. The market appeared increasingly sensitive to incoming news ahead of the Q2 earnings season."
+  market_notes:
+    - "VIX increased (+2.17%) and gold rose (+1.35%), suggesting higher market risk perception and stronger defensive positioning."
+    - "Bitcoin declined (-0.95%), suggesting weakness in risk-sensitive assets."
+    - "WTI crude oil rose significantly (+3.31%), becoming the most notable macro move and reinforcing the previous geopolitical risk concern."
+    - "Nasdaq-100 (-0.74%) and S&P 500 (-0.16%) moved lower, while Dow Jones (+0.12%) remained relatively stable."
+    - "The market appeared highly sensitive to incoming news, with Q2 earnings releases approaching as the next major catalyst."
+
 - date: "2026-07-21"
   summary: "Overnight market data suggested improving market sentiment. The Nasdaq-100 led the gains (+1.85%), followed by the S&P 500 (+0.63%) and Dow Jones (+0.15%). VIX fell 6.27%, while the 10-year Treasury yield (+0.04%) and the U.S. dollar (−0.01%) remained broadly stable. WTI crude oil rose 1.75%."
   key_observation: "Market sentiment improved noticeably, with technology leading the advance. Unlike the previous session, the overnight strength was largely confirmed throughout the trading session."
