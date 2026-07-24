@@ -1,3 +1,13 @@
+- date: "2026-07-23"
+  summary: "Overnight market data showed a significant deterioration in market sentiment. The Nasdaq-100 (-1.65%) led the decline, followed by the S&P 500 (-1.08%) and Dow Jones (-0.89%). VIX surged (+6.19%), while Bitcoin (-1.49%) and gold (-2.25%) declined. WTI crude oil increased significantly (+6.59%), while the 10-year Treasury yield (+0.90%) and U.S. dollar (-0.02%) remained broadly stable."
+  key_observation: "Market sentiment weakened significantly, with technology-led declines and increasing sensitivity to earnings-related news."
+  market_notes:
+    - "Equities declined broadly, with Nasdaq-100 leading losses as investors reacted to Q2 earnings releases from major technology companies, particularly Tesla and Alphabet. Concerns over AI-related spending further pressured market sentiment."
+    - "VIX increased (+6.19%), while Bitcoin and gold declined, suggesting increased risk perception rather than traditional defensive positioning."
+    - "WTI crude oil surged (+6.59%), becoming the major macro move and increasing concerns around inflation and geopolitical risks."
+    - "The U.S. dollar remained stable, while Treasury yields moved slightly higher, reflecting increasing concerns around inflation and rates."
+    - "VHT showed relative stability during the recent market pullback, highlighting defensive healthcare sector resilience."
+
 - date: "2026-07-22"
   summary: "Overnight market data showed increasing risk perception. The Nasdaq-100 (-0.74%) and S&P 500 (-0.16%) moved lower, while Dow Jones (+0.12%) remained relatively stable. VIX increased (+2.17%), gold rose (+1.35%), and Bitcoin declined (-0.95%). WTI crude oil rose significantly (+3.31%), while the 10-year Treasury yield (+0.26%) and the U.S. dollar (+0.01%) remained broadly stable."
   key_observation: "Market sentiment became more defensive overnight, with higher VIX and gold prices suggesting increased risk perception and stronger defensive positioning. Higher WTI crude oil prices reinforced the previous geopolitical risk concern, while limited equity weakness suggested investors remained cautious but not in broad risk-off mode. The market appeared increasingly sensitive to incoming news ahead of the Q2 earnings season."
