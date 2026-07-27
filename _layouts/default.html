@@ -11,7 +11,7 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body class="accent-{{ page.accent | default: 'brand' }}">
+  <body class="accent-{{ page.accent | default: 'brand' }}{% if page.layout == 'read-paper' %} read-paper-page{% endif %}">
 
     <a class="skip-link" href="#main">Skip to content</a>
 

@@ -1,0 +1,22 @@
+{%- comment -%}
+  Shared editorial header for the Read Paper with Will series.
+  Required front matter: series_number, paper_title, journal, doi, citation,
+  summary, and date.
+{%- endcomment -%}
+<header class="read-paper__header">
+  <p class="read-paper__identity"><span class="read-paper__identity-mark">WillGaoLab</span> · scientific reading notes</p>
+  <p class="read-paper__series">Read Paper with Will · {{ page.series_number }}</p>
+  <h1 class="read-paper__title" itemprop="headline">{{ page.paper_title }}</h1>
+  <p class="read-paper__meta">
+    <span>{{ page.journal }}</span>
+    <span aria-hidden="true">·</span>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    <span aria-hidden="true">·</span>
+    <a href="{{ page.doi_url }}">DOI: {{ page.doi }}</a>
+  </p>
+  <p class="read-paper__citation"><strong>Paper:</strong> {{ page.citation }}</p>
+  <div class="read-paper__lead">
+    <p class="read-paper__ui-label">One-sentence summary</p>
+    <p>{{ page.summary }}</p>
+  </div>
+</header>

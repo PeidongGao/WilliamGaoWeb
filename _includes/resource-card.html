@@ -5,10 +5,19 @@
   Usage: {% include resource-card.html item=r %}
 {%- endcomment -%}
 {%- assign it = include.item -%}
-{%- assign label = include.label | default: it.type -%}
-<a class="wg-card wg-card--link" href="{{ it.url | relative_url }}"{% if it.type %} data-type="{{ it.type }}"{% endif %}{% if it.topics %} data-topics="{{ it.topics | join: ' ' }}"{% endif %}>
+{%- assign label = include.label | default: it.series | default: it.type -%}
+{%- assign is_read_paper = false -%}
+{%- if it.paper_title and it.series_number -%}{%- assign is_read_paper = true -%}{%- endif -%}
+<a class="wg-card wg-card--link{% if include.featured %} wg-card--featured{% endif %}{% if is_read_paper %} wg-card--read-paper{% endif %}" href="{{ it.url | relative_url }}"{% if it.type %} data-type="{{ it.type }}"{% endif %}{% if it.topics %} data-topics="{{ it.topics | join: ' ' }}"{% endif %}>
+  {%- if is_read_paper -%}
+  <span class="wg-card__eyebrow wg-card__eyebrow--lab">{{ it.series | default: "Read Paper with Will" }} · {{ it.series_number }}</span>
+  <h3 class="wg-card__title">{{ it.paper_title }}</h3>
+  <p class="wg-card__meta"><span>{{ it.journal }}</span><span aria-hidden="true"> · </span><time datetime="{{ it.date | date_to_xmlschema }}">{{ it.date | date: "%B %d, %Y" }}</time></p>
+  {%- if it.topics %}<span class="wg-card__keywords">{% for t in it.topics %}<span>{{ t }}</span>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}{% endfor %}</span>{% endif -%}
+  {%- else -%}
   {%- if label %}<span class="wg-card__eyebrow wg-card__eyebrow--lab">{{ label }}</span>{% endif -%}
   <h3 class="wg-card__title">{{ it.title }}</h3>
   {%- if it.summary %}<p class="wg-card__desc">{{ it.summary }}</p>{% endif -%}
   {%- if it.topics %}<span class="wg-card__topics">{% for t in it.topics %}<span class="wg-chip">{{ t }}</span>{% endfor %}</span>{% endif -%}
+  {%- endif -%}
 </a>

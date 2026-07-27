@@ -262,3 +262,92 @@
     }
   }
 }
+
+/* =========================================================================
+   Collapsible author sidebar — slide out / in with a persistent edge tab.
+   Only active where the sidebar is a fixed left column (>= 1024px).
+   ========================================================================= */
+
+$sidebar-slide-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+.sidebar-toggle {
+  display: none; // shown only at the fixed-sidebar breakpoint
+}
+
+@media screen and (min-width: $sidebar-screen-min-width) {
+  .sidebar {
+    transition: transform 0.32s $sidebar-slide-ease;
+    will-change: transform;
+  }
+
+  // Content column animates its width as the sidebar leaves/returns.
+  .page,
+  .page--read-paper {
+    transition: width 0.32s $sidebar-slide-ease;
+  }
+
+  .sidebar-collapsed {
+    // --sidebar-hide-x is computed in JS as the exact distance needed to push
+    // the sidebar fully off the left edge (its start varies with the centered
+    // container on wide screens). Fallback covers the no-JS case.
+    .sidebar {
+      transform: translateX(var(--sidebar-hide-x, -120%)) !important;
+      pointer-events: none;
+    }
+
+    // Reclaim the freed space and recenter the reading column.
+    .page,
+    .page--read-paper {
+      width: 100% !important;
+    }
+
+    .page--read-paper .page__content {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  // Edge tab: pinned vertically, JS keeps its left aligned to the sidebar edge.
+  .sidebar-toggle {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 54px;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    border-left-color: transparent;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    background: var(--color-surface);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: left 0.32s $sidebar-slide-ease, color 0.15s ease, background 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--lab);
+      background: var(--lab-tint);
+      border-color: var(--lab);
+    }
+  }
+
+  // Chevron drawn from a rotated box; points "<" when open, ">" when closed.
+  .sidebar-toggle__arrow {
+    width: 7px;
+    height: 7px;
+    margin-left: 3px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(135deg);
+    transition: transform 0.2s ease;
+  }
+
+  .sidebar-collapsed .sidebar-toggle__arrow {
+    margin-left: -3px;
+    transform: rotate(-45deg);
+  }
+}

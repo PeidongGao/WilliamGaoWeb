@@ -1,1 +1,59 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+
+<script>
+// Collapsible author sidebar: slide out / in. Always opens on each page load;
+// folding applies only to the current page and is not remembered across pages.
+(function () {
+  var root = document.documentElement;
+  var btn = document.querySelector('.sidebar-toggle');
+  var sidebar = document.querySelector('.sidebar');
+  if (!btn || !sidebar) return;
+
+  var shownRight = null; // cached right edge of the sidebar while visible
+
+  function hidden() { return root.classList.contains('sidebar-collapsed'); }
+
+  // Measure the sidebar's on-screen right edge as if it were visible, ignoring
+  // any current slide transform (so it works even when loaded collapsed).
+  function measureShown() {
+    var prevT = sidebar.style.transition, prevX = sidebar.style.transform;
+    sidebar.style.transition = 'none';
+    sidebar.style.transform = 'none';
+    var r = Math.round(sidebar.getBoundingClientRect().right);
+    sidebar.style.transform = prevX;
+    requestAnimationFrame(function () { sidebar.style.transition = prevT; });
+    if (r > 0) {
+      shownRight = r;
+      // exact distance to push the sidebar fully off the left edge
+      root.style.setProperty('--sidebar-hide-x', (-(r + 24)) + 'px');
+    }
+  }
+
+  function placeTab() {
+    btn.style.left = hidden() ? '0px' : ((shownRight || 0) + 'px');
+  }
+
+  function sync() {
+    var isHidden = hidden();
+    btn.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
+    btn.setAttribute('aria-label', isHidden ? 'Show sidebar' : 'Hide sidebar');
+    btn.setAttribute('title', isHidden ? 'Show sidebar' : 'Hide sidebar');
+    placeTab();
+  }
+
+  btn.addEventListener('click', function () {
+    root.classList.toggle('sidebar-collapsed');
+    sync();
+  });
+
+  // Re-measure once the sidebar settles after a slide, and on resize.
+  sidebar.addEventListener('transitionend', function (e) {
+    if (e.propertyName === 'transform') { measureShown(); placeTab(); }
+  });
+  window.addEventListener('resize', function () { measureShown(); placeTab(); });
+  window.addEventListener('load', function () { measureShown(); sync(); });
+
+  measureShown();
+  sync();
+})();
+</script>

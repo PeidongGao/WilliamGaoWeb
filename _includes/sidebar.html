@@ -1,8 +1,14 @@
 {% include base_path %}
 
-{% if page.author_profile or layout.author_profile or page.sidebar %}
+{% assign show_author_profile = page.author_profile %}
+{% if include.author_profile %}{% assign show_author_profile = true %}{% endif %}
+
+{% if show_author_profile or layout.author_profile or page.sidebar %}
+  <button type="button" class="sidebar-toggle" aria-label="Hide sidebar" aria-expanded="true" title="Hide sidebar">
+    <span class="sidebar-toggle__arrow" aria-hidden="true"></span>
+  </button>
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if show_author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
