@@ -52,6 +52,21 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
+    {% comment %}
+      Read Paper commentaries put the *discussed paper's* citation in the
+      `citation` field, so the generic "Recommended citation:" label below
+      would wrongly tell readers to cite that paper as the commentary.
+      Relabel it for this layout only.
+
+      DEPENDENCY: this relies on the post declaring `layout: read-paper` in
+      its front matter. A series post missing that field falls through to
+      the mislabeled branch silently.
+    {% endcomment %}
+    {% if post.layout == 'read-paper' %}
+      {% if post.citation %}
+        <p>Paper: {{ post.citation }}</p>
+      {% endif %}
+    {% else %}
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
@@ -78,7 +93,7 @@
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.bibtexurl %}
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% endif %}
+    {% endif %}{% endif %}
 
   </article>
 </div>

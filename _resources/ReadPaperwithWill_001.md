@@ -110,9 +110,8 @@ The atlas links monogenic endocrine disease genes with their cell-type-specific 
 - Expression of KCNQ1 and KCNJ5 in adrenal cortical cells, together with protein-level evidence of KCNQ1 expression in human adrenal tissue, suggests a potential role for potassium channels in adrenal function and aldosterone regulation ([Figure 5E–F](https://doi.org/10.1126/science.aeb2672)).
 
 </div>
-This approach links disease-associated genes to the cellular context in which dysfunction may occur, generating mechanistic hypotheses for endocrine disorders.
+By linking disease-associated genes to the specific cellular and anatomical contexts where dysfunction may arise, the atlas turns molecular alterations into testable, mechanistic hypotheses for endocrine disorders.
 </section>
-<p class="read-paper__bridge">Together, these findings demonstrate how the atlas can connect molecular alterations with specific cellular and anatomical contexts, providing a framework for understanding endocrine disease mechanisms.</p>
 <section class="read-paper__editor-note" markdown="1">
 <p class="read-paper__ui-label">My Assessment</p>
 
