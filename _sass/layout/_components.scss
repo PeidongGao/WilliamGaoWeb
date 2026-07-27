@@ -749,7 +749,7 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
   > h2,
   .read-paper__chapter > h2,
   .read-paper__editor-note > h2,
-  .read-paper__open-question > h2 {
+  .read-paper__closing-note > h2 {
     padding-bottom: 0;
     border-bottom: 0;
     font-family: $serif;
@@ -885,7 +885,7 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
 }
 
 .read-paper__editor-note,
-.read-paper__open-question {
+.read-paper__closing-note {
   margin-top: 4rem;
   padding: clamp(1.25rem, 3vw, 1.8rem);
   border-radius: var(--radius);
@@ -903,7 +903,7 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
   background: var(--color-surface);
 }
 
-.read-paper__open-question {
+.read-paper__closing-note {
   margin-top: 3.5rem;
   border: 1px solid var(--color-border);
   background: var(--lab-tint);
@@ -984,7 +984,7 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
   .read-paper__lead,
   .read-paper__key-example,
   .read-paper__editor-note,
-  .read-paper__open-question {
+  .read-paper__closing-note {
     padding: 1.1rem;
   }
 
@@ -992,7 +992,7 @@ a.wg-chip:hover { border-color: var(--accent); color: var(--accent); }
     gap: 0.25rem 0.5rem;
   }
 
-  .read-paper__open-question blockquote {
+  .read-paper__closing-note blockquote {
     padding-left: 1rem;
   }
 }

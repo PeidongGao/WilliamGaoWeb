@@ -1,16 +1,22 @@
 {%- comment -%}
   Shared editorial header for the Read Paper with Will series.
   Required front matter: series_number, paper_title, journal, doi, citation,
-  summary, and date.
+  summary, and date (the commentary's publication date).
+  Optional front matter: commentary_title (H1 override framing the page as
+  commentary; falls back to paper_title), paper_date (when the paper itself
+  appeared), and volume / issue / article_no (to render the paper's citation
+  locator next to the journal name).
 {%- endcomment -%}
 <header class="read-paper__header">
   <p class="read-paper__identity"><span class="read-paper__identity-mark">WillGaoLab</span> · scientific reading notes</p>
   <p class="read-paper__series">Read Paper with Will · {{ page.series_number }}</p>
-  <h1 class="read-paper__title" itemprop="headline">{{ page.paper_title }}</h1>
+  <h1 class="read-paper__title" itemprop="headline">{{ page.commentary_title | default: page.paper_title }}</h1>
   <p class="read-paper__meta">
-    <span>{{ page.journal }}</span>
+    <span>{{ page.journal }}{% if page.volume %} {{ page.volume }}{% if page.issue %}({{ page.issue }}){% endif %}{% if page.article_no %}:{{ page.article_no }}{% endif %}{% endif %}</span>
     <span aria-hidden="true">·</span>
-    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% if page.paper_date %}<span>Paper online <time datetime="{{ page.paper_date | date_to_xmlschema }}">{{ page.paper_date | date: "%B %d, %Y" }}</time></span>
+    <span aria-hidden="true">·</span>
+    <span>Commentary posted <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span>{% else %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% endif %}
     <span aria-hidden="true">·</span>
     <a href="{{ page.doi_url }}">DOI: {{ page.doi }}</a>
   </p>

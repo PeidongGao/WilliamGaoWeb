@@ -10,11 +10,16 @@ status: published
 series: "Read Paper with Will"
 series_number: "001"
 paper_title: "A Hormone Cell Atlas maps the human endocrine system at cellular resolution"
+commentary_title: "Reading <em>A Hormone Cell Atlas</em>: the human endocrine system at cellular resolution"
 journal: "Science"
+volume: "393"
+issue: "6806"
+article_no: "eaeb2672"
+paper_date: 2026-05-28
 doi: "10.1126/science.aeb2672"
 doi_url: "https://doi.org/10.1126/science.aeb2672"
 citation: >-
-  Lijiang Fei, Isabel Huang-Doran, et al. <em>Science</em> 393, no. 6806 (2026). <a href="https://doi.org/10.1126/science.aeb2672">DOI: 10.1126/science.aeb2672</a>
+  Fei L, Huang-Doran I, Lawler K, et al. <em>Science</em> 393, no. 6806 (2026): eaeb2672. <a href="https://doi.org/10.1126/science.aeb2672">DOI: 10.1126/science.aeb2672</a>
 summary: "A valuable resource that constructs the human Hormone Cell Atlas and maps predicted hormone production and reception, adipocyte endocrine remodeling, and monogenic endocrine disease genes at cellular resolution."
 ---
 
@@ -38,14 +43,14 @@ This paper asks:
 **How can we understand the human endocrine system at cellular resolution and connect hormone signaling with physiology and disease?**
 
 <section class="read-paper__chapter" id="build-the-atlas" markdown="1">
-<p class="read-paper__chapter-label">01 · Build the map</p>
+<p class="read-paper__chapter-label">01 · Build the atlas</p>
 
 ## Figure 1: Build the Human Hormone Cell Atlas by integrating sc/snRNA-seq data and hormone-related gene information
 The authors built a cross-tissue human endocrine atlas by integrating sc/snRNA-seq datasets with curated hormone–receptor information ([Figure 1A](https://doi.org/10.1126/science.aeb2672)). This provides a cellular framework to predict hormone-producing and hormone-responsive cell types across human tissues. The major contribution of this figure is to establish the foundation for a system-level endocrine map rather than studying individual hormones or organs in isolation.
 </section>
 <p class="read-paper__bridge">With the map established, the next step is to predict which cells produce the signals.</p>
 <section class="read-paper__chapter" id="map-hormone-producers" markdown="1">
-<p class="read-paper__chapter-label">02 · Map the producers</p>
+<p class="read-paper__chapter-label">02 · Map hormone producers</p>
 
 ## Figure 2: Map predicted hormone-producing cell types
 The atlas identifies predicted hormone-producing cell types across tissues and shows that hormone-related expression patterns are strongly associated with cell identity. Beyond classical endocrine organs, some unexpected cell types were predicted to produce hormones.
@@ -59,28 +64,37 @@ This expands the traditional view that hormone production is restricted to class
 </section>
 <p class="read-paper__bridge">Mapping predicted hormone-producing cells defines the potential signal sources; the next step is to predict which cells receive them.</p>
 <section class="read-paper__chapter" id="map-hormone-receivers" markdown="1">
-<p class="read-paper__chapter-label">03 · Map the receivers</p>
+<p class="read-paper__chapter-label">03 · Map hormone receivers</p>
 
 ## Figure 3: Map predicted hormone-responsive cell types and infer endocrine communication networks
 By mapping hormone receptor expression, the atlas predicts hormone-responsive cell populations and infers endocrine communication networks. The study recovers classical endocrine axes and predicts cross-tissue hormone interactions.
 <div class="read-paper__key-example" markdown="1">
 <p class="read-paper__ui-label">Key Example</p>
+
 - GLP1R and GIPR co-expression in cardiomyocytes and cardiac pacemaker cells ([Figure 3H](https://doi.org/10.1126/science.aeb2672))
+
 </div>
 This demonstrates that endocrine regulation is not a simple one-organ-to-one-organ pathway but a distributed cellular communication network.
 </section>
 <p class="read-paper__bridge">The authors then applied this framework to adipose tissue, an important metabolic and endocrine organ.</p>
 <section class="read-paper__chapter" id="explore-adipocyte-remodeling" markdown="1">
-<p class="read-paper__chapter-label">04 · Adipocyte remodeling</p>
+<p class="read-paper__chapter-label">04 · Explore adipocyte remodeling</p>
 
 ## Figure 4: Explore adipocyte endocrine remodeling during differentiation, across depots and metabolic states
-The atlas reveals that predicted adipocyte endocrine profiles change dynamically during differentiation and differ across adipose depots and metabolic states. Adipose progenitor cell (APC) → committed preadipocyte (CPA) → mature adipocyte
+The atlas reveals that predicted adipocyte endocrine profiles change dynamically during differentiation and differ across adipose depots and metabolic states.
+
+Adipose progenitor cell (APC) → committed preadipocyte (CPA) → mature adipocyte
+
 Maturation is associated with changes in:
+
 - hormone production
 - hormone reception
+
 <div class="read-paper__key-example" markdown="1">
 <p class="read-paper__ui-label">Key Example</p>
+
 - regulatory programs, including SCENIC-predicted regulon activity across APCs, CPAs, and mature adipocytes ([Figure 4I](https://doi.org/10.1126/science.aeb2672))
+
 </div>
 Adipocytes should be considered dynamic endocrine cells rather than passive energy storage cells. This raises questions about how endocrine programs contribute to metabolic protection or dysfunction.
 </section>
@@ -92,34 +106,37 @@ Adipocytes should be considered dynamic endocrine cells rather than passive ener
 The atlas links monogenic endocrine disease genes with their cell-type-specific and anatomical expression patterns.
 <div class="read-paper__key-example" markdown="1">
 <p class="read-paper__ui-label">Key Example</p>
+
 - Expression of KCNQ1 and KCNJ5 in adrenal cortical cells, together with protein-level evidence of KCNQ1 expression in human adrenal tissue, suggests a potential role for potassium channels in adrenal function and aldosterone regulation ([Figure 5E–F](https://doi.org/10.1126/science.aeb2672)).
+
 </div>
-</section>
 This approach links disease-associated genes to the cellular context in which dysfunction may occur, generating mechanistic hypotheses for endocrine disorders.
+</section>
 <p class="read-paper__bridge">Together, these findings demonstrate how the atlas can connect molecular alterations with specific cellular and anatomical contexts, providing a framework for understanding endocrine disease mechanisms.</p>
 <section class="read-paper__editor-note" markdown="1">
-<p class="read-paper__ui-label">Editor’s Note</p>
+<p class="read-paper__ui-label">My Assessment</p>
 
 ## My Thoughts
 My overall impression is that the major strength of this paper lies in the development of a comprehensive endocrine cell atlas rather than in uncovering new biological mechanisms. Much of the validation demonstrates that the atlas recapitulates established endocrine biology, which is appropriate for demonstrating the quality of the resource. The study proposes many intriguing hypotheses, but only a limited number are followed up with functional experiments, leaving substantial opportunities for future mechanistic work.
 </section>
-<section class="read-paper__open-question" markdown="1">
-<p class="read-paper__ui-label">Open Question</p>
+<section class="read-paper__closing-note" markdown="1">
+<p class="read-paper__ui-label">A Note on Scope</p>
 
-## Open Question and Hypothesis
-Among the adipocyte patterns in this atlas, one observation stayed with me: RBP4 showed potentially meaningful sex- and depot-specific expression patterns.
-[Figure S18C](https://doi.org/10.1126/science.aeb2672) suggests that RBP4 expression is higher in adipocytes from females than males and is enriched in subcutaneous white adipose tissue compared with visceral adipose tissue.
-These patterns are interesting because visceral adiposity is more strongly associated with adverse cardiometabolic risk than subcutaneous adiposity ([Fox et al., 2007](https://pubmed.ncbi.nlm.nih.gov/17576866/); [Neeland et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23687099/)). However, elevated circulating RBP4 has been linked to insulin resistance, suggesting that its biological effects may depend on cellular location and physiological context ([Yang et al., 2005](https://doi.org/10.1038/nature03711)).
-Therefore, an important open question is:
-
-> Could RBP4 represent a marker or regulator of metabolically preserved adipocyte states, and how does adipocyte-intrinsic RBP4 expression differ from the role of circulating RBP4 in metabolic regulation?
-
-This hypothesis would require functional validation to determine whether RBP4 contributes to metabolic regulation or primarily reflects a specific adipocyte state.
+## Reading depot and sex comparisons in an integrated atlas
+One thing worth holding in mind when reading the adipose comparisons: this atlas is assembled from many independent studies, and the adipose depots sampled are unlikely to be evenly represented across them. A difference that appears to distinguish one depot from another may therefore be partly a difference between the studies that contributed those depots. The same caution applies to the sex comparison, which is collapsed across depots — if depot representation is not balanced between sexes, an apparent sex effect could partly reflect depot composition. This does not undercut the atlas; disentangling biological from technical variation is the central difficulty of any cross-study integration, and the authors are explicit that these are predictions. It does mean that the depot- and sex-resolved panels are best read as a starting point for targeted comparison rather than as settled effect estimates.
 </section>
 <footer class="read-paper__article-footer" markdown="1">
 **Resources:** [Original paper](https://doi.org/10.1126/science.aeb2672) · [Hormone Cell Atlas](https://hormonecellatlas.org.uk/)
+
+<p class="read-paper__ui-label">Cite this commentary as</p>
+
+William (Peidong) Gao. “Reading *A Hormone Cell Atlas*: the human endocrine system at cellular resolution.” *Read Paper with Will* #001, WillGaoLab (williampeidonggao.com), July 26, 2026. <https://williampeidonggao.com/resources/papers/ReadPaperwithWill_001/>
+
+<p class="read-paper__ui-label">Paper discussed</p>
+
+Fei L, Huang-Doran I, Lawler K, et al. “A Hormone Cell Atlas maps the human endocrine system at cellular resolution.” *Science* 393, no. 6806 (2026): eaeb2672. [DOI: 10.1126/science.aeb2672](https://doi.org/10.1126/science.aeb2672)
+
 <div class="read-paper__disclaimer" markdown="1">
-This Read Paper with Will article is an independent work of scholarly commentary on Fei et al., “A Hormone Cell Atlas maps the human endocrine system at cellular resolution,” Science (2026), DOI: 10.1126/science.aeb2672.
-No figures from the Science article are reproduced. References to individual figures are provided only to direct readers to the supporting evidence in the original paper. Copyright in the paper and its figures remains with the original authors and rights holders. This commentary is not affiliated with or endorsed by Science or AAAS.
+Independent scholarly commentary on the paper cited above. No figures are reproduced; figure references point readers to the evidence in the original. Not affiliated with or endorsed by *Science* or AAAS. Views are my own and do not represent Case Western Reserve University.
 </div>
 </footer>
