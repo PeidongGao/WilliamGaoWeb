@@ -1,3 +1,12 @@
+- date: "2026-07-27"
+  summary: "Overnight market data suggested improving market sentiment following the weekend. The S&P 500 (+0.75%) and Dow Jones (+0.89%) moved higher, while the Nasdaq-100 (-0.25%) slightly lagged. VIX declined (-5.78%), Bitcoin fell (-2.27%), and gold rose (+0.38%). WTI crude oil dropped sharply (-8.18%), while the 10-year Treasury yield (-1.19%) and the U.S. dollar (-0.11%) also moved lower."
+  key_observation: "Overnight sentiment improved noticeably, but the strong opening was not confirmed during the trading session."
+  market_notes:
+    - "Equities opened higher after weekend geopolitical tensions eased, but the early optimism faded quickly as the market turned lower throughout the day."
+    - "VIX declined (-5.78%), suggesting improving risk sentiment at the open, although the intraday reversal indicated investors remained cautious ahead of a busy week of major earnings and the FOMC meeting."
+    - "WTI crude oil fell sharply (-8.18%) as geopolitical risk eased, while Treasury yields and the U.S. dollar also moved lower."
+    - "Today's session was a typical gap-up followed by a broad intraday selloff. This makes me more cautious when interpreting Monday overnight market data, as the overnight fingerprint may not reflect the direction of the full trading session."
+
 - date: "2026-07-24"
   summary: "Overnight market data showed mixed market performance. The Nasdaq-100 (+0.28%) and Dow Jones (+0.15%) moved higher, while the S&P 500 (-0.03%) remained broadly stable. VIX increased (+1.39%), Bitcoin declined (-1.47%), and gold rose slightly (+0.17%). WTI crude oil increased (+0.39%), while the 10-year Treasury yield (-0.43%) declined and the U.S. dollar (+0.01%) remained broadly stable."
   key_observation: "Market sentiment remained cautious, with risk perception continuing to outweigh improving equity performance."
