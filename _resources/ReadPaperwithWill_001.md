@@ -10,7 +10,7 @@ status: published
 series: "Read Paper with Will"
 series_number: "001"
 paper_title: "A Hormone Cell Atlas maps the human endocrine system at cellular resolution"
-commentary_title: "Reading <em>A Hormone Cell Atlas</em>: the human endocrine system at cellular resolution"
+commentary_title: "Reading <em>A Hormone Cell Atlas</em>: The Human Endocrine System at Cellular Resolution"
 journal: "Science"
 volume: "393"
 issue: "6806"
@@ -45,7 +45,7 @@ This paper asks:
 <section class="read-paper__chapter" id="build-the-atlas" markdown="1">
 <p class="read-paper__chapter-label">01 · Build the atlas</p>
 
-## Figure 1: Build the Human Hormone Cell Atlas by integrating sc/snRNA-seq data and hormone-related gene information
+## Figure 1: Build the human Hormone Cell Atlas by integrating sc/snRNA-seq data and hormone-related gene information
 The authors built a cross-tissue human endocrine atlas by integrating sc/snRNA-seq datasets with curated hormone–receptor information ([Figure 1A](https://doi.org/10.1126/science.aeb2672)). This provides a cellular framework to predict hormone-producing and hormone-responsive cell types across human tissues. The major contribution of this figure is to establish the foundation for a system-level endocrine map rather than studying individual hormones or organs in isolation.
 </section>
 <p class="read-paper__bridge">With the map established, the next step is to predict which cells produce the signals.</p>
@@ -129,13 +129,13 @@ One thing worth holding in mind when reading the adipose comparisons: this atlas
 
 <p class="read-paper__ui-label">Cite this commentary as</p>
 
-William (Peidong) Gao. “Reading *A Hormone Cell Atlas*: the human endocrine system at cellular resolution.” *Read Paper with Will* #001, WillGaoLab (williampeidonggao.com), July 26, 2026. <https://williampeidonggao.com/resources/papers/ReadPaperwithWill_001/>
+William (Peidong) Gao. “Reading *A Hormone Cell Atlas*: The Human Endocrine System at Cellular Resolution.” *Read Paper with Will*, no. 001. WillGaoLab. July 26, 2026. <https://williampeidonggao.com/resources/papers/ReadPaperwithWill_001/>
 
 <p class="read-paper__ui-label">Paper discussed</p>
 
-Fei L, Huang-Doran I, Lawler K, et al. “A Hormone Cell Atlas maps the human endocrine system at cellular resolution.” *Science* 393, no. 6806 (2026): eaeb2672. [DOI: 10.1126/science.aeb2672](https://doi.org/10.1126/science.aeb2672)
+Fei L, Huang-Doran I, Lawler K, et al. “A Hormone Cell Atlas Maps the Human Endocrine System at Cellular Resolution.” *Science* 393, no. 6806 (2026): eaeb2672. <https://doi.org/10.1126/science.aeb2672>
 
 <div class="read-paper__disclaimer" markdown="1">
-Independent scholarly commentary on the paper cited above. No figures are reproduced; figure references point readers to the evidence in the original. Not affiliated with or endorsed by *Science* or AAAS. Views are my own and do not represent Case Western Reserve University.
+Independent scholarly commentary on the paper cited above. No figures are reproduced. Figure references direct readers to the evidence presented in the original publication. This commentary is not affiliated with or endorsed by <em>Science</em> or AAAS. The views expressed are solely my own and do not represent those of Case Western Reserve University.
 </div>
 </footer>
