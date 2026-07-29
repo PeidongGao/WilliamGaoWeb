@@ -1,3 +1,16 @@
+- date: "2026-07-28"
+  summary: "Overnight market data showed a cautious market environment. The Nasdaq-100 (-0.81%) and S&P 500 (-0.24%) moved lower, while the Dow Jones (+0.54%) moved higher. VIX increased (+2.04%), while Bitcoin (-0.25%) and gold (-1.32%) both declined. WTI crude oil fell further (-3.11%), while the 10-year Treasury yield (-0.24%) and the U.S. dollar (+0.05%) remained broadly stable."
+
+  key_observation: "Market remained cautious ahead of the FOMC decision and another wave of major technology earnings."
+
+  market_notes:
+    - "Equities followed yesterday's weak trend, with the Nasdaq-100 and S&P 500 opening lower as investors remained cautious ahead of the FOMC decision and major technology earnings."
+    - "VIX increased (+2.04%), while both Bitcoin (-0.25%) and gold (-1.32%) declined, suggesting risk sentiment remained fragile rather than shifting toward defensive assets."
+    - "The 10-year Treasury yield (-0.24%) and the U.S. dollar (+0.05%) remained broadly stable, while WTI crude oil continued to decline (-3.11%)."
+    - "The FOMC meeting began today, making this one of the most uncertain periods of the week as investors awaited another wave of major technology earnings."
+    - "AI infrastructure remained a key market focus. Corning reported Optical Communications sales of $2.07B (+32% YoY), while Alphabet raised its 2026 capital expenditure guidance to $195–205B."
+    - "Although AI-related and semiconductor stocks continued to pull back, AI remained the dominant market theme. China's CXMT completed its RMB57.9B Shanghai IPO, while Reuters reported new progress in domestic immersion DUV lithography development."
+
 - date: "2026-07-27"
   summary: "Overnight market data suggested improving market sentiment following the weekend. The S&P 500 (+0.75%) and Dow Jones (+0.89%) moved higher, while the Nasdaq-100 (-0.25%) slightly lagged. VIX declined (-5.78%), Bitcoin fell (-2.27%), and gold rose (+0.38%). WTI crude oil dropped sharply (-8.18%), while the 10-year Treasury yield (-1.19%) and the U.S. dollar (-0.11%) also moved lower."
   key_observation: "Overnight sentiment improved noticeably, but the strong opening was not confirmed during the trading session."
