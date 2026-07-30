@@ -1,3 +1,13 @@
+- date: "2026-07-29"
+  summary: "Overnight market data reflected a mixed market environment. The Nasdaq-100 (-2.58%) significantly underperformed the broader market, while the S&P 500 (-0.14%) and Dow Jones (-0.14%) remained relatively stable. Gold (+2.24%) and WTI crude oil (+6.80%) both advanced, while the VIX (+0.33%), 10-year Treasury yield (+0.72%), U.S. dollar (+0.04%), and Bitcoin (-0.05%) showed limited changes."
+  key_observation: "Markets opened lower following weakness in global equities and AI-related stocks, while investors remained focused on the FOMC decision and rising geopolitical risks."
+  market_notes:
+    - "U.S. equities opened lower following weakness in overseas markets, with South Korea's KOSPI down nearly 40% from its June 19 record intraday high (9,385.59) to 5,663.24, extending the semiconductor correction."
+    - "Gold (+2.24%) advanced as investors moved toward defensive assets, while WTI crude oil (+6.80%) surged amid rising geopolitical risks. VIX increased only modestly (+0.33%)."
+    - "The FOMC left interest rates unchanged. Chairman Warsh reaffirmed the Federal Reserve's commitment to the 2% inflation target, reinforcing a relatively hawkish policy stance."
+    - "The Federal Reserve also highlighted the rapid growth in AI-related capital expenditures, noting their support for manufacturing and future growth while emphasizing that their effects on productivity, supply, and inflation remain uncertain."
+    - "Markets declined sharply following the FOMC press conference, suggesting investors placed more weight on the Fed's firm inflation stance than on the unchanged policy decision."
+
 - date: "2026-07-28"
   summary: "Overnight market data showed a cautious market environment. The Nasdaq-100 (-0.81%) and S&P 500 (-0.24%) moved lower, while the Dow Jones (+0.54%) moved higher. VIX increased (+2.04%), while Bitcoin (-0.25%) and gold (-1.32%) both declined. WTI crude oil fell further (-3.11%), while the 10-year Treasury yield (-0.24%) and the U.S. dollar (+0.05%) remained broadly stable."
 
