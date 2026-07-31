@@ -29,7 +29,10 @@ author:
   location: Cleveland, OH
   employer: Case Western Reserve University School of Medicine
   uri        : "https://williampeidonggao.com/"
-  email      : "william@williampeidonggao.com"
+  # Split the public contact address so it is not exposed as one easily
+  # harvestable string in the repository or generated feeds.
+  email_user   : "william"
+  email_domain : "williampeidonggao.com"
 
 
   # Academic websites
