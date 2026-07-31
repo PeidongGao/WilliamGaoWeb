@@ -4,6 +4,11 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+{% assign author_email = author.email %}
+{% if author_email == nil and author.email_user and author.email_domain %}
+  {% capture author_email %}{{ author.email_user }}@{{ author.email_domain }}{% endcapture %}
+{% endif %}
+
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
@@ -43,8 +48,8 @@
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
-      {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+      {% if author_email %}
+        <li><a href="mailto:{{ author_email | strip }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
