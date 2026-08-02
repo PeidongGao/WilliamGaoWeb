@@ -1,3 +1,13 @@
+- date: "2026-07-31"
+  summary: "Overnight market data suggested a relatively stable market environment following the recent rebound. The S&P 500 (+0.33%), Nasdaq-100 (+0.28%), and Dow Jones (+0.05%) all moved modestly higher. VIX declined (-1.58%), while Bitcoin (-2.79%) weakened and gold (+1.56%) continued to rise. WTI crude oil (+0.39%), the 10-year Treasury yield (+0.45%), and the U.S. dollar (+0.01%) showed limited gains."
+  key_observation: "Markets continued to stabilize following the sharp post-FOMC selloff, although macro uncertainty remained elevated."
+  market_notes:
+    - "U.S. equities continued to recover after the recent correction, with all three major indices posting modest overnight gains. However, the rebound appeared to slow following yesterday's strong recovery."
+    - "VIX declined a further 1.58%, but Bitcoin (-2.79%) remained under pressure while gold (+1.56%) continued to strengthen, suggesting investors remained cautious despite improving equity sentiment."
+    - "Treasury markets remained unusually volatile. The U.S. 30-year Treasury yield rose to approximately 5.27%, its highest level since 2007, while the 10-year Treasury yield increased to around 4.74%, suggesting investors continued to demand higher compensation for long-term risk."
+    - "The Japanese yen strengthened sharply after appreciating by nearly 3% against the U.S. dollar. Financial Times reported that the New York Federal Reserve conducted a dollar-yen rate check on behalf of the U.S. Treasury, reinforcing expectations of official support for the yen."
+    - "Although equities continued to recover, I think macro conditions remain unstable. The combination of elevated long-term Treasury yields, continued volatility in global bond markets, and a stronger yen may increase the risk of yen carry-trade unwinding. While current conditions do not indicate a systemic crisis, this remains an important macro risk worth monitoring."
+
 - date: "2026-07-30"
   summary: "Overnight market data showed a broad recovery following the recent pullback. The Nasdaq-100 (+3.57%) led the rebound, significantly outperforming the S&P 500 (+1.02%) and Dow Jones (+1.01%). VIX declined (-5.32%), while Bitcoin (+1.49%) also moved higher. Gold continued to advance (+3.20%), whereas WTI crude oil (-0.64%) edged lower. The 10-year Treasury yield (+1.02%) and the U.S. dollar (+0.02%) remained broadly stable."
   key_observation: "Market sentiment improved noticeably following the recent correction. Beyond today's price action, AI companies continued lowering the cost of AI services, suggesting the industry may be shifting from improving model capability toward broader real-world adoption."
