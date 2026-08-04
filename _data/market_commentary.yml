@@ -1,3 +1,11 @@
+- date: "2026-08-03"
+  summary: "Overnight market data showed improving market sentiment. The Nasdaq-100 (+1.85%) led the gains, while the Dow Jones (+0.52%) and S&P 500 (+0.20%) also moved higher. VIX (+0.25%) and Bitcoin (+0.07%) remained broadly stable, while gold (+1.49%) advanced. WTI crude oil fell sharply (-5.40%), whereas the 10-year Treasury yield (-1.56%) and the U.S. dollar (-0.11%) both declined."
+  key_observation: "Market sentiment continued to improve as easing geopolitical tensions supported risk assets."
+  market_notes:
+    - "The Nasdaq-100 (+1.85%) led the market higher, suggesting continued strength in AI-related technology stocks."
+    - "WTI crude oil (-5.40%) recorded the largest overnight move after the U.S. shifted from planned military action toward renewed diplomacy with Iran, reducing the geopolitical risk premium."
+    - "The 10-year Treasury yield (-1.56%) declined alongside oil prices, while the U.S. dollar remained broadly stable."
+    - "Overall, the market continued to recover from last week's volatility, although upcoming AI earnings and macroeconomic data remain the next major catalysts."
 - date: "2026-07-31"
   summary: "Overnight market data suggested a relatively stable market environment following the recent rebound. The S&P 500 (+0.33%), Nasdaq-100 (+0.28%), and Dow Jones (+0.05%) all moved modestly higher. VIX declined (-1.58%), while Bitcoin (-2.79%) weakened and gold (+1.56%) continued to rise. WTI crude oil (+0.39%), the 10-year Treasury yield (+0.45%), and the U.S. dollar (+0.01%) showed limited gains."
   key_observation: "Markets continued to stabilize following the sharp post-FOMC selloff, although macro uncertainty remained elevated."
