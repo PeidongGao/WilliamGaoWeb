@@ -1,3 +1,12 @@
+- date: "2026-08-04"
+  summary: "Overnight market data showed improving market sentiment. The Nasdaq-100 (+3.06%) led the gains, while the Dow Jones (+0.87%) and S&P 500 (+0.40%) also moved higher. VIX declined (-0.63%), while Bitcoin (+1.55%) and gold (+2.48%) both advanced. WTI crude oil fell sharply (-6.44%) for a second consecutive session, while the 10-year Treasury yield (-0.45%) and the U.S. dollar (+0.01%) remained broadly stable."
+  key_observation: "Market sentiment continued to improve as easing geopolitical tensions supported risk assets, while investors became increasingly selective toward AI-related companies."
+  market_notes:
+    - "The Nasdaq-100 (+3.06%) significantly outperformed the broader market, extending the recent recovery in AI-related technology stocks."
+    - "WTI crude oil (-6.44%) fell for a second consecutive session as expectations for renewed U.S.-Iran diplomacy continued to reduce the geopolitical risk premium."
+    - "SpaceX reported stronger-than-expected Q2 revenue ($7.8B vs. ~$6.8B expected), but shares fell in after-hours trading as investors focused on continued heavy AI capital spending and the path to profitability rather than the headline earnings beat."
+    - "Overall, the market remained constructive, but recent earnings suggest investors are beginning to pay closer attention to the sustainability and returns of AI investment rather than simply rewarding higher AI spending."
+
 - date: "2026-08-03"
   summary: "Overnight market data showed improving market sentiment. The Nasdaq-100 (+1.85%) led the gains, while the Dow Jones (+0.52%) and S&P 500 (+0.20%) also moved higher. VIX (+0.25%) and Bitcoin (+0.07%) remained broadly stable, while gold (+1.49%) advanced. WTI crude oil fell sharply (-5.40%), whereas the 10-year Treasury yield (-1.56%) and the U.S. dollar (-0.11%) both declined."
   key_observation: "Market sentiment continued to improve as easing geopolitical tensions supported risk assets."
