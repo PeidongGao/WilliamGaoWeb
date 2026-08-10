@@ -1,3 +1,12 @@
+- date: "2026-08-07"
+  summary: "This week showed a strong rebound across VOO, QQQ, and SMH. Cooling labor-market data reduced expectations of another near-term Fed rate hike, but it is still too early to confirm a sustained recovery, especially in semiconductors."
+  key_observation: "The rebound is a positive signal, but I still think the recovery needs more confirmation as macro and currency risks remain unstable."
+  market_notes:
+    - "VOO gained 3.50%, QQQ 5.09%, and SMH 7.80% this week. However, SMH remains 13.27% below its 52-week high, suggesting that the semiconductor recovery is still incomplete."
+    - "July nonfarm payrolls fell by 23,000, unemployment was 4.1%, and May and June payrolls were revised down by a combined 103,000. The weaker labor market reduced expectations of another near-term Fed rate hike."
+    - "The Japanese yen remained volatile. Japan confirmed that it purchased yen in coordination with the U.S. Treasury on July 31, while both sides remain in close communication about further intervention."
+    - "Competition among major AI companies remains intense, with technology, leadership, and talent changing quickly. Alphabet reorganized Google DeepMind this week, with Demis Hassabis moving to a broader scientific role and Jeff Dean leaving after 27 years."
+
 - date: "2026-07-31"
   summary: "This week remained highly volatile. VOO and QQQ recovered modestly, while SMH declined sharply as semiconductor weakness and macro uncertainty continued."
   key_observation: "Although the broader market recovered by the end of the week, elevated long-term yields and continued semiconductor weakness suggest that the recovery remains fragile. The sharp appreciation of the yen also adds another source of macro risk."
