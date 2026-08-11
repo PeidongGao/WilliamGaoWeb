@@ -1,3 +1,12 @@
+- date: "2026-08-10"
+  summary: "Overnight market data showed a relatively stable market environment. The S&P 500 (-0.08%), Nasdaq-100 (-0.24%), and Dow Jones (+0.07%) remained broadly unchanged. VIX (+3.36%) increased, while gold (+2.45%) and WTI crude oil (+5.33%) both advanced. Bitcoin (-1.40%) weakened, while the 10-year Treasury yield (+0.04%) and the U.S. dollar (-0.01%) remained broadly stable."
+  key_observation: "Although the major indices remained relatively stable, AI-related semiconductor stocks continued to face pressure as investors became increasingly focused on the returns from AI infrastructure spending rather than the pace of investment itself."
+  market_notes:
+    - "Major indices remained broadly stable, with limited movement between the open and close despite higher volatility in commodities and safe-haven assets."
+    - "WTI crude oil (+5.33%) and gold (+2.45%) both moved higher as geopolitical uncertainty continued to support energy prices and defensive assets."
+    - "Semiconductor stocks remained under pressure. Nvidia declined after news surrounding a large AI infrastructure financing initiative, while Intel fell following a $15 billion equity offering to fund AI and foundry investments. These developments reinforced investor focus on the cost and expected returns of AI infrastructure spending rather than AI demand itself."
+    - "Although the semiconductor sector has recovered meaningfully from its late-July lows, it remains well below its June peak, suggesting investors continue to reassess AI-related valuations and capital allocation."
+
 - date: "2026-08-07"
   summary: "This week showed a strong rebound across VOO, QQQ, and SMH. Cooling labor-market data reduced expectations of another near-term Fed rate hike, but it is still too early to confirm a sustained recovery, especially in semiconductors."
   key_observation: "The rebound is a positive signal, but I still think the recovery needs more confirmation as macro and currency risks remain unstable."
