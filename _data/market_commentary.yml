@@ -1,3 +1,11 @@
+- date: "2026-08-14"
+  summary: "Overnight market data reflected a consolidative market environment following a week of record highs. The S&P 500 (+0.10%), Nasdaq-100 (+0.07%), and Dow Jones (+0.01%) remained broadly unchanged. VIX (+0.07%) was stable, while gold (+1.02%) outperformed and Bitcoin (-0.96%) weakened. The 10-year Treasury yield (+0.09%), U.S. dollar (-0.03%), and WTI crude oil (+0.02%) showed little change."
+  key_observation: "This week's market was characterized by record highs supported by cooling inflation data, while AI-related spending and earnings continued to provide the primary leadership for U.S. equities."
+  market_notes:
+    - "July retail sales declined 0.6% month over month, weaker than market expectations, while consumer sentiment also softened. Despite the weaker economic data, markets largely interpreted the report as reducing the likelihood of another near-term Fed rate hike rather than signaling an immediate economic downturn."
+    - "AI infrastructure remained the dominant investment theme. Semiconductor performance became more selective this week, with companies that beat earnings not necessarily seeing positive stock reactions, suggesting investors are increasingly evaluating the long-term returns on AI investment rather than rewarding AI spending alone."
+    - "The AI story continued to broaden beyond chip manufacturers. Nvidia remained focused on robotics, while software and AI platform companies continued to attract investor attention, suggesting the market is gradually expanding from AI infrastructure toward AI applications and deployment."
+
 - date: "2026-08-13"
   summary: "Overnight market data showed a constructive market environment. The Nasdaq-100 (+1.20%) led the gains, while the S&P 500 (+0.19%) and Dow Jones (+0.11%) also moved slightly higher. VIX (+0.89%) increased modestly, while Bitcoin (+0.09%) and gold (-0.02%) were broadly unchanged. The 10-year Treasury yield (-0.17%) and U.S. dollar (-0.05%) edged lower, while WTI crude oil fell sharply (-2.40%)."
   key_observation: "Markets continued to make new highs as softer inflation data reinforced expectations that the Federal Reserve may remain on hold. Technology continued to lead the market."
