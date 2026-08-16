@@ -1,3 +1,12 @@
+- date: "2026-08-14"
+  summary: "The market continued to recover this week, but the rebound was much weaker than last week. Inflation continued to cool, reducing near-term Fed tightening pressure, while softer consumer data also suggest that economic growth is beginning to slow."
+  key_observation: "The recovery remains positive, but weaker momentum in semiconductors and continued macro and currency uncertainty suggest that more confirmation is still needed."
+  market_notes:
+    - "VOO gained 0.41%, QQQ 1.11%, and SMH 0.88% this week, much weaker than last week's rebound. SMH remains 12.50% below its 52-week high, suggesting that the semiconductor recovery is still incomplete."
+    - "July CPI rose 0.1% month over month and 3.4% year over year, while core CPI was 2.5% year over year. Retail sales fell 0.6% month over month, suggesting that inflation is cooling while consumer demand is also beginning to soften."
+    - "AI infrastructure financing is expanding beyond Big Tech balance sheets. Nvidia announced partnerships with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to mobilize more than $500 billion of third-party capital for AI infrastructure."
+    - "The yen weakened about 0.9% this week to around ¥159 per dollar after strengthening to nearly ¥155 following the U.S.-Japan intervention. The intervention helped temporarily, but the yen remains structurally weak and currency risk is still worth monitoring."
+
 - date: "2026-08-07"
   summary: "This week showed a strong rebound across VOO, QQQ, and SMH. Cooling labor-market data reduced expectations of another near-term Fed rate hike, but it is still too early to confirm a sustained recovery, especially in semiconductors."
   key_observation: "The rebound is a positive signal, but I still think the recovery needs more confirmation as macro and currency risks remain unstable."
