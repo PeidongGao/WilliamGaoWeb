@@ -1,3 +1,12 @@
+- date: "2026-08-17"
+  summary: "Overnight market data showed a relatively stable market environment. The S&P 500 (+0.06%) edged slightly higher, while the Nasdaq-100 (-0.21%) and Dow Jones (-0.13%) moved modestly lower. VIX (+5.12%) increased, while Bitcoin (+2.29%) and gold (+2.12%) both advanced. WTI crude oil (+3.13%) moved higher, while the 10-year Treasury yield (-0.04%) and the U.S. dollar (-0.01%) remained broadly stable."
+  key_observation: "Although VIX increased, its absolute level remained below 15, suggesting that overall market conditions remained relatively stable, while oil continued to be the main macro risk."
+  market_notes:
+    - "Major equity indices remained broadly stable, with only modest overnight movements across the S&P 500, Nasdaq-100, and Dow Jones."
+    - "VIX increased 5.12% from 14.25 to 14.98, but the absolute level remained relatively low. Bitcoin (+2.29%) and gold (+2.12%) also moved higher, suggesting that the increase in volatility did not develop into a broad risk-off move."
+    - "WTI crude oil (+3.13%) remained the most notable macro move, continuing the recent pattern of elevated oil-price sensitivity to geopolitical developments."
+    - "Recent discussion around the USS Abraham Lincoln kept attention on the continued U.S. military presence in the region. I think this remains worth monitoring together with oil prices as part of the broader geopolitical risk environment."
+
 - date: "2026-08-14"
   summary: "Overnight market data reflected a consolidative market environment following a week of record highs. The S&P 500 (+0.10%), Nasdaq-100 (+0.07%), and Dow Jones (+0.01%) remained broadly unchanged. VIX (+0.07%) was stable, while gold (+1.02%) outperformed and Bitcoin (-0.96%) weakened. The 10-year Treasury yield (+0.09%), U.S. dollar (-0.03%), and WTI crude oil (+0.02%) showed little change."
   key_observation: "This week's market was characterized by record highs supported by cooling inflation data, while AI-related spending and earnings continued to provide the primary leadership for U.S. equities."
