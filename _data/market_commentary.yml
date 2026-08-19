@@ -1,3 +1,12 @@
+
+- date: "2026-08-18"
+  summary: "Overnight market data showed a risk-off market environment led by technology stocks. The Nasdaq-100 (-1.76%) significantly underperformed the S&P 500 (-0.58%) and Dow Jones (-0.20%). VIX (+4.08%) increased, while Bitcoin (+0.19%) remained stable and gold (-0.60%) declined. The 10-year Treasury yield (+0.17%) moved slightly higher, while the U.S. dollar (-0.10%) and WTI crude oil (-0.05%) remained broadly unchanged."
+  key_observation: "Technology and AI-related stocks faced renewed selling pressure as investors became more cautious about high-valuation growth companies."
+  market_notes:
+    - "Technology and semiconductor stocks led the market decline. The Nasdaq-100 fell 1.76%, with major AI-related companies under pressure, including Nvidia (-2.3%), Micron (-7.0%), and Broadcom (-3.2%). The Philadelphia Semiconductor Index declined about 5.6%, reflecting renewed concerns around AI-related valuations."
+    - "The weakness extended to the Korean market. The KOSPI declined 1.55%, while KOSDAQ fell 3.52%. Semiconductor stocks lost momentum after an early rally, with Samsung Electronics declining 2.19% and SK Hynix closing only slightly higher (+1.03%), suggesting investors became more cautious toward AI and memory-related stocks."
+    - "Higher long-term Treasury yields remained an important pressure factor for growth stocks. The U.S. 30-year Treasury yield briefly reached 5.34%, the highest level since 2007, while the 10-year Treasury yield remained around 4.7%. Rising long-term yields increased valuation pressure on high-duration technology companies."
+
 - date: "2026-08-17"
   summary: "Overnight market data showed a relatively stable market environment. The S&P 500 (+0.06%) edged slightly higher, while the Nasdaq-100 (-0.21%) and Dow Jones (-0.13%) moved modestly lower. VIX (+5.12%) increased, while Bitcoin (+2.29%) and gold (+2.12%) both advanced. WTI crude oil (+3.13%) moved higher, while the 10-year Treasury yield (-0.04%) and the U.S. dollar (-0.01%) remained broadly stable."
   key_observation: "Although VIX increased, its absolute level remained below 15, suggesting that overall market conditions remained relatively stable, while oil continued to be the main macro risk."
