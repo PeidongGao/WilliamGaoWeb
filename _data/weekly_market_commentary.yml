@@ -1,3 +1,13 @@
+- date: "2026-08-21"
+  summary: "The market entered another risk-off week, with weakness concentrated in technology and semiconductor stocks. While broad equities remained relatively resilient, AI-related stocks stayed under pressure as investors balanced long-term AI investment opportunities against elevated interest-rate risks."
+  key_observation: "The current market weakness appears to reflect selective de-risking from high-beta AI and semiconductor exposure rather than a broad market breakdown. VOO remained close to its highs, while QQQ and especially SMH continued to underperform."
+  market_notes:
+    - "VOO declined 1.39%, QQQ declined 2.41%, and SMH declined 4.66% this week. VOO remained only 1.77% below its 52-week high, while QQQ and SMH remained 4.70% and 16.58% below their highs, respectively. Semiconductor weakness remains the primary source of equity market pressure."
+    - "Bitcoin gained 7.49% this week and extended its rally above $77,000, showing continued strength in alternative assets despite weakness in technology equities."
+    - "AI infrastructure investment remained a major long-term market theme. Estimated cumulative AI infrastructure investment has exceeded $1 trillion since the beginning of the AI boom, reinforcing the long-term AI growth narrative while increasing investor focus on future returns, capital efficiency, and valuation."
+    - "Long-term Treasury yields remained a key macro risk. The 30-year Treasury yield reached around 5.3%, the highest level since 2007, while the 10-year yield approached 4.7%. Yields later eased toward approximately 4.65% for the 10-year and 5.20% for the 30-year following market stabilization measures."
+    - "Elevated long-term yields continue to pressure high-duration technology companies by increasing discount rates, contributing to the continued underperformance of QQQ and SMH relative to the broader market."
+
 - date: "2026-08-14"
   summary: "The market continued to recover this week, but the rebound was much weaker than last week. Inflation continued to cool, reducing near-term Fed tightening pressure, while softer consumer data also suggest that economic growth is beginning to slow."
   key_observation: "The recovery remains positive, but weaker momentum in semiconductors and continued macro and currency uncertainty suggest that more confirmation is still needed."
