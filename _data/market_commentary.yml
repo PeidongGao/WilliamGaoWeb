@@ -1,3 +1,12 @@
+- date: "2026-08-26"
+  summary: "U.S. equities remained cautious during the regular session after inflation data came in slightly hotter than expected. The S&P 500 finished nearly unchanged, while the Nasdaq Composite declined about 0.1% and the Dow Jones fell 0.2%. Treasury yields moved modestly higher. After the close, strong Nvidia earnings improved technology sentiment and pushed Nasdaq-100 futures about 1% higher."
+  key_observation: "Sticky inflation remained a macro headwind during the regular session, but Nvidia's stronger-than-expected earnings reinforced the underlying strength of AI demand and triggered a positive after-hours market reaction."
+  market_notes:
+    - "July PCE inflation remained sticky. Headline PCE increased 3.7% year over year, above the 3.6% expected, while core PCE remained at 3.3%, in line with expectations. Fed-funds futures increased the implied probability of a September rate hike to about 44% from roughly 36% before the report."
+    - "Nvidia reported quarterly revenue of $96.22 billion versus $92.27 billion expected and adjusted EPS of $2.22 versus $2.09 expected. Data Center revenue reached $89.0 billion, up 117% year over year, confirming continued strong demand for AI computing infrastructure."
+    - "Nvidia also guided next-quarter revenue to approximately $108 billion, above the roughly $104.9 billion consensus estimate. The earnings beat helped lift Nasdaq-100 futures about 1% after hours, shifting market sentiment more positively toward technology and AI-related stocks."
+    - "The session highlighted competing market forces: persistent inflation and higher-rate risk continued to constrain valuations, while strong AI earnings demonstrated that corporate demand and revenue growth remain robust."
+
 - date: "2026-08-25"
   summary: "Overnight market data showed a relatively constructive market environment. The S&P 500 (+0.31%), Nasdaq-100 (+0.63%), and Dow Jones (+0.33%) moved higher, while VIX (-0.88%) declined. Bitcoin (-0.27%) remained broadly stable, while gold (+1.61%) advanced. The 10-year Treasury yield (-0.85%) declined, the U.S. dollar (-0.01%) remained unchanged, and WTI crude oil fell sharply (-4.59%)."
   key_observation: "Markets remained constructive as falling oil prices and Treasury yields improved financial conditions, although investors remained cautious ahead of Nvidia earnings, upcoming inflation and Fed signals, and escalating U.S.-Canada trade tensions."
