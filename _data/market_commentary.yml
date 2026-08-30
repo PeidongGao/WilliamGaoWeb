@@ -1,3 +1,21 @@
+- date: "2026-08-28"
+  summary: "Overnight market data showed a largely flat market environment. The S&P 500 (+0.05%) and Dow Jones (+0.08%) were little changed, while the Nasdaq-100 declined slightly (-0.20%). VIX increased 0.41%, Bitcoin declined 0.27%, and gold gained 1.00%. The 10-year Treasury yield rose 0.34%, while the U.S. dollar (-0.05%) and WTI crude oil (+0.17%) remained broadly stable."
+  key_observation: "Markets began the day relatively flat but turned modestly risk-off after Fed Chair Kevin Warsh emphasized that underlying inflation remains too high, increasing expectations for another rate hike and pushing Treasury yields higher."
+  market_notes:
+    - "Fed Chair Kevin Warsh delivered a hawkish message at Jackson Hole, stating that 'inflation remained too high' and that recent PCE and CPI readings 'do not tell me that underlying trends have meaningfully improved.' He added: 'We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, we have work to do.'"
+    - "Markets sharply repriced September policy expectations after the speech, with the implied probability of a rate hike rising to nearly 60% from just over one-third the previous day. The 2-year Treasury yield increased about 12 basis points to 4.35%."
+    - "Equities weakened after Warsh's remarks, with the S&P 500 finishing about 0.2%-0.3% lower and the Nasdaq-100 declining about 0.7%, while the Dow remained nearly unchanged. The reaction represented a moderate risk-off adjustment rather than a broad market selloff."
+    - "Technology remained particularly sensitive to higher-rate expectations, while the combination of persistent inflation and rising Treasury yields returned monetary policy to the forefront of near-term market risk."
+
+- date: "2026-08-27"
+  summary: "Overnight market data showed a constructive market environment. The S&P 500 (+0.45%), Nasdaq-100 (+0.72%), and Dow Jones (+0.28%) moved higher, while VIX declined (-1.91%). Bitcoin (+0.64%) and gold (+0.25%) edged higher. The 10-year Treasury yield (-0.13%), U.S. dollar (-0.05%), and WTI crude oil (-0.28%) remained broadly stable."
+  key_observation: "Markets moved higher, but the technology rally remained selective rather than broad-based, with strong gains concentrated in large software and AI leaders while several semiconductor names remained flat or weaker."
+  market_notes:
+    - "Salesforce became one of the strongest new market movers, surging 22.6% after reporting a strong quarter, raising its annual outlook, and expanding its partnership with Anthropic. The broader software sector also strengthened, with the State Street Software and Services ETF gaining about 5.2%."
+    - "Semiconductor performance remained uneven despite the stronger technology indexes. Micron declined 0.32% on the day, while Marvell fell 1.49% during the regular session, showing that the rally was not uniform across AI-related hardware stocks."
+    - "Marvell reported stronger-than-expected demand for AI data-center chips and guided third-quarter revenue to about $3.15 billion versus $3.03 billion expected, but shares fell more than 6% after hours as investors questioned the timing of revenue from its new Google AI-chip agreement."
+    - "Overall, the market remained constructive, but the divergence between strong software performance and mixed semiconductor stocks suggested increasingly selective positioning within the broader technology sector."
+
 - date: "2026-08-26"
   summary: "U.S. equities remained cautious during the regular session after inflation data came in slightly hotter than expected. The S&P 500 finished nearly unchanged, while the Nasdaq Composite declined about 0.1% and the Dow Jones fell 0.2%. Treasury yields moved modestly higher. After the close, strong Nvidia earnings improved technology sentiment and pushed Nasdaq-100 futures about 1% higher."
   key_observation: "Sticky inflation remained a macro headwind during the regular session, but Nvidia's stronger-than-expected earnings reinforced the underlying strength of AI demand and triggered a positive after-hours market reaction."
