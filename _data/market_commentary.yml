@@ -1,3 +1,12 @@
+- date: "2026-08-31"
+  summary: "Overnight market data showed a relatively stable but mildly risk-off market environment. The S&P 500 (-0.18%) and Dow Jones (-0.18%) edged lower, while the Nasdaq-100 (+0.09%) was little changed. VIX increased 5.61%, while Bitcoin (-0.07%) remained broadly stable and gold gained 0.46%. The 10-year Treasury yield rose 0.17%, the U.S. dollar declined 0.28%, and WTI crude oil increased sharply by 3.49%."
+  key_observation: "Markets ended August with a modest risk-off tone as renewed U.S.-Iran tensions pushed oil prices and Treasury yields higher, reviving inflation and rate-hike concerns despite relatively limited declines in major equity indexes."
+  market_notes:
+    - "Renewed U.S.-Iran tensions became the main new market catalyst after U.S. strikes targeted Iranian rocket launchers near the Strait of Hormuz, marking the first renewed exchange in about a month and pushing oil prices sharply higher."
+    - "Energy prices reacted strongly to the geopolitical escalation, with Brent crude rising 2.7% to $90.49 per barrel and WTI also advancing. Higher oil prices reinforced concerns that energy-related inflation could complicate the Federal Reserve's policy outlook."
+    - "The broader equity reaction remained moderate: the S&P 500 declined 0.3%, the Dow fell 0.7%, and the Nasdaq Composite slipped 0.1% during the regular session, while the 10-year Treasury yield climbed to around 4.75%."
+    - "Despite the weaker final session, August remained a positive month for U.S. equities. The S&P 500 gained 2.6%, the Nasdaq Composite rose 3.9%, and the Dow advanced 1.3%, showing that the month's overall market trend remained constructive despite persistent geopolitical and inflation risks."
+
 - date: "2026-08-28"
   summary: "Overnight market data showed a largely flat market environment. The S&P 500 (+0.05%) and Dow Jones (+0.08%) were little changed, while the Nasdaq-100 declined slightly (-0.20%). VIX increased 0.41%, Bitcoin declined 0.27%, and gold gained 1.00%. The 10-year Treasury yield rose 0.34%, while the U.S. dollar (-0.05%) and WTI crude oil (+0.17%) remained broadly stable."
   key_observation: "Markets began the day relatively flat but turned modestly risk-off after Fed Chair Kevin Warsh emphasized that underlying inflation remains too high, increasing expectations for another rate hike and pushing Treasury yields higher."
