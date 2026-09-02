@@ -1,3 +1,12 @@
+- date: "2026-09-01"
+  summary: "Overnight market data showed a clear risk-off environment. The S&P 500 (-0.66%), Nasdaq-100 (-1.28%), and Dow Jones (-0.19%) moved lower, with technology leading the weakness. VIX increased slightly (+0.20%), while Bitcoin (-0.08%) remained broadly stable and gold declined (-1.22%). The 10-year Treasury yield rose 0.63%, the U.S. dollar strengthened 0.24%, and WTI crude oil surged 5.70%."
+  key_observation: "Markets moved into a broader risk-off mode as renewed U.S.-Iran military escalation pushed oil prices above $90 and Treasury yields higher, reinforcing concerns that persistent energy inflation could keep the Federal Reserve restrictive for longer."
+  market_notes:
+    - "Oil became the dominant macro driver after another round of U.S. strikes on Iranian targets renewed concerns about supply disruptions through the Strait of Hormuz. WTI crude settled 5.2% higher at $90.22 per barrel, while Brent rose 4.6% to $94.65, its strongest level in more than a month."
+    - "Higher energy prices intensified inflation and monetary-policy concerns. The 10-year Treasury yield climbed to 4.79%, while the 2-year yield rose to 4.39%. Markets were pricing roughly a 66% probability of a September Fed rate hike as inflation remained above 3%."
+    - "Technology stocks were among the largest contributors to the equity decline as higher yields increased pressure on growth-stock valuations. Nvidia fell 1.5%, Amazon declined 1.9%, and AMD dropped 2.4%, while the Nasdaq Composite finished 1.0% lower."
+    - "The weakness extended beyond technology. The S&P 500 declined 0.7%, the Dow fell 0.8%, and the Russell 2000 dropped 1.2%, marking a third consecutive down session for the major U.S. indexes and showing that the risk-off move had broadened beyond a single sector."
+
 - date: "2026-08-31"
   summary: "Overnight market data showed a relatively stable but mildly risk-off market environment. The S&P 500 (-0.18%) and Dow Jones (-0.18%) edged lower, while the Nasdaq-100 (+0.09%) was little changed. VIX increased 5.61%, while Bitcoin (-0.07%) remained broadly stable and gold gained 0.46%. The 10-year Treasury yield rose 0.17%, the U.S. dollar declined 0.28%, and WTI crude oil increased sharply by 3.49%."
   key_observation: "Markets ended August with a modest risk-off tone as renewed U.S.-Iran tensions pushed oil prices and Treasury yields higher, reviving inflation and rate-hike concerns despite relatively limited declines in major equity indexes."
