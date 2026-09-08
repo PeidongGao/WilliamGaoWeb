@@ -1,3 +1,12 @@
+- date: "2026-09-04"
+  summary: "Overnight market data showed a relatively stable market environment ahead of the Labor Day weekend. The S&P 500 (+0.03%) was little changed, while the Nasdaq-100 (-0.07%) and Dow Jones (-0.19%) edged lower. VIX declined 1.19%, Bitcoin fell 1.99%, and gold gained 0.67%. The 10-year Treasury yield declined 0.17%, the U.S. dollar remained unchanged (+0.03%), and WTI crude oil increased 0.41%."
+  key_observation: "Markets entered the Labor Day weekend cautiously after a much stronger-than-expected August jobs report demonstrated continued labor-market resilience, increasing expectations for a September Fed rate hike and pushing Treasury yields higher."
+  market_notes:
+    - "The August Nonfarm Payrolls report showed the U.S. economy added 162,000 jobs, well above the 56,000 expected by economists surveyed by Reuters, while the unemployment rate remained unchanged at 4.1%. June and July payrolls were also revised higher by a combined 55,000 jobs, indicating stronger labor-market momentum than previously reported."
+    - "The stronger employment report prompted a significant repricing of monetary-policy expectations. Fed-funds futures implied about a 65% probability of a September rate hike after the release, up from approximately 55% beforehand, while the 10-year Treasury yield moved toward 4.8%."
+    - "Equities weakened during the regular session as stronger employment reduced concerns about near-term economic weakness but increased expectations for tighter monetary policy. The S&P 500 declined 0.38%, the Dow fell 0.51%, and the Nasdaq Composite declined 0.29% ahead of the three-day Labor Day weekend."
+    - "Average hourly earnings increased 0.3% month over month and 3.1% year over year, indicating that wage growth remained relatively contained despite stronger job creation. The Fed therefore continued to face a mixed policy environment of resilient employment alongside persistent inflation and elevated energy prices."
+
 - date: "2026-09-03"
   summary: "Overnight market data showed a constructive market environment. The S&P 500 (+0.26%), Nasdaq-100 (+1.09%), and Dow Jones (+0.47%) moved higher, with technology leading the gains. VIX increased slightly (+0.33%), while Bitcoin (+5.00%) and gold (+3.57%) rose strongly. The 10-year Treasury yield declined 0.63%, the U.S. dollar fell 0.53%, and WTI crude oil increased 0.73%."
   market_notes:
