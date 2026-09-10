@@ -1,3 +1,13 @@
+- date: "2026-09-09"
+  summary: "The S&P 500 (-0.17%), Nasdaq-100 futures (-0.27%), and Dow Jones (-0.15%) declined modestly at their recorded openings. VIX fell 0.45%, Bitcoin was little changed (-0.04%), and gold gained 1.23%. The 10-year Treasury yield edged up 0.04%, the U.S. dollar declined 0.09%, and WTI crude oil increased 4.14%."
+  key_observation: "Equities opened modestly lower, while stronger oil prices and rising Treasury yields kept markets cautious during the session, with Apple’s product launch and Meta’s rally providing distinct company-level developments."
+  market_notes:
+    - "Further U.S.–Iran maritime escalation intensified oil-supply concerns, pushing Brent crude to a settlement of $101.21 per barrel, up 3.4%, and reinforcing concerns about energy-driven inflation."
+    - "Equities weakened beyond their modest opening declines, with the S&P 500 closing 0.48% lower, the Dow falling 0.77%, and the Nasdaq Composite declining 0.64%."
+    - "Apple unveiled its first foldable iPhone, iPhone Duo, with availability beginning October 23, while its shares finished approximately 0.3% lower on the day."
+    - "Meta shares rose 6.55% following the September 8 announcement of its Muse personal AI agent, providing a notable positive exception within the weaker broader market."
+    - "The 10-year Treasury yield rose to approximately 4.84% during the session as investors awaited the August PPI release on September 10 and CPI release on September 11, both scheduled for 8:30 a.m. ET."
+
 - date: "2026-09-08"
   summary: "The S&P 500 (-0.01%) and Nasdaq-100 futures (-0.13%) were little changed at their recorded openings, while the Dow Jones declined 0.57%. VIX increased 1.70%, Bitcoin gained 0.33%, and gold declined 0.70%. The 10-year Treasury yield rose 0.21%, the U.S. dollar fell 0.35%, and WTI crude oil increased 3.09%."
   key_observation: "Markets reopened after Labor Day with limited movement in the S&P 500 and Nasdaq-100 futures, while weakness in the Dow and a sharp increase in oil prices pointed to a more cautious market backdrop."
