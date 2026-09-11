@@ -1,3 +1,13 @@
+- date: "2026-09-10"
+  summary: "The S&P 500 (-0.55%), Nasdaq-100 futures (-1.05%), and Dow Jones (-0.17%) declined at their recorded openings, with technology showing the largest decline. VIX fell 0.91%, Bitcoin gained 0.30%, and gold declined 1.28%. The 10-year Treasury yield rose 0.91%, the U.S. dollar strengthened 0.33%, and WTI crude oil increased sharply by 8.61%."
+  key_observation: "Markets weakened as higher-than-expected producer inflation and another oil-price surge increased expectations of a Fed rate hike and pushed Treasury yields higher."
+  market_notes:
+    - "August PPI rose 0.4% month over month and 5.4% year over year, with the annual increase slightly above the 5.3% Reuters consensus, reinforcing concerns about persistent inflation."
+    - "By midday, futures pricing implied roughly a 70% probability of a Fed rate hike of at least 25 basis points at the September meeting, up from about 64% before the PPI release."
+    - "Continued disruption to oil supplies from the Iran war pushed Brent crude briefly above $108 per barrel before it settled at $107.63, up 6.3%, adding to energy-inflation concerns."
+    - "The 10-year Treasury yield climbed to approximately 4.95% from 4.83% late Wednesday, while the S&P 500 and Dow each closed about 0.6% lower and the Nasdaq Composite fell about 0.7%."
+    - "Attention turned to the August CPI release scheduled for September 11 at 8:30 a.m. ET, which could further influence expectations ahead of the Fed meeting."
+
 - date: "2026-09-09"
   summary: "The S&P 500 (-0.17%), Nasdaq-100 futures (-0.27%), and Dow Jones (-0.15%) declined modestly at their recorded openings. VIX fell 0.45%, Bitcoin was little changed (-0.04%), and gold gained 1.23%. The 10-year Treasury yield edged up 0.04%, the U.S. dollar declined 0.09%, and WTI crude oil increased 4.14%."
   key_observation: "Equities opened modestly lower, while stronger oil prices and rising Treasury yields kept markets cautious during the session, with Apple’s product launch and Meta’s rally providing distinct company-level developments."
