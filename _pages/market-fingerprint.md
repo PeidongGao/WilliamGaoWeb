@@ -2,6 +2,9 @@
 layout: single
 title: "Market Fingerprint"
 permalink: /market-fingerprint/
+# Retired dated snapshot; keep its published URL alive.
+redirect_from:
+  - /market-fingerprint/2026-09-11/
 author_profile: true
 accent: lab
 type: market
@@ -27,7 +30,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 {% if latest_commentary %}
 <h3><time data-market-commentary-date datetime="{{ latest_commentary.date }}">{{ latest_commentary.date | date: "%B %-d, %Y" }}</time></h3>
-<p class="wg-market-report-link"><a href="{{ '/market-fingerprint/2026-09-11/' | relative_url }}">Open the dated report</a></p>
+
 <p>{{ latest_commentary.summary | escape }}</p>
 {% else %}
 <h3><span data-market-commentary-date>Commentary pending</span></h3>
