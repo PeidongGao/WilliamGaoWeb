@@ -6,6 +6,7 @@ permalink: /publications/tcf21-visceral-adipose-mesenchymal-progenitors/
 date: 2023-03-01
 venue: "Cell Reports"
 doi: "10.1016/j.celrep.2023.112166"
+open_access: true
 paperurl: "https://doi.org/10.1016/j.celrep.2023.112166"
 authors:
   - Qianglin Liu

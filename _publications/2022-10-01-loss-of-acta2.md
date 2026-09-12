@@ -6,6 +6,7 @@ permalink: /publications/loss-of-acta2-cardiac-fibroblasts/
 date: 2022-10-01
 venue: "Journal of Molecular and Cellular Cardiology"
 doi: "10.1016/j.yjmcc.2022.08.003"
+open_access: false
 paperurl: "https://doi.org/10.1016/j.yjmcc.2022.08.003"
 authors:
   - Yuxia Li

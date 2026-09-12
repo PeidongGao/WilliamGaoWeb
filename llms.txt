@@ -1,6 +1,20 @@
 # William Peidong Gao
 
-Academic website of William Peidong Gao.
+Academic website of William Peidong Gao, Ph.D. candidate in Genetics at Case Western Reserve University.
+
+Start here:
+- Home: https://williampeidonggao.com/
+- About: https://williampeidonggao.com/about/
+- Research: https://williampeidonggao.com/research/
+- Publications: https://williampeidonggao.com/publications/
+- Curriculum vitae: https://williampeidonggao.com/cv/
+- WillGaoLab resources: https://williampeidonggao.com/resources/
+
+Identity and attribution:
+- ORCID: https://orcid.org/0009-0004-1467-7570
+- Google Scholar: https://scholar.google.com/citations?hl=en&user=j-UnGkAAAAAJ&view_op=list_works
+- GitHub: https://github.com/PeidongGao
+- The academic site and research records belong to William Peidong Gao. WillGaoLab is his public learning and software brand.
 
 Research areas:
 - Bioinformatics

@@ -6,6 +6,7 @@ permalink: /publications/aav-hepatic-necroptosis-carcinoma-pebp1/
 date: 2023-07-10
 venue: "EMBO Molecular Medicine"
 doi: "10.15252/emmm.202217230"
+open_access: true
 paperurl: "https://doi.org/10.15252/emmm.202217230"
 authors:
   - Yalan Cheng

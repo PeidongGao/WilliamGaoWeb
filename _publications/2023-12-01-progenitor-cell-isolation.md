@@ -6,6 +6,7 @@ permalink: /publications/progenitor-cell-isolation-from-mouse-epididymal-adipose
 date: 2023-12-01
 venue: "STAR Protocols"
 doi: "10.1016/j.xpro.2023.102703"
+open_access: true
 paperurl: "https://doi.org/10.1016/j.xpro.2023.102703"
 authors:
   - Qianglin Liu

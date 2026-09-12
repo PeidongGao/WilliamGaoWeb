@@ -3,6 +3,7 @@ permalink: /
 title: "William Peidong Gao"
 author_profile: true
 description: "William Peidong Gao studies why insulin-producing cells fail in diabetes, using single-cell and multi-omics data. Ph.D. candidate in Genetics at Case Western."
+profile_updated: 2026-09-12
 ---
 
 <section class="home-hero">
