@@ -1,5 +1,5 @@
 ---
-title: "Read Paper with Will #001"
+title: "Read Paper with Will #001: A Hormone Cell Atlas"
 layout: read-paper
 permalink: /resources/papers/ReadPaperwithWill_001/
 author_profile: false

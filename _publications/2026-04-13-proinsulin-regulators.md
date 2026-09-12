@@ -6,6 +6,7 @@ permalink: /publications/proinsulin-regulators-identified-with-crispr-screen-and
 date: 2026-04-13
 venue: "Nature Communications"
 doi: "10.1038/s41467-026-71726-z"
+open_access: true
 paperurl: "https://doi.org/10.1038/s41467-026-71726-z"
 authors:
   - Sisi Lai

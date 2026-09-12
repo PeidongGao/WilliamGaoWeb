@@ -54,7 +54,9 @@
   "@type": "ProfilePage",
   "url": "https://williampeidonggao.com",
   "name": "William Peidong Gao",
-  "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+  {%- comment -%}A real profile-edit date, not site.time: that changed on every
+  build, including unrelated market-page updates, and misreports freshness.{%- endcomment -%}
+  {% if page.profile_updated %}"dateModified": "{{ page.profile_updated | date: '%Y-%m-%d' }}",{% endif %}
   "mainEntity": {{ person_schema }}
 }
 </script>
@@ -90,10 +92,16 @@
   "name": {{ page.title | jsonify }},
   "url": "{{ page.url | absolute_url }}",
   "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  {% if page.abstract %}"description": {{ page.abstract | jsonify }},{% endif %}
   "inLanguage": "en",
   "author": [
     {%- for a in page.authors -%}
-    { "@type": "Person", "name": {{ a | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- assign ca = a | replace: " ", "" | downcase -%}
+    {%- if ca == "peidonggao" or ca == "williampeidonggao" -%}
+    { "@type": "Person", "@id": "https://williampeidonggao.com/#person", "name": {{ a | jsonify }}, "url": "https://williampeidonggao.com/" }
+    {%- else -%}
+    { "@type": "Person", "name": {{ a | jsonify }} }
+    {%- endif -%}{% unless forloop.last %},{% endunless %}
     {%- endfor -%}
   ],
   {% if page.venue %}"isPartOf": {
@@ -115,7 +123,9 @@
     { "@type": "PropertyValue", "propertyID": "DOI", "value": {{ page.doi | jsonify }} }
   ],
   "sameAs": "https://doi.org/{{ page.doi }}",{% endif %}
-  "isAccessibleForFree": true,
+  {%- comment -%}Only asserted where verified per paper (Europe PMC / Crossref);
+  omitted entirely when the access status is unknown.{%- endcomment -%}
+  {% unless page.open_access == nil %}"isAccessibleForFree": {{ page.open_access }},{% endunless %}
   "mainEntityOfPage": "{{ page.url | absolute_url }}"
 }
 </script>

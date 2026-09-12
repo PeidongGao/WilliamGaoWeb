@@ -6,6 +6,7 @@ permalink: /publications/heterogeneous-enhancer-states-beta-cell-responses/
 date: 2024-10-30
 venue: "Nature Communications"
 doi: "10.1038/s41467-024-53717-0"
+open_access: true
 paperurl: "https://doi.org/10.1038/s41467-024-53717-0"
 authors:
   - Liu Wang

@@ -66,7 +66,10 @@ layout: default
           {% if page.equal_contrib %}
             <p class="publication-note">* These authors contributed equally.</p>
           {% endif %}
-        {% endif %}    
+        {% endif %}
+        {% if page.collection == 'publications' and page.abstract %}
+          <p class="publication-abstract"><strong>Research summary:</strong> {{ page.abstract }}</p>
+        {% endif %}
         </header>
       {% endunless %}
 
