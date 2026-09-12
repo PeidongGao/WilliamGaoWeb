@@ -1,3 +1,13 @@
+- date: "2026-09-11"
+  summary: "The S&P 500 (+0.59%) and Dow Jones (+0.27%) rose at their recorded openings, while Nasdaq-100 futures were little changed (+0.02%). VIX fell 1.85%, Bitcoin gained 0.10%, and gold declined 0.12%. The 10-year Treasury yield rose 0.22%, the U.S. dollar was nearly unchanged (+0.01%), and WTI crude oil increased 1.80%."
+  key_observation: "The market held up well on September 11 despite stronger expectations for a Fed rate hike, while the possibility of further hikes remained an important issue to watch."
+  market_notes:
+    - "August CPI, released September 11, rose 0.4% month over month and 3.4% year over year, with a 3.9% increase in gasoline prices accounting for more than one-third of the monthly headline increase."
+    - "Core CPI rose 0.3% month over month, up from 0.2% in July, although its annual increase eased to 2.4% from 2.5%, showing that the inflation picture remained mixed."
+    - "Reuters reported that market pricing implied about an 85% probability of a 25-basis-point September Fed rate hike after the CPI release, compared with roughly 67% beforehand."
+    - "Ahead of the September 15–16 Fed meeting, investors were debating whether a potential hike would be an isolated move or the start of a series, with neither outcome confirmed."
+    - "The S&P 500 closed 0.9% higher and the Dow and Nasdaq Composite each gained 1.0%, helped by easing oil prices and CPI near expectations, although all three indexes still finished the week lower."
+
 - date: "2026-09-10"
   summary: "The S&P 500 (-0.55%), Nasdaq-100 futures (-1.05%), and Dow Jones (-0.17%) declined at their recorded openings, with technology showing the largest decline. VIX fell 0.91%, Bitcoin gained 0.30%, and gold declined 1.28%. The 10-year Treasury yield rose 0.91%, the U.S. dollar strengthened 0.33%, and WTI crude oil increased sharply by 8.61%."
   key_observation: "Markets weakened as higher-than-expected producer inflation and another oil-price surge increased expectations of a Fed rate hike and pushed Treasury yields higher."
