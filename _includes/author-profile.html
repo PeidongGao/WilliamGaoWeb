@@ -15,12 +15,17 @@
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | relative_url }}" class="author__avatar" alt="{{ author.name }}">
+      <picture>
+        <source srcset="{{ '/images/profile-avatar.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/images/profile-avatar.jpg' | relative_url }}" class="author__avatar"
+             width="350" height="350" loading="lazy" decoding="async"
+             alt="{{ author.name }}">
+      </picture>
     {% endif %}
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <p class="author__name">{{ author.name }}</p>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>

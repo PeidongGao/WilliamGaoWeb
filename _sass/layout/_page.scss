@@ -216,6 +216,7 @@
 
 .page__share-title {
   margin-bottom: 10px;
+  font-weight: 700;   /* was an <h4>; kept bold after the change to <p> */
   font-size: $type-size-6;
   text-transform: uppercase;
 }

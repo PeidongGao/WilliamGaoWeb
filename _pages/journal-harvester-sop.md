@@ -46,14 +46,14 @@ automated retrieval.
 ## Attribution and Affiliation
 
 This is a WillGaoLab project created and maintained by
-William (Peidong) Gao.
+William Peidong Gao.
 
 - Project website: <https://williampeidonggao.com>
 - Brand: <https://github.com/WillGaoLab>
 - Personal GitHub: <https://github.com/PeidongGao>
 
 ```text
-William (Peidong) Gao
+William Peidong Gao
         |
     WillGaoLab
         |

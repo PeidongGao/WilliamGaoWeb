@@ -184,14 +184,14 @@ in their configured workflow.
 
 ## Attribution and Affiliation
 
-This is a WillGaoLab project created and maintained by William (Peidong) Gao.
+This is a WillGaoLab project created and maintained by William Peidong Gao.
 
 - Project website: <https://williampeidonggao.com>
 - Brand: <https://github.com/WillGaoLab>
 - Personal GitHub: <https://github.com/PeidongGao>
 
 ```text
-William (Peidong) Gao
+William Peidong Gao
         |
     WillGaoLab
         |
@@ -212,7 +212,7 @@ descriptive purposes.
 
 Original code and documentation are released under the
 [MIT License](https://github.com/PeidongGao/MorningBrief/blob/main/LICENSE)
-© 2026 William Gao. The MIT grant covers this project's own source and
+© 2026 William Peidong Gao. The MIT grant covers this project's own source and
 documentation only; it does not extend to third-party content, private
 documents, API outputs, model outputs, datasets, trademarks, logos, product
 names, or other materials referenced by a configured workflow or generated

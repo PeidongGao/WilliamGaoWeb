@@ -129,7 +129,7 @@ One thing worth holding in mind when reading the adipose comparisons: this atlas
 
 <p class="read-paper__ui-label">Cite this commentary as</p>
 
-William (Peidong) Gao. “Reading *A Hormone Cell Atlas*: The Human Endocrine System at Cellular Resolution.” *Read Paper with Will*, no. 001. WillGaoLab. July 26, 2026. <https://williampeidonggao.com/resources/papers/ReadPaperwithWill_001/>
+William Peidong Gao. “Reading *A Hormone Cell Atlas*: The Human Endocrine System at Cellular Resolution.” *Read Paper with Will*, no. 001. WillGaoLab. July 26, 2026. <https://williampeidonggao.com/resources/papers/ReadPaperwithWill_001/>
 
 <p class="read-paper__ui-label">Paper discussed</p>
 

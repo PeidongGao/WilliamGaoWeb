@@ -8,16 +8,16 @@
 {%- if include.featured -%}
 <div class="wg-featured-resource">
   {%- assign newest = items | first -%}
-  {% include resource-card.html item=newest featured=true %}
+  {% include resource-card.html item=newest featured=true level=2 %}
 </div>
 {%- if items.size > 1 -%}
 <div class="wg-card-grid">
-  {%- for it in items offset:1 %}{% include resource-card.html item=it %}{% endfor -%}
+  {%- for it in items offset:1 %}{% include resource-card.html item=it level=2 %}{% endfor -%}
 </div>
 {%- endif -%}
 {%- else -%}
 <div class="wg-card-grid">
-  {%- for it in items %}{% include resource-card.html item=it %}{% endfor -%}
+  {%- for it in items %}{% include resource-card.html item=it level=2 %}{% endfor -%}
 </div>
 {%- endif -%}
 {%- else -%}

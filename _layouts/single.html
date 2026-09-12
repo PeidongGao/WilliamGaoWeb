@@ -45,6 +45,27 @@ layout: default
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+{%- assign is_cofirst = false -%}
+{%- for a in page.equal_contrib -%}
+  {%- assign ca = a | replace: " ", "" | downcase -%}
+  {%- if ca == "peidonggao" or ca == "williampeidonggao" -%}{%- assign is_cofirst = true -%}{%- endif -%}
+{%- endfor -%}
+        {% if page.collection == 'publications' and page.authors %}
+          {% if is_cofirst %}<p class="publication-role"><span class="publication-badge publication-badge--role">Co-first author</span></p>{% endif %}
+          <p class="publication-authors">
+            {% for author in page.authors %}
+              {% assign compact_author = author | replace: " ", "" | downcase %}
+              {% if compact_author == "peidonggao" or compact_author == "williampeidonggao" %}
+                <strong class="publication-self">{{ author }}{% if page.equal_contrib contains author %}<sup aria-hidden="true">*</sup><span class="visually-hidden publication-eq-sr"> (contributed equally)</span>{% endif %}</strong>{% unless forloop.last %}, {% endunless %}
+              {% else %}
+                {{ author }}{% if page.equal_contrib contains author %}<sup aria-hidden="true">*</sup><span class="visually-hidden publication-eq-sr"> (contributed equally)</span>{% endif %}{% unless forloop.last %}, {% endunless %}
+              {% endif %}
+            {% endfor %}
+          </p>
+          {% if page.equal_contrib %}
+            <p class="publication-note">* These authors contributed equally.</p>
+          {% endif %}
         {% endif %}    
         </header>
       {% endunless %}
@@ -78,6 +99,8 @@ layout: default
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.bibtexurl %}
           <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% elsif page.paperurl %}
+          <p style="font-size: smaller"><a href="{{ page.paperurl }}">View paper</a>{% if page.doi %} &middot; DOI: <a href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>{% endif %}</p>
         {% endif %}
         {% endunless %}
 

@@ -5,6 +5,7 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+description: "Curriculum vitae of William Peidong Gao, Ph.D. candidate in Genetics at Case Western Reserve University, covering research, publications, and training."
 ---
 
 {% include base_path %}

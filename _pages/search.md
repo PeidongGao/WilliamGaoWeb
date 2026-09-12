@@ -4,6 +4,8 @@ permalink: /search/
 layout: single
 author_profile: true
 accent: lab
+noindex: true
+sitemap: false
 ---
 
 Search across every note, tool, and publication — or explore the collections below.

@@ -4,6 +4,7 @@ title: "Resources"
 permalink: /resources/
 author_profile: true
 accent: lab
+description: "Free learn-in-public resources from WillGaoLab: plain-language notes on statistics, guides to reading scientific papers, book notes, and hands-on tools."
 ---
 
 The WillGaoLab knowledge base — learning notes and practical tools.

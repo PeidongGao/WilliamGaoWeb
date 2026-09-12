@@ -1,8 +1,9 @@
 {% include base_path %}
 
-<section class="page__share">
+<section class="page__share" aria-labelledby="page-share-label">
   {% if site.data.ui-text[site.locale].share_on_label %}
-    <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
+    {%- comment -%}A widget label, not document structure: a heading here skipped h2/h3 after the page h1.{%- endcomment -%}
+    <p class="page__share-title" id="page-share-label">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</p>
   {% endif %}
 
   <a href="https://bsky.app/intent/compose?text={{ base_path }}{{ page.url }}" class="btn btn--bluesky" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>

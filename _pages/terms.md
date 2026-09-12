@@ -2,6 +2,7 @@
 permalink: /terms/
 title: "Terms and Privacy Policy"
 modified: 2026-05-15
+description: "Privacy policy and terms for williampeidonggao.com, covering what information is collected when you visit and how it is used."
 ---
 
 {% include base_path %}

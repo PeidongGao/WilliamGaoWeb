@@ -3,6 +3,7 @@ layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
+description: "How pancreatic beta cell states and stress responses drive diabetes, studied with single-cell and multi-omics analysis by William Peidong Gao."
 ---
 
 <section class="research-page-hero">
