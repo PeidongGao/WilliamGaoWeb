@@ -1,6 +1,6 @@
-# William Gao
+# William Peidong Gao
 
-Academic website of William (Peidong) Gao.
+Academic website of William Peidong Gao.
 
 Research areas:
 - Bioinformatics

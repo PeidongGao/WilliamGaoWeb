@@ -1,14 +1,16 @@
 {% assign publication = include.publication %}
 {% assign month_day = publication.date | date: "%b %-d" %}
+{%- assign is_cofirst = false -%}
+{%- for a in publication.equal_contrib -%}
+  {%- assign ca = a | replace: " ", "" | downcase -%}
+  {%- if ca == "peidonggao" or ca == "williampeidonggao" -%}{%- assign is_cofirst = true -%}{%- endif -%}
+{%- endfor -%}
 
-<article class="publication-entry">
-  <p class="publication-date">{{ month_day }}</p>
+
+<article class="publication-entry{% if publication.highlight %} publication-entry--highlight{% endif %}">
+  <p class="publication-date">{{ month_day }}{% if publication.highlight %} <span class="publication-badge">Selected work</span>{% endif %}{% if is_cofirst %} <span class="publication-badge publication-badge--role">Co-first author</span>{% endif %}</p>
   <h3 class="publication-title">
-    {% if publication.paperurl %}
-      <a href="{{ publication.paperurl }}">{{ publication.title }}</a>
-    {% else %}
-      {{ publication.title }}
-    {% endif %}
+    <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
   </h3>
 
   {% if publication.authors %}
@@ -16,12 +18,15 @@
       {% for author in publication.authors %}
         {% assign compact_author = author | replace: " ", "" | downcase %}
         {% if compact_author == "peidonggao" or compact_author == "williampeidonggao" %}
-          <strong class="publication-self">{{ author }}</strong>{% unless forloop.last %}, {% endunless %}
+          <strong class="publication-self">{{ author }}{% if publication.equal_contrib contains author %}<sup aria-hidden="true">*</sup><span class="visually-hidden publication-eq-sr"> (contributed equally)</span>{% endif %}</strong>{% unless forloop.last %}, {% endunless %}
         {% else %}
-          {{ author }}{% unless forloop.last %}, {% endunless %}
+          {{ author }}{% if publication.equal_contrib contains author %}<sup aria-hidden="true">*</sup><span class="visually-hidden publication-eq-sr"> (contributed equally)</span>{% endif %}{% unless forloop.last %}, {% endunless %}
         {% endif %}
       {% endfor %}
     </p>
+    {% if publication.equal_contrib %}
+      <p class="publication-note">* These authors contributed equally.</p>
+    {% endif %}
   {% endif %}
 
   <p class="publication-meta">

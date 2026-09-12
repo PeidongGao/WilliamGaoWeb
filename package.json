@@ -1,7 +1,7 @@
 {
   "name": "william-gao-web",
   "version": "0.8.1.1",
-  "description": "Asset build scripts for William Gao's personal academic website",
+  "description": "Asset build scripts for William Peidong Gao's personal academic website",
   "repository": {
     "type": "git",
     "url": "https://github.com/PeidongGao/WilliamGaoWeb"
@@ -33,6 +33,8 @@
   "scripts": {
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/magnific-popup/dist/jquery.magnific-popup.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+    "build:js": "npm run uglify",
+    "build": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll build",
+    "serve": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll serve --config _config.yml,_config.dev.yml"
   }
 }

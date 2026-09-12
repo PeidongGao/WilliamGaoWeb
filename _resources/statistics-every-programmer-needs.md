@@ -10,7 +10,7 @@ status: published
 summary: "A practical, growing set of notes on the statistics and probability programmers and computational researchers use most."
 ---
 
-William Gao
+William Peidong Gao
 
 Ph.D. candidate in Genetics at Case Western Reserve University.
 

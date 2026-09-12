@@ -5,9 +5,10 @@ layout: single
 author_profile: true
 redirect_from:
   - /about.html
+description: "About William Peidong Gao: Ph.D. candidate in Genetics at Case Western Reserve University, working across genetics, computational biology, and disease biology."
 ---
 
-William (Peidong) Gao is a Ph.D. candidate in Genetics at Case Western Reserve University.
+William Peidong Gao is a Ph.D. candidate in Genetics at Case Western Reserve University.
 
 ## Academic Background
 
@@ -30,4 +31,4 @@ My training combines computational genomics with wet-lab experience in molecular
 
 WillGaoLab is my public learning archive for statistics, papers, books, and scientific learning. I built it to make learning visible, reusable, and cumulative.
 
-William Gao provides the academic credibility behind the work. WillGaoLab carries the long-term content assets.
+William Peidong Gao provides the academic credibility behind the work. WillGaoLab carries the long-term content assets.

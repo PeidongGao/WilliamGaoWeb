@@ -121,6 +121,7 @@
 
 .author__name {
   margin: 0;
+  font-weight: 700;   /* was an <h3>; kept bold after the change to <p> for heading order */
 
   @include breakpoint($large) {
     margin-top: 10px;

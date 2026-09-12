@@ -5,22 +5,22 @@
    and dark. Component SCSS should reference these tokens — never raw hex.
 
    Identity mapping:
-     --brand  = William Gao (academic)  -> teal
+     --brand  = William Peidong Gao (academic)  -> teal
      --lab    = WillGaoLab (builder)     -> coral
    ========================================================================== */
 
 :root {
-  /* Brand — William Gao (academic) */
+  /* Brand — William Peidong Gao (academic) */
   --brand:            #2f7f93;
   --brand-hover:      #24606f;
   --brand-contrast:   #ffffff;   /* text on a solid brand fill */
   --brand-tint:       rgba(47, 127, 147, 0.08);
 
   /* Sub-brand — WillGaoLab (builder) */
-  --lab:              #d55d4c;
-  --lab-hover:        #b8472f;
+  --lab:              #b8472f;   /* WCAG AA 5.28:1 on white (was #d55d4c, 3.82:1) */
+  --lab-hover:        #8f3624;   /* darker for hover state */
   --lab-contrast:     #ffffff;
-  --lab-tint:         rgba(213, 93, 76, 0.08);
+  --lab-tint:         rgba(184, 71, 47, 0.08);
 
   /* Surfaces / neutrals (light) */
   --color-bg:         #ffffff;

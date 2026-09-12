@@ -143,7 +143,7 @@ trading advice.
 ## Attribution and Affiliation
 
 Daily Market Tracker is an independent open-source project developed and
-maintained by William (Peidong) Gao under WillGaoLab.
+maintained by William Peidong Gao under WillGaoLab.
 
 - Project website: <https://williampeidonggao.com>
 - Brand: <https://github.com/WillGaoLab>
@@ -161,6 +161,6 @@ used solely for identification and descriptive purposes.
 
 Original code and documentation are released under the
 [MIT License](https://github.com/PeidongGao/Daily_Market_Tracker/blob/main/LICENSE)
-© 2026 William Gao. The MIT grant covers this project's own source and
+© 2026 William Peidong Gao. The MIT grant covers this project's own source and
 documentation only; it does not extend to Yahoo Finance or exchange-provided
 data, trademarks, or other third-party materials.

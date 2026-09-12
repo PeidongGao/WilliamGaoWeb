@@ -14,17 +14,22 @@
 <meta name="theme-color" content="#ffffff"/>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
-<!-- Person schema for AI and search discoverability -->
-<script type="application/ld+json">
+<!-- Identity graph: Person, wrapped in ProfilePage on the homepage. -->
+{%- capture person_schema -%}
 {
-  "@context": "https://schema.org",
   "@type": "Person",
-  "name": "William (Peidong) Gao",
-  "alternateName": ["Peidong Gao", "William Gao"],
+  "@id": "https://williampeidonggao.com/#person",
+  "name": "William Peidong Gao",
+  "alternateName": ["Peidong Gao", "William Gao", "William (Peidong) Gao"],
   "url": "https://williampeidonggao.com",
-  "image": "https://williampeidonggao.com/images/profile.2.png",
+  "image": "https://williampeidonggao.com/images/profile-hero.jpg",
+  "description": {{ site.description | jsonify }},
   "jobTitle": "Ph.D. Candidate in Genetics",
   "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Case Western Reserve University"
+  },
+  "alumniOf": {
     "@type": "CollegeOrUniversity",
     "name": "Case Western Reserve University"
   },
@@ -40,25 +45,81 @@
     "Reproducible computational workflows"
   ]
 }
+{%- endcapture -%}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://williampeidonggao.com",
+  "name": "William Peidong Gao",
+  "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+  "mainEntity": {{ person_schema }}
+}
 </script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {{ person_schema | remove_first: "{" }}
+</script>
+{% endif %}
 
 <!-- WebSite schema for site-level AI and search discoverability -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "William Gao",
-  "alternateName": "William (Peidong) Gao Academic Website",
+  "name": "William Peidong Gao",
+  "alternateName": "William Peidong Gao Academic Website",
   "url": "https://williampeidonggao.com",
   "description": {{ site.description | jsonify }},
-  "publisher": {
-    "@type": "Person",
-    "name": "William (Peidong) Gao",
-    "url": "https://williampeidonggao.com"
-  },
+  "publisher": { "@id": "https://williampeidonggao.com/#person" },
   "inLanguage": "en-US"
 }
 </script>
+
+<!-- ScholarlyArticle schema on individual publication pages -->
+{% if page.collection == "publications" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ page.title | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "inLanguage": "en",
+  "author": [
+    {%- for a in page.authors -%}
+    { "@type": "Person", "name": {{ a | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ],
+  {% if page.venue %}"isPartOf": {
+    {%- if page.issue %}"@type": "PublicationIssue",
+    "issueNumber": {{ page.issue | jsonify }},
+    "isPartOf": {
+      {%- if page.volume %}"@type": "PublicationVolume",
+      "volumeNumber": {{ page.volume | jsonify }},
+      "isPartOf": { "@type": "Periodical", "name": {{ page.venue | jsonify }} }
+      {%- else %}"@type": "Periodical", "name": {{ page.venue | jsonify }}
+      {%- endif %}
+    }
+    {%- else %}"@type": "Periodical", "name": {{ page.venue | jsonify }}
+    {%- endif %}
+  },{% endif %}
+  {% if page.pages %}"pagination": {{ page.pages | jsonify }},{% endif %}
+  {% if page.license %}"license": {{ page.license | jsonify }},{% endif %}
+  {% if page.doi %}"identifier": [
+    { "@type": "PropertyValue", "propertyID": "DOI", "value": {{ page.doi | jsonify }} }
+  ],
+  "sameAs": "https://doi.org/{{ page.doi }}",{% endif %}
+  "isAccessibleForFree": true,
+  "mainEntityOfPage": "{{ page.url | absolute_url }}"
+}
+</script>
+{% endif %}
 
 <!-- Preload the primary self-hosted fonts for faster first paint -->
 <link rel="preload" href="{{ base_path }}/assets/fonts/inter-normal.woff2" as="font" type="font/woff2" crossorigin>

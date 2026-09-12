@@ -4,6 +4,7 @@ permalink: /willgaolab/
 layout: single
 author_profile: true
 accent: lab
+description: "WillGaoLab is where William Peidong Gao learns in public: videos on YouTube, writing on Substack, and open-source code and tools on GitHub."
 ---
 
 ## Learning

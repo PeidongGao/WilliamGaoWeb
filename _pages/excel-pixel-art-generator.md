@@ -16,11 +16,16 @@ summary: "Turn any image into an Excel paint-by-number workbook or material-matc
     <p class="home-kicker">Tool / Excel / Paint-by-number</p>
     <h2>Excel Pixel Art Generator</h2>
     <p class="home-hero__lead">Upload an image and independently generate a Digital Excel paint-by-number workbook or Physical production outputs with material palettes, validated poster splitting, sharp vector printable pages, and color masks.</p>
-    <p>Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao.</p>
+    <p>Excel Pixel Art Generator is a WillGaoLab product made by William Peidong Gao.</p>
     <p class="wg-actions">{% include button.html href="https://excelpixelartgenerator-8tq4k2vmpkxskubnxzrxeo.streamlit.app/" text="Launch the app" accent="lab" external=true %}</p>
   </div>
   <figure class="home-hero__media">
-    <img src="{{ '/images/excel-pixel-art-wave.jpg' | relative_url }}" alt="Under the Wave off Kanagawa demo image">
+    <picture>
+      <source srcset="{{ '/images/excel-pixel-art-wave.webp' | relative_url }}" type="image/webp">
+      <img src="{{ '/images/excel-pixel-art-wave.jpg' | relative_url }}"
+           width="1200" height="830" fetchpriority="high" decoding="async"
+           alt="Under the Wave off Kanagawa, used as a demo input image">
+    </picture>
   </figure>
 </section>
 
@@ -86,13 +91,13 @@ Physical material colors are screen approximations. Actual LEGO plastic and acry
 
 ### Print Mode and Material Palette Disclaimer
 
-Brand and product names are provided only as unaffiliated references. WillGaoLab and William (Peidong) Gao are not sponsored, endorsed, authorized by, or associated with any brand, manufacturer, retailer, or product listed in Print Mode or Material Palette.
+Brand and product names are provided only as unaffiliated references. WillGaoLab and William Peidong Gao are not sponsored, endorsed, authorized by, or associated with any brand, manufacturer, retailer, or product listed in Print Mode or Material Palette.
 
 Material palette matches, color names, screen colors, quantities, poster layouts, masks, and other generated recommendations are estimates and may be inaccurate, incomplete, unavailable, or unsuitable for a user's intended project.
 
 Users must independently verify colors, dimensions, quantities, availability, compatibility, safety, costs, licensing, and all other requirements before purchasing materials, printing, assembling, or producing an output. All purchasing, printing, material selection, assembly, and production decisions are made entirely at the user's own risk and judgment.
 
-To the maximum extent permitted by law, WillGaoLab and William (Peidong) Gao accept no responsibility or liability for purchases, expenses, losses, waste, incorrect colors, inaccurate quantities, print errors, failed projects, injuries, damages, or any other consequences arising from Print Mode, Material Palette, or generated outputs.
+To the maximum extent permitted by law, WillGaoLab and William Peidong Gao accept no responsibility or liability for purchases, expenses, losses, waste, incorrect colors, inaccurate quantities, print errors, failed projects, injuries, damages, or any other consequences arising from Print Mode, Material Palette, or generated outputs.
 
 ## Run Locally
 
@@ -133,7 +138,12 @@ Both examples use A4 landscape paper setup. Higher resolution and more indexed c
 | Landscape photo | [80 x 56 / 16 colors](https://github.com/PeidongGao/excel-pixel-art-generator/raw/main/demos/landscape_a4_080x056_016colors.xlsx) | [160 x 113 / 64 colors](https://github.com/PeidongGao/excel-pixel-art-generator/raw/main/demos/landscape_a4_160x113_064colors.xlsx) | [240 x 170 / 256 colors](https://github.com/PeidongGao/excel-pixel-art-generator/raw/main/demos/landscape_a4_240x170_256colors.xlsx) |
 
 <figure>
-  <img src="{{ '/images/excel-pixel-art-landscape.jpg' | relative_url }}" alt="Landscape photo used as an Excel Pixel Art Generator demo">
+  <picture>
+    <source srcset="{{ '/images/excel-pixel-art-landscape.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/images/excel-pixel-art-landscape.jpg' | relative_url }}"
+         width="1600" height="1200" loading="lazy" decoding="async"
+         alt="Landscape photo used as an Excel Pixel Art Generator demo input">
+  </picture>
   <figcaption>Landscape photo demo input.</figcaption>
 </figure>
 
@@ -143,7 +153,7 @@ The Great Wave sample image is sourced from [The Art Institute of Chicago collec
 
 ## Personal Use and Legal Notice
 
-Excel Pixel Art Generator is a WillGaoLab product made by William (Peidong) Gao. The WillGaoLab name, project identity, documentation, source code organization, and product presentation are maintained by William (Peidong) Gao unless otherwise stated.
+Excel Pixel Art Generator is a WillGaoLab product made by William Peidong Gao. The WillGaoLab name, project identity, documentation, source code organization, and product presentation are maintained by William Peidong Gao unless otherwise stated.
 
 The hosted Streamlit app uses Microsoft Clarity to process usage and technical analytics data. Microsoft Clarity and Streamlit Community Cloud may process data under their own terms and privacy policies.
 

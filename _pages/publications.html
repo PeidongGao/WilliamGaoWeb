@@ -3,6 +3,7 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+description: "Peer-reviewed publications by William Peidong Gao on single-cell genomics, gene regulation, and metabolic disease, including work in Nature Communications."
 ---
 
 {% include base_path %}
@@ -22,6 +23,21 @@ author_profile: true
 
 {% if publications.size == 0 %}
   <p>Publication records will be added here.</p>
+{% endif %}
+
+{%- comment -%}
+  Selected work is surfaced first so a reader (or a retrieval system) meets the
+  most important papers without scanning the full chronological list. Each entry
+  still appears again below, in date order, so the record stays complete.
+{%- endcomment -%}
+{%- assign selected = publications | where: "highlight", true -%}
+{% if selected.size > 0 %}
+  <section class="publication-selected" aria-labelledby="selected-work">
+    <h2 class="publication-year" id="selected-work">Selected work</h2>
+    {% for publication in selected %}
+      {% include publication-item.html publication=publication %}
+    {% endfor %}
+  </section>
 {% endif %}
 
 {% assign current_year = "" %}

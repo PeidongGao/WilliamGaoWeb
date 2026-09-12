@@ -1,0 +1,9 @@
+# Local development overrides.
+#
+# _config.yml hardcodes `url` to the production domain, and _includes/base_path
+# builds every asset URL from it — so a local preview would otherwise load the
+# LIVE stylesheet and never show local CSS changes. Blanking `url` makes those
+# references relative to whatever host is serving.
+#
+# Used automatically by `npm run serve`.
+url: ""

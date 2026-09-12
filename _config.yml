@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "William Gao"
+title                    : "William Peidong Gao"
 title_separator          : "-"
-name                     : &name "William (Peidong) Gao"
-description              : &description "William (Peidong) Gao is a Ph.D. candidate in Genetics at Case Western Reserve University working on bioinformatics, multi-omics, human islet biology, and diabetes."
+name                     : &name "William Peidong Gao"
+description              : &description "William Peidong Gao is a Ph.D. candidate in Genetics at Case Western Reserve University working on bioinformatics, multi-omics, human islet biology, and diabetes."
 url                      : "https://williampeidonggao.com" # the base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "PeidongGao/WilliamGaoWeb"
@@ -21,8 +21,8 @@ repository               : "PeidongGao/WilliamGaoWeb"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  avatar     : "profile.png"
-  name       : "William (Peidong) Gao"
+  avatar     : "profile-avatar.jpg"
+  name       : "William Peidong Gao"
   pronouns   :
   bio: >
     Ph.D. candidate in Genetics at Case Western Reserve University. I work on bioinformatics, multi-omics, human islet biology, and diabetes.
@@ -140,13 +140,13 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "profile-hero.jpg"  # Social media default site image
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : Person
-  name                   : "William (Peidong) Gao"
+  name                   : "William Peidong Gao"
   links:
     - "https://orcid.org/0009-0004-1467-7570"
     - "https://scholar.google.com/citations?hl=en&user=j-UnGkAAAAAJ&view_op=list_works"

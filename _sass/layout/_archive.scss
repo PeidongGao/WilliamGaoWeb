@@ -101,6 +101,51 @@
   font-weight: bold;
 }
 
+/* Screen readers announce this, but it must not land in a copied citation. */
+.publication-eq-sr {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Equal-contribution footnote under an author list. */
+.publication-note {
+  margin: 0.15em 0 0;
+  color: var(--color-text-muted);
+  font-size: $type-size-6;
+}
+
+/* "Selected work" marker on highlighted publications. */
+.publication-role {
+  margin: 0 0 0.35em;
+}
+
+.publication-badge {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0.1em 0.5em;
+  border-radius: var(--radius-pill);
+  background: var(--accent-tint);
+  color: var(--accent-hover);   /* 6.39:1 on the tint; --accent was 4.16:1 */
+  font-size: $type-size-7;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/* "Co-first author" reads as a role, so it uses the sub-brand colour.
+   Must come after .publication-badge: same specificity, source order decides. */
+.publication-badge--role {
+  margin-left: 0.4em;
+  background: var(--lab-tint);
+  color: var(--lab-hover);   /* 6.88:1 on the lab tint */
+}
+
+.publication-entry--highlight {
+  padding-left: 0.9em;
+  border-left: 3px solid var(--accent);
+}
+
 .home-hero {
   display: grid;
   gap: 1.5rem;

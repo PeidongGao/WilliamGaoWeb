@@ -1,4 +1,4 @@
-# William Gao
+# William Peidong Gao
 
 This repository contains the source code for my personal academic website:
 
@@ -8,7 +8,7 @@ I use this site to keep a public record of my research interests, publications, 
 
 ## About
 
-I am William (Peidong) Gao, a Ph.D. candidate in Genetics at Case Western Reserve University. My work focuses on bioinformatics, multi-omics analysis, human islet cells, and diabetes.
+I am William Peidong Gao, a Ph.D. candidate in Genetics at Case Western Reserve University. My work focuses on bioinformatics, multi-omics analysis, human islet cells, and diabetes.
 
 ## Local Development
 
