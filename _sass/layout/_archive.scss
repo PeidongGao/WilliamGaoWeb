@@ -108,6 +108,18 @@
 }
 
 /* Equal-contribution footnote under an author list. */
+/* One-line lead under the citation: the point of the paper, before any scrolling. */
+.publication-lead {
+  margin: 0.8em 0 0.4em;
+  font-size: var(--fs-lead);
+  line-height: 1.5;
+}
+
+.publication-links {
+  margin: 0 0 0.4em;
+  font-size: $type-size-6;
+}
+
 .publication-note {
   margin: 0.15em 0 0;
   color: var(--color-text-muted);
