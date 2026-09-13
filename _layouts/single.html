@@ -67,20 +67,22 @@ layout: default
             <p class="publication-note">* These authors contributed equally.</p>
           {% endif %}
         {% endif %}
+        {%- comment -%}
+          Lead line and paper link sit directly under the citation: a visitor should
+          get the point and a route to the paper without scrolling.
+        {%- endcomment -%}
+        {% if page.collection == 'publications' %}
+          {% if page.summary %}<p class="publication-lead">{{ page.summary }}</p>{% endif %}
+          {% if page.paperurl %}
+            <p class="publication-links"><a href="{{ page.paperurl }}">Read the paper</a>{% if page.doi %} &middot; <a href="https://doi.org/{{ page.doi }}">DOI: {{ page.doi }}</a>{% endif %}</p>
+          {% endif %}
+        {% endif %}
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {%- comment -%}
-          The technical abstract sits after the plain-language explanation on
-          purpose: general readers and passage-retrieval both meet the readable
-          version first, while specialists still get the precise wording.
-        {%- endcomment -%}
-        {% if page.collection == 'publications' and page.abstract %}
-          <p class="publication-abstract"><strong>Technical abstract:</strong> {{ page.abstract }}</p>
-        {% endif %}
 
         {% comment %}read-paper posts render their own citation block in the article footer.{% endcomment %}
         {% unless page.layout == 'read-paper' %}
@@ -108,7 +110,7 @@ layout: default
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.bibtexurl %}
           <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
-        {% elsif page.paperurl %}
+        {% elsif page.paperurl and page.collection != 'publications' %}
           <p style="font-size: smaller"><a href="{{ page.paperurl }}">View paper</a>{% if page.doi %} &middot; DOI: <a href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>{% endif %}</p>
         {% endif %}
         {% endunless %}

@@ -38,20 +38,20 @@ authors:
   - Xing Fu
 ---
 
-## What this study asked
+## The Question
 
-Marbling is the fat that forms inside a muscle rather than around it. It decides how good a steak tastes. The same kind of fat builds up in human muscle disease, and nobody knew much about how it forms.
+Intramuscular fat (IMF) and intramuscular connective tissue (IMC) are major determinants of beef quality, and both accumulate in human myopathies and during aging. Their regulation in large mammals remained poorly understood.
 
-So we asked two questions. Can beef cattle serve as a model for studying it? And which cells decide whether a muscle fills with fat or with tough connective tissue?
+**Can beef cattle serve as a model for IMF and IMC accumulation, and which cells determine the balance between the two?**
 
-## What we found
+## What the study showed
 
-We read the genes of 32,708 single muscle cells from three cattle breeds: Wagyu, which marbles heavily; Brahman, which builds connective tissue instead; and a cross of the two. That gave us 21 distinct cell types.
+Single-cell RNA sequencing of 32,708 cells from Wagyu (high IMF), Brahman (abundant IMC but scarce IMF), and Wagyu/Brahman crossbred calves resolved 21 cell types.
 
-One family of cells makes the choice. These are progenitor cells — young cells that have not yet settled on what to become. The same cell can turn into fat, or into connective tissue.
+Bovine FAPs are a heterogeneous population. Sub-clustering identified an adipogenic subpopulation enriched for *COL4A1* and *CFD* in the endomysium, and a fibrogenic subpopulation enriched for *COL1A1* and *POSTN* in the perimysium, both arising from a shared unspecified progenitor. Wagyu FAPs showed more advanced adipogenic programming and Brahman FAPs more advanced fibrogenic programming, consistent with each breed.
 
-Inside that family we found a smaller group marked by two genes, **COL4A1** and **CFD**. We then showed that CFD predicts how much fat a muscle will gain. The signal holds in people too, not just in cattle.
+Integrated analysis with published human and non-human primate datasets identified *CFD* as a regulator common to both species. It predicted adult IMF from young cattle (R² = 0.885) and was elevated in aged humans with metabolic syndrome and in patients with Duchenne muscular dystrophy.
 
-## My contribution
+## My role
 
-I am a **co-first author** on this study. The journal records that Leshan Wang, Peidong Gao, and Chaoyang Li contributed equally to the work.
+I performed all of the single-cell analysis, from raw data to the reported results: atlas construction and cell-type annotation, the FAP sub-population and trajectory analysis, and the cross-species integration.
