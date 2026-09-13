@@ -222,7 +222,21 @@ async function handle(request) {
       return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
     };
 
-    if (!wantsMarkdown(request)) return withVary(response);
+    // Advertise the Markdown representation in a Link header so an agent can
+    // discover it without having to guess that content negotiation is offered.
+    const withAlternate = (res) => {
+      const type = res.headers.get('Content-Type') || '';
+      if (!res.ok || !type.includes('text/html')) return res;
+      const h = new Headers(res.headers);
+      const self = new URL(request.url);
+      self.search = '';
+      const link = '<' + self.toString() + '>; rel="alternate"; type="text/markdown"';
+      const prev = h.get('Link');
+      h.set('Link', prev ? prev + ', ' + link : link);
+      return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
+    };
+
+    if (!wantsMarkdown(request)) return withAlternate(withVary(response));
 
     const type = response.headers.get('Content-Type') || '';
     if (!response.ok || !type.includes('text/html')) return withVary(response);
