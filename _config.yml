@@ -168,6 +168,8 @@ include:
   - _pages
   - files
 exclude:
+  - .mcp.json
+  - workers
   - "*.sublime-project"
   - "*.sublime-workspace"
   - DESIGN_UPGRADE_PLAN.md
