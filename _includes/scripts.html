@@ -32,7 +32,13 @@
   }
 
   function placeTab() {
-    btn.style.left = hidden() ? '0px' : ((shownRight || 0) + 'px');
+    /* Centre the tab on the sidebar's right edge rather than starting it there.
+       Anchoring its left edge to that boundary pushed the 22px tab into the
+       content column, leaving only ~10px before the first characters of the
+       page text (e.g. the "Ph.D. candidate in Genetics" kicker), which the tab
+       could cover at some widths and zoom levels. */
+    var half = Math.round((btn.offsetWidth || 22) / 2);
+    btn.style.left = hidden() ? '0px' : (Math.max(0, (shownRight || 0) - half) + 'px');
   }
 
   function sync() {
