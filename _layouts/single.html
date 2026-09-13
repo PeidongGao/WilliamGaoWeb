@@ -72,7 +72,6 @@ layout: default
           get the point and a route to the paper without scrolling.
         {%- endcomment -%}
         {% if page.collection == 'publications' %}
-          {% if page.summary %}<p class="publication-lead">{{ page.summary }}</p>{% endif %}
           {% if page.paperurl %}
             <p class="publication-links"><a href="{{ page.paperurl }}">Read the paper</a>{% if page.doi %} &middot; <a href="https://doi.org/{{ page.doi }}">DOI: {{ page.doi }}</a>{% endif %}</p>
           {% endif %}
