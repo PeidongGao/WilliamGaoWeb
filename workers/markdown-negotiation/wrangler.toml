@@ -1,0 +1,12 @@
+name = "markdown-negotiation"
+main = "worker.js"
+compatibility_date = "2026-09-12"
+
+# Runs in front of the whole site. The Worker passes every request through
+# untouched unless the client sent `Accept: text/markdown`.
+[[routes]]
+pattern = "williampeidonggao.com/*"
+zone_name = "williampeidonggao.com"
+
+[observability]
+enabled = true
