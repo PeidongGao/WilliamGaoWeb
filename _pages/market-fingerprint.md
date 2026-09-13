@@ -37,19 +37,6 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 <p>Commentary is not yet published.</p>
 {% endif %}
 
-{% if latest_commentary %}
-<section id="report-{{ latest_commentary.date }}" aria-labelledby="report-{{ latest_commentary.date }}-title">
-  <h2 id="report-{{ latest_commentary.date }}-title">Dated report: {{ latest_commentary.date | date: "%B %-d, %Y" }}</h2>
-  <p><strong>Summary:</strong> {{ latest_commentary.summary | escape }}</p>
-  <p><strong>Key observation:</strong> {{ latest_commentary.key_observation | escape }}</p>
-  <h3>Market notes</h3>
-  <ol>
-    {% for note in latest_commentary.market_notes %}<li>{{ note | escape }}</li>{% endfor %}
-  </ol>
-  <p><a href="{{ '/resources/daily-market-tracker/' | relative_url }}">Method and source: Daily Market Tracker</a></p>
-</section>
-{% endif %}
-
 <p class="wg-market-remote-state" data-market-remote-state role="status" aria-live="polite">Latest Tracker data will load when JavaScript is available.</p>
 
 <figure class="wg-market-fingerprint-image" data-market-figure hidden>
