@@ -34,6 +34,7 @@ Search across every note, tool, and publication — or explore the collections b
   <section class="home-section" aria-label="Browse market">
     <h2 class="home-section__title">Browse market</h2>
     <div class="wg-card-grid">
+      {% include card.html href="/market-fingerprint/" accent="lab" eyebrow="Daily Market" title="Market Fingerprint" desc="A daily overnight read on equities, risk, and macro conditions before the U.S. open." cta="View latest" %}
       {% include card.html href="/follow-the-market-with-will/" accent="lab" eyebrow="Weekly Market" title="Follow the Market with Will" desc="Weekly observations for VOO, QQQ, and SMH." cta="View latest" %}
     </div>
   </section>
