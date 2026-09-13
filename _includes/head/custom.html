@@ -56,7 +56,12 @@
   "name": "William Peidong Gao",
   {%- comment -%}A real profile-edit date, not site.time: that changed on every
   build, including unrelated market-page updates, and misreports freshness.{%- endcomment -%}
-  {% if page.profile_updated %}"dateModified": "{{ page.profile_updated | date: '%Y-%m-%d' }}",{% endif %}
+  {%- comment -%}
+    Google requires a full ISO 8601 datetime with timezone here, not a bare
+    date: "2026-09-12" is reported as "Invalid datetime value for dateModified".
+    date_to_xmlschema emits 2026-09-12T00:00:00+00:00.
+  {%- endcomment -%}
+  {% if page.profile_updated %}"dateModified": "{{ page.profile_updated | date_to_xmlschema }}",{% endif %}
   "mainEntity": {{ person_schema }}
 }
 </script>
