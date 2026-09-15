@@ -1,3 +1,13 @@
+- date: "2026-09-14"
+  summary: "The S&P 500 opened 0.59% lower, while Nasdaq-100 futures (+0.35%) and the Dow Jones (+0.34%) moved higher at their recorded openings. VIX jumped 10.48%, Bitcoin declined 0.19%, and gold fell 1.56%. The 10-year Treasury yield edged up 0.08%, the U.S. dollar strengthened 0.36%, and WTI crude oil increased 1.96%."
+  key_observation: "AI and semiconductor stocks weakened across Japan, South Korea, China, and the United States, although the declines in broader market indexes were generally more modest and some indexes remained positive."
+  market_notes:
+    - "Warnings from leading AI executives about the pace and safety of advanced-model development triggered a global reassessment of AI-related stocks."
+    - "South Korea experienced the sharpest broad-market decline, with the Kospi falling 3.26% as Samsung Electronics lost 4.05% and SK Hynix declined 6.35%."
+    - "Japan's Nikkei fell 0.81% as SoftBank dropped 10.72% and Kioxia declined 6.37%, while the broader Topix gained 0.74%, showing that the weakness was concentrated in AI and semiconductor names."
+    - "Mainland China's Shanghai Composite slipped 0.07% and the CSI 300 fell 0.67%, while the CSI AI and semiconductor indexes declined 1.9% and 1.4%; Hong Kong's Hang Seng nevertheless gained 0.45%."
+    - "In the United States, the S&P 500 closed 0.48% lower, the Nasdaq Composite fell 0.56%, and the Dow declined 0.29% as Nvidia and other chipmakers weakened, while higher oil prices and a brief move above 5% in the 10-year Treasury yield added pressure."
+
 - date: "2026-09-11"
   summary: "The S&P 500 (+0.59%) and Dow Jones (+0.27%) rose at their recorded openings, while Nasdaq-100 futures were little changed (+0.02%). VIX fell 1.85%, Bitcoin gained 0.10%, and gold declined 0.12%. The 10-year Treasury yield rose 0.22%, the U.S. dollar was nearly unchanged (+0.01%), and WTI crude oil increased 1.80%."
   key_observation: "The market held up well on September 11 despite stronger expectations for a Fed rate hike, while the possibility of further hikes remained an important issue to watch."
