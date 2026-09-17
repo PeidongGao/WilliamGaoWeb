@@ -1,3 +1,13 @@
+- date: "2026-09-16"
+  summary: "The S&P 500 (+0.20%), Nasdaq-100 futures (+1.09%), and Dow Jones (+0.04%) rose at their recorded openings. VIX declined 1.69%, Bitcoin gained 0.21%, and gold fell 0.72%. The 10-year Treasury yield declined 0.34%, the U.S. dollar strengthened 0.62%, and WTI crude oil fell 3.45%."
+  key_observation: "Markets opened higher ahead of the expected 25-basis-point Fed rate increase but reversed after the meeting as the Fed emphasized persistent inflation and indicated that another increase could follow this year."
+  market_notes:
+    - "The FOMC voted unanimously to raise the federal-funds target range by 25 basis points to 3.75%–4.00%, its first rate increase since 2023, while describing economic activity as solid and inflation as elevated."
+    - "The median year-end federal-funds-rate projection increased to 4.1% from 3.8% in June, implying another quarter-point increase could occur before year-end if the economy and inflation remain strong."
+    - "August retail sales rose 1.2% from July, above the 0.7% FactSet consensus, reinforcing the Fed's assessment that domestic spending remains resilient."
+    - "Stocks retained modest gains immediately after the decision but weakened during Chair Kevin Warsh's press conference; the S&P 500 closed 0.4% lower, the Dow fell 1.2%, and the Nasdaq Composite was nearly unchanged."
+    - "Through Wednesday, the S&P 500 was down 1.4% for the week, the Dow 2.1%, and the Nasdaq Composite 1.3% as investors contended with the expected rate increase, elevated Treasury yields, and oil-driven inflation and geopolitical risks."
+
 - date: "2026-09-15"
   summary: "The S&P 500 (-0.10%) and Dow Jones (-0.23%) edged lower at their recorded openings, while Nasdaq-100 futures rose 0.38%. VIX increased 2.75%, Bitcoin gained 0.17%, and gold declined 0.42%. The 10-year Treasury yield rose 0.99%, the U.S. dollar strengthened 0.24%, and WTI crude oil increased sharply by 4.03%."
   key_observation: "Markets faced increasing pressure from geopolitical and oil-supply risks, Treasury yields above 5%, and expectations for a Federal Reserve rate increase, while U.S. and European political developments added secondary uncertainty."
