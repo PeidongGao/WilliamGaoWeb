@@ -1,3 +1,13 @@
+- date: "2026-09-17"
+  summary: "The S&P 500 (+1.05%), Nasdaq-100 futures (+2.62%), and Dow Jones (+0.82%) rose strongly at their recorded openings. VIX fell 9.49%, while Bitcoin was nearly unchanged (-0.01%) and gold edged down 0.13%. The 10-year Treasury yield declined 1.06%, the U.S. dollar slipped 0.07%, and WTI crude oil fell 1.34%."
+  key_observation: "Markets staged a broad post-FOMC relief rebound led by technology and AI-related stocks as falling oil prices and Treasury yields eased inflation and valuation pressure."
+  market_notes:
+    - "The S&P 500 closed 1.1% higher, the Dow gained 0.6%, and the Nasdaq Composite advanced 1.7%, while nine of the S&P 500's 11 sectors rose and advancing stocks outnumbered decliners by roughly three to one on both the NYSE and Nasdaq."
+    - "Technology gained approximately 2.2% and the semiconductor index rose about 3%, with Nvidia advancing 2.5% and AMD jumping 6.4% as AI-related stocks continued to recover from Monday's global decline."
+    - "Brent crude fell 1% to $104.82 per barrel and the 10-year Treasury yield declined to 4.93% from 5.01%, reducing immediate inflation concerns and easing valuation pressure on growth stocks."
+    - "The widely expected 25-basis-point Fed increase removed an important source of uncertainty and supported a relief rebound, although the Fed's projected policy path still indicated that another increase could occur this year."
+    - "Initial unemployment claims fell to 196,000, the lowest since mid-July, while the Philadelphia Fed manufacturing index remained expansionary at 37.8, reinforcing evidence that the economy remains resilient despite higher interest rates."
+
 - date: "2026-09-16"
   summary: "The S&P 500 (+0.20%), Nasdaq-100 futures (+1.09%), and Dow Jones (+0.04%) rose at their recorded openings. VIX declined 1.69%, Bitcoin gained 0.21%, and gold fell 0.72%. The 10-year Treasury yield declined 0.34%, the U.S. dollar strengthened 0.62%, and WTI crude oil fell 3.45%."
   key_observation: "Markets opened higher ahead of the expected 25-basis-point Fed rate increase but reversed after the meeting as the Fed emphasized persistent inflation and indicated that another increase could follow this year."
