@@ -1,3 +1,13 @@
+- date: "2026-09-18"
+  summary: "The S&P 500 (+0.25%), Nasdaq-100 futures (+0.94%), and Dow Jones (+0.09%) rose at their recorded openings. VIX declined 2.40%, Bitcoin gained 0.23%, and gold fell 0.41%. The 10-year Treasury yield increased 0.67%, the U.S. dollar was nearly unchanged (+0.02%), and WTI crude oil declined 0.83%."
+  key_observation: "Markets opened positively and technology remained constructive, but the session ended mixed as higher Treasury yields and persistent oil-related inflation concerns limited the broader advance."
+  market_notes:
+    - "The S&P 500 closed 0.2% higher and the Nasdaq Composite gained 0.4%, while the Dow fell 0.2% and the Russell 2000 declined 0.5%, showing that the positive headline performance was not broadly shared."
+    - "A semiconductor rally supported the major indexes, with Lam Research rising about 7%, Seagate gaining 6.9%, and Sandisk advancing roughly 11%, helping technology outperform the broader market."
+    - "The 10-year Treasury yield climbed to approximately 5.00% from 4.94% as investors continued to evaluate the Fed's tightening path and the possibility of another rate increase this year."
+    - "Brent crude briefly fell below $102 before settling at $103.87 per barrel, down 0.9%, providing some relief while oil above $100 continued to reinforce inflation concerns."
+    - "August industrial production was unchanged and manufacturing output declined 0.3%, while the Bank of Japan raised its policy rate by 25 basis points to 1.25%, reinforcing a broader global monetary-tightening trend."
+
 - date: "2026-09-17"
   summary: "The S&P 500 (+1.05%), Nasdaq-100 futures (+2.62%), and Dow Jones (+0.82%) rose strongly at their recorded openings. VIX fell 9.49%, while Bitcoin was nearly unchanged (-0.01%) and gold edged down 0.13%. The 10-year Treasury yield declined 1.06%, the U.S. dollar slipped 0.07%, and WTI crude oil fell 1.34%."
   key_observation: "Markets staged a broad post-FOMC relief rebound led by technology and AI-related stocks as falling oil prices and Treasury yields eased inflation and valuation pressure."
