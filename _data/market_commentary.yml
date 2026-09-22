@@ -1,3 +1,13 @@
+- date: "2026-09-21"
+  summary: "The S&P 500 (+0.55%), Nasdaq-100 futures (+3.94%), and Dow Jones (+0.49%) rose at their recorded openings. VIX increased 1.01%, while Bitcoin declined 0.47% and gold fell 0.96%. The 10-year Treasury yield declined 0.90%, the U.S. dollar strengthened 0.20%, and WTI crude oil fell sharply by 8.33%."
+  key_observation: "Markets moved into a clear risk-on mode as falling oil prices and Treasury yields eased inflation and valuation pressure, while renewed AI optimism drove a particularly strong technology rally."
+  market_notes:
+    - "The advance extended across the major U.S. indexes, with the S&P 500 closing 1.5% higher, the Dow gaining 0.7%, the Nasdaq Composite rising 2.3% to a record, and the Russell 2000 adding 0.5%."
+    - "Technology and AI-related stocks led rather than every sector participating equally, as AMD surged 9.9% and reached a $1 trillion market value, Nvidia rose 2.3%, and energy shares weakened with oil prices."
+    - "Brent crude fell 3.4% to $100.34 per barrel and the 10-year Treasury yield declined to 4.95% from 5.01%, easing some of the inflation and valuation pressure that had weighed on markets during the previous week."
+    - "Risk sentiment also benefited from hopes for further Middle East diplomatic progress and constructive U.S.-China engagement ahead of President Xi Jinping's scheduled September 23–25 U.S. visit."
+    - "Oil remained near $100 despite Monday's decline, leaving energy-driven inflation and the possibility of additional Federal Reserve tightening as continuing risks to the rally."
+
 - date: "2026-09-18"
   summary: "The S&P 500 (+0.25%), Nasdaq-100 futures (+0.94%), and Dow Jones (+0.09%) rose at their recorded openings. VIX declined 2.40%, Bitcoin gained 0.23%, and gold fell 0.41%. The 10-year Treasury yield increased 0.67%, the U.S. dollar was nearly unchanged (+0.02%), and WTI crude oil declined 0.83%."
   key_observation: "Markets opened positively and technology remained constructive, but the session ended mixed as higher Treasury yields and persistent oil-related inflation concerns limited the broader advance."
