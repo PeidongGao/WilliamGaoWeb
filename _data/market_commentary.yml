@@ -1,3 +1,13 @@
+- date: "2026-09-22"
+  summary: "The S&P 500 (+0.08%), Nasdaq-100 futures (+0.73%), and Dow Jones (+0.49%) rose at their recorded openings. VIX declined 1.55%, while Bitcoin gained 0.40% and gold increased 0.25%. The 10-year Treasury yield declined 0.69%, the U.S. dollar strengthened 0.13%, and WTI crude oil fell sharply by 6.15%."
+  key_observation: "AI and semiconductor shares remained strong, led by Micron, and helped the Nasdaq Composite reach a record close, while the broader U.S. market finished mixed."
+  market_notes:
+    - "The Nasdaq Composite gained 0.45% to a second straight record close, while the S&P 500 finished essentially unchanged and the Dow declined 0.36%."
+    - "Micron rose about 5%, Sandisk gained nearly 7%, and the PHLX Semiconductor Index advanced about 2.1% as investors continued to favor AI-related memory and chip stocks."
+    - "Despite those gains, Micron remained about 12.6% below its $1,255 52-week intraday high and the semiconductor index about 13.3% below its June closing peak, so neither reached a new record."
+    - "Brent crude settled at $99.25 per barrel, down 1.1%, and the 10-year Treasury yield eased to about 4.95% from 4.96%, providing some relief from oil and interest-rate pressure."
+    - "Six of the S&P 500's 11 sectors declined, with financials falling 1.68%, showing that the strength in chips was not shared across the whole market."
+
 - date: "2026-09-21"
   summary: "The S&P 500 (+0.55%), Nasdaq-100 futures (+3.94%), and Dow Jones (+0.49%) rose at their recorded openings. VIX increased 1.01%, while Bitcoin declined 0.47% and gold fell 0.96%. The 10-year Treasury yield declined 0.90%, the U.S. dollar strengthened 0.20%, and WTI crude oil fell sharply by 8.33%."
   key_observation: "Markets moved into a clear risk-on mode as falling oil prices and Treasury yields eased inflation and valuation pressure, while renewed AI optimism drove a particularly strong technology rally."
