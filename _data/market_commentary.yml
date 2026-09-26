@@ -1,3 +1,12 @@
+- date: "2026-09-25"
+  summary: "The S&P 500 (+0.07%) and Dow Jones (+0.02%) were nearly unchanged at their recorded openings, while Nasdaq-100 futures edged down 0.13%. VIX fell 0.38%, Bitcoin declined 0.31%, and gold gained 0.27%. The 10-year Treasury yield rose 0.46% relative to its previous reading, the U.S. dollar slipped 0.02%, and WTI crude oil rose 0.15%."
+  key_observation: "The market opened nearly flat but closed moderately higher as falling oil prices eased pressure, while weak consumer sentiment and elevated inflation expectations remained concerns."
+  market_notes:
+    - "The S&P 500 and Nasdaq Composite each closed about 0.5% higher, while the Dow gained 0.9%."
+    - "Brent crude fell 2.8% to $97.44 per barrel, helping relieve some of the recent pressure from oil prices."
+    - "Final September consumer sentiment fell to 48.1 from 51.7 in August, while year-ahead inflation expectations rose to 4.6% from 4.0%."
+    - "August durable-goods orders were virtually unchanged, according to the Census Bureau."
+
 - date: "2026-09-24"
   summary: "The S&P 500 (-0.51%), Nasdaq-100 futures (-0.12%), and Dow Jones (-0.19%) declined at their recorded openings. VIX rose 4.28%, Bitcoin gained 0.21%, and gold slipped 0.21%. The 10-year Treasury yield increased 0.14% relative to its previous reading, the U.S. dollar strengthened 0.17%, and WTI crude oil gained 2.81%."
   key_observation: "The market remained under pressure from rising Treasury yields and expectations of another Fed rate increase, although a late recovery left the major U.S. indexes mixed and nearly flat."
