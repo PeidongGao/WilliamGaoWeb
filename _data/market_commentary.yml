@@ -1,3 +1,12 @@
+- date: "2026-09-29"
+  summary: "The S&P 500 (+0.21%) and Nasdaq-100 futures (+0.30%) edged higher at their recorded openings, while the Dow Jones slipped 0.13%. VIX rose 0.62%, Bitcoin fell 0.26%, and gold declined 2.43%. The 10-year Treasury yield fell 0.52% relative to its previous reading, the U.S. dollar gained 0.21%, and WTI crude oil dropped 3.89%."
+  key_observation: "The equity market was nearly flat on September 29, though the major U.S. indexes finished slightly lower as long-term Treasury yields rose."
+  market_notes:
+    - "The S&P 500 closed down 0.17%, the Dow 0.26%, and the Nasdaq Composite 0.08%."
+    - "The Treasury's 10-year yield rose from 5.24% on September 28 to 5.26% on September 29, a later reading than the tracker's opening observation."
+    - "August U.S. job openings fell to 7.079 million from 7.335 million in July."
+    - "September consumer confidence fell to 81.9 from 88.6 in August, while lower oil prices provided some relief."
+
 - date: "2026-09-28"
   summary: "The S&P 500 (-0.28%), Nasdaq-100 futures (-0.06%), and Dow Jones (-0.35%) declined at their recorded openings. VIX rose 8.68%, Bitcoin fell 0.57%, and gold slipped 0.14%. The 10-year Treasury yield increased 0.48% relative to its previous reading, the U.S. dollar strengthened 0.13%, and WTI crude oil rose 1.27%."
   key_observation: "What looked risk-on was limited to selective strength in Nvidia and an intraday easing in oil; the broader market closed lower under pressure from higher Treasury yields."
