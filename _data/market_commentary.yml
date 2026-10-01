@@ -1,3 +1,12 @@
+- date: "2026-09-30"
+  summary: "The S&P 500 (+0.24%), Nasdaq-100 futures (+0.31%), and Dow Jones (+0.15%) edged higher at their recorded openings. VIX fell 0.69%, Bitcoin slipped 0.02% from its UTC reference, and gold gained 0.25%. The 10-year Treasury yield declined 0.23% relative to its previous reading, the U.S. dollar rose 0.09%, and WTI crude oil gained 1.14%."
+  key_observation: "Softer-than-expected inflation in the Personal Consumption Expenditures (PCE) price index reduced expectations for an October Fed rate increase, while still-elevated inflation and resilient growth kept the outlook unsettled."
+  market_notes:
+    - "August PCE inflation was 3.4% year over year, with core at 3.0%; both were softer than expected, but headline inflation matched revised July."
+    - "Market-implied odds of an October Fed rate increase fell to about 37% from roughly 50% a day earlier, though traders still priced a possible hike later this year."
+    - "The early stock rally faded as the S&P 500 closed down 0.3% and the Dow fell 0.9%, while the Nasdaq Composite gained 0.2% and the 10-year Treasury yield rose to 5.29%."
+    - "ADP reported 90,000 private-sector jobs added in September, while second-quarter GDP growth was revised up to 2.2% from 1.5%."
+
 - date: "2026-09-29"
   summary: "The S&P 500 (+0.21%) and Nasdaq-100 futures (+0.30%) edged higher at their recorded openings, while the Dow Jones slipped 0.13%. VIX rose 0.62%, Bitcoin fell 0.26%, and gold declined 2.43%. The 10-year Treasury yield fell 0.52% relative to its previous reading, the U.S. dollar gained 0.21%, and WTI crude oil dropped 3.89%."
   key_observation: "The equity market was nearly flat on September 29, though the major U.S. indexes finished slightly lower as long-term Treasury yields rose."
