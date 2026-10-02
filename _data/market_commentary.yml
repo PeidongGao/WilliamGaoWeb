@@ -1,3 +1,12 @@
+- date: "2026-10-01"
+  summary: "The S&P 500 (+0.20%), Nasdaq-100 futures (+0.24%), and Dow Jones (+0.20%) edged higher at their recorded openings. VIX slipped 0.06%, Bitcoin fell 0.33% from its UTC reference, and gold gained 0.08%. The 10-year Treasury yield declined 0.26% relative to its previous reading, the U.S. dollar rose 0.02%, and WTI crude oil was nearly unchanged (-0.02%)."
+  key_observation: "The U.S. market was largely steady on October 1, finishing with modest gains despite an intraday rise in Treasury yields."
+  market_notes:
+    - "The S&P 500 closed 0.2% higher, while the Dow and Nasdaq Composite each gained less than 0.1%."
+    - "The 10-year Treasury yield approached 5.34% intraday before easing to about 5.23%, helping stocks recover from earlier weakness."
+    - "Stronger-than-expected results from Micron supported AI shares; Micron rose 3.0% and Nvidia gained 1.1%."
+    - "DeepSeek said it worked with Huawei on software for Ascend AI chips and a 128-chip Ascend 950 system, marking progress in China's AI-computing ecosystem."
+
 - date: "2026-09-30"
   summary: "The S&P 500 (+0.24%), Nasdaq-100 futures (+0.31%), and Dow Jones (+0.15%) edged higher at their recorded openings. VIX fell 0.69%, Bitcoin slipped 0.02% from its UTC reference, and gold gained 0.25%. The 10-year Treasury yield declined 0.23% relative to its previous reading, the U.S. dollar rose 0.09%, and WTI crude oil gained 1.14%."
   key_observation: "Softer-than-expected inflation in the Personal Consumption Expenditures (PCE) price index reduced expectations for an October Fed rate increase, while still-elevated inflation and resilient growth kept the outlook unsettled."
