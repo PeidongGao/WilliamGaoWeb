@@ -1,3 +1,12 @@
+- date: "2026-10-06"
+  summary: "The S&P 500 (+0.41%), Nasdaq-100 futures (+0.61%), and Dow Jones (+0.34%) rose at their recorded openings. VIX fell 0.13%, Bitcoin declined 0.28% from its UTC reference, and gold gained 0.92%. The 10-year Treasury yield decreased 0.72% relative to its previous reading, the U.S. dollar edged down 0.03%, and WTI crude oil rose 0.59%."
+  key_observation: "The market was positive overall on October 6, with the S&P 500 and Nasdaq Composite closing at records while smaller stocks lagged."
+  market_notes:
+    - "The S&P 500 closed up 0.6%, the Nasdaq Composite gained 0.4%, and the Dow rose 0.5%, while the Russell 2000 fell 0.6%."
+    - "The 10-year Treasury yield eased to about 5.28% from 5.31% late Monday, giving stocks some relief from recent rate pressure."
+    - "Constellation Energy rose about 12% after announcing a long-term Google agreement to add 890 megawatts of nuclear capacity through upgrades to existing plants."
+    - "The August U.S. goods-and-services trade deficit widened to $105.6 billion from a revised $92.8 billion in July, according to data released Tuesday."
+
 - date: "2026-10-02"
   summary: "The S&P 500 (+0.78%) and Dow Jones (+0.62%) rose at their recorded openings, while Nasdaq-100 futures were nearly flat (+0.03%). VIX fell 1.46%, Bitcoin gained 0.20% from its UTC reference, and gold edged up 0.05%. The 10-year Treasury yield declined 0.40% relative to its previous reading, the U.S. dollar slipped 0.08%, and WTI crude oil rose 0.64%."
   key_observation: "Friday's rebound was led by technology, with the Nasdaq-100 at a new 52-week closing high and Nvidia at an intraday record, while most large tech stocks and broader indexes remained below their peaks."
