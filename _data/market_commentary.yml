@@ -1,3 +1,13 @@
+- date: "2026-10-08"
+  summary: "The S&P 500 (-0.30%) and Dow Jones (-0.15%) declined at their recorded openings, while Nasdaq-100 futures were nearly unchanged (+0.002%). VIX rose 3.98%, Bitcoin gained 0.37% from its UTC reference, and gold edged down 0.02%. The 10-year Treasury yield increased 0.89% relative to its previous reading, the U.S. dollar slipped 0.01%, and WTI crude oil rose 0.82%."
+  key_observation: "Market weakness reached Asia and Europe on October 8, while U.S. losses were concentrated in large technology shares as oil and interest-rate concerns weighed on sentiment."
+  market_notes:
+    - "Japan's Nikkei fell 1.4%, South Korea's Kospi 2.6%, and Europe's STOXX 600 0.75%, showing weakness across major regions."
+    - "The S&P 500 fell 0.5% and the Nasdaq Composite 1.3%, but the Dow rose 0.1% and roughly two-thirds of S&P 500 stocks gained."
+    - "Brent crude settled at $104.28, up 4.1%, amid Middle East supply uncertainty and a hurricane threat to U.S. Gulf production."
+    - "AI-related shares led U.S. index losses, with Nvidia down 2.9%, Broadcom 4.3%, and Micron 4.8%, as investors weighed the cost of continued AI expansion."
+    - "The 10-year Treasury yield climbed to 5.35% early before easing to 5.23%, while Fed Governor Waller said he expected further rate increases if economic data follow his outlook."
+
 - date: "2026-10-07"
   summary: "The S&P 500 (-0.33%), Nasdaq-100 futures (-0.25%), and Dow Jones (-0.22%) declined at their recorded openings. VIX rose 1.33%, Bitcoin fell 0.16% from its UTC reference, and gold dropped 1.13%. The 10-year Treasury yield increased 1.37% relative to its previous reading, the U.S. dollar edged up 0.06%, and WTI crude oil slipped 0.49%."
   key_observation: "The market showed mild risk-off pressure on October 7, with rising Treasury yields weighing on stocks after Tuesday’s records and Fed minutes later reinforcing concern about another rate increase."
