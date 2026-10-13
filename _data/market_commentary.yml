@@ -1,3 +1,12 @@
+- date: "2026-10-12"
+  summary: "At their recorded openings, the S&P 500 (+0.02%), Nasdaq-100 futures (+0.12%), and Dow Jones (+0.21%) edged higher. VIX rose 3.71%; Bitcoin gained 1.29% from its 00:00 UTC reference, and gold futures rose 0.11%. WTI crude oil was nearly unchanged (-0.02%). The 10-year Treasury yield slipped 0.08% relative to its previous reading, while the U.S. dollar index edged up 0.09%."
+  key_observation: "AI and semiconductor shares weakened across the U.S. and parts of Asia, especially South Korea, while broader global markets were mixed."
+  market_notes:
+    - "The modestly positive U.S. opening gave way to a Nasdaq Composite decline of 0.4%; the S&P 500 closed down 0.1%, while the Dow gained 0.4%."
+    - "Micron fell 3.9%, AMD 2.3%, Broadcom 1.9%, and Nvidia 1.3%, showing the pressure on U.S. chip shares."
+    - "South Korea's Kospi fell 3.65% as Samsung and SK Hynix declined about 4.4%-4.5%; Hong Kong and European broad indexes rose, and Japan was closed for a holiday."
+    - "Investors were weighing the cost and financing of AI expansion ahead of earnings, alongside oil and interest-rate concerns; the reporting does not establish one cause for every decline."
+
 - date: "2026-10-09"
   summary: "The S&P 500 (+0.27%), Nasdaq-100 futures (+0.16%), and Dow Jones (+0.05%) rose at their recorded openings. VIX fell 0.45%, Bitcoin gained 0.05% from its UTC reference, and gold rose 0.06%. The 10-year Treasury yield increased 0.10% relative to its previous reading, while the U.S. dollar slipped 0.01% and WTI crude oil declined 0.22%."
   key_observation: "The market opened higher and closed with gains, though the S&P 500 finished slightly below its intraday high."
