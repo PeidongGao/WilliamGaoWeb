@@ -1,3 +1,13 @@
+- date: "2026-10-13"
+  summary: "At their recorded openings, the S&P 500 (-0.15%) and Nasdaq-100 futures (-0.35%) declined, while the Dow Jones (+0.47%) rose. VIX increased 2.63%, Bitcoin gained 0.26% from its 00:00 UTC reference, and gold futures fell 0.15%. WTI crude oil rose 1.08%, while the 10-year Treasury yield declined 1.01% relative to its previous reading and the U.S. dollar index fell 0.36%."
+  key_observation: "The pullback continued across major markets, with AI and semiconductor shares facing pressure as investors reassessed competition and spending returns amid elevated financing costs and geopolitical uncertainty."
+  market_notes:
+    - "The S&P 500 closed down 0.02%, the Nasdaq Composite 0.15%, and the Dow 0.35%, while South Korea's Kospi fell 5.46% and Europe's STOXX 600 slipped 0.1%."
+    - "Micron fell 3.6%, Samsung 7.39%, and SK Hynix 10.09%, as reports of progress by China's ChangXin Memory Technologies (CXMT) added to concerns about semiconductor competition and AI spending returns."
+    - "Elevated borrowing costs remained a headwind, although the official 10-year Treasury yield eased to 5.21% from 5.24% on Friday as investors awaited the October 14 Consumer Price Index (CPI) release."
+    - "The Iran and Ukraine wars continued to create energy supply uncertainty, while Brent crude fell 0.9% to $105.69 as investors assessed additional Russian supplies."
+    - "Election-related policy uncertainty remained a background concern ahead of the November 3 U.S. midterms, with limited evidence linking it directly to October 13 selling."
+
 - date: "2026-10-12"
   summary: "At their recorded openings, the S&P 500 (+0.02%), Nasdaq-100 futures (+0.12%), and Dow Jones (+0.21%) edged higher. VIX rose 3.71%; Bitcoin gained 1.29% from its 00:00 UTC reference, and gold futures rose 0.11%. WTI crude oil was nearly unchanged (-0.02%). The 10-year Treasury yield slipped 0.08% relative to its previous reading, while the U.S. dollar index edged up 0.09%."
   key_observation: "AI and semiconductor shares weakened across the U.S. and parts of Asia, especially South Korea, while broader global markets were mixed."
