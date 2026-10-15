@@ -1,3 +1,13 @@
+- date: "2026-10-14"
+  summary: "At their recorded openings, the S&P 500 (-0.40%) and Nasdaq-100 futures (-2.07%) declined, while the Dow Jones edged up 0.03%. VIX fell 0.65%, Bitcoin gained 0.18% from its 00:00 UTC reference, and gold futures declined 1.17%. WTI crude oil rose 1.12%, the 10-year Treasury yield fell 0.40% relative to its previous reading, and the U.S. dollar index gained 0.21%."
+  key_observation: "U.S. stocks fell further as hotter inflation renewed rate-hike concerns and intensified pressure on AI financing and valuations, while global markets showed uneven performance."
+  market_notes:
+    - "The S&P 500 closed down 1.11%, the Nasdaq Composite 1.88%, and the Dow 0.09%, while China's CSI 300 fell 1.4%, South Korea's Kospi lost 0.44%, and Europe's STOXX 600 rose 0.43%."
+    - "September's Consumer Price Index (CPI) rose 0.6% month over month and 3.7% year over year, up from 3.4% annual inflation in August, renewing expectations of further Fed tightening."
+    - "AI financing concerns weighed on Oracle (-8.8%) and CoreWeave (about -15%), while the semiconductor index fell 4.3% for its sixth consecutive decline."
+    - "Treasury yields jumped initially after CPI, but the Treasury's daily 10-year par yield eased to 5.19% from 5.21% Tuesday, while the two-year yield rose to 4.82% from 4.79%."
+    - "A reported attack on a Saudi Aramco building and continuing threats to Strait of Hormuz shipping kept energy supply risks and inflation concerns elevated."
+
 - date: "2026-10-13"
   summary: "At their recorded openings, the S&P 500 (-0.15%) and Nasdaq-100 futures (-0.35%) declined, while the Dow Jones (+0.47%) rose. VIX increased 2.63%, Bitcoin gained 0.26% from its 00:00 UTC reference, and gold futures fell 0.15%. WTI crude oil rose 1.08%, while the 10-year Treasury yield declined 1.01% relative to its previous reading and the U.S. dollar index fell 0.36%."
   key_observation: "The pullback continued across major markets, with AI and semiconductor shares facing pressure as investors reassessed competition and spending returns amid elevated financing costs and geopolitical uncertainty."
