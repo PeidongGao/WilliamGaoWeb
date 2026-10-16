@@ -57,7 +57,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 {% if latest_commentary %}
 {% for note in latest_commentary.market_notes %}
-<p>{{ note | escape }}</p>
+{{ note | markdownify }}
 {% endfor %}
 {% else %}
 <p class="wg-market-remote-state">Commentary is not yet published.</p>
@@ -72,7 +72,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
         <p><strong>Summary:</strong> {{ entry.summary | escape }}</p>
         <p><strong>Key observation:</strong> {{ entry.key_observation | escape }}</p>
         {% for note in entry.market_notes %}
-          <p>{{ note | escape }}</p>
+          {{ note | markdownify }}
         {% endfor %}
       </details>
     {% endfor %}
