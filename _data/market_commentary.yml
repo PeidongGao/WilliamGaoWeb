@@ -1,3 +1,13 @@
+- date: "2026-10-15"
+  summary: "At their recorded openings, the S&P 500 (-0.41%) and Nasdaq-100 futures (-0.31%) fell, while the Dow Jones rose 0.46%. VIX increased 4.03%, Bitcoin gained 0.05% from its 00:00 UTC reference, and gold futures rose 2.05%. The 10-year Treasury yield declined 2.10% relative to its previous reading, the U.S. dollar index fell 0.49%, and WTI crude oil rose 1.10%."
+  key_observation: "Asian markets and AI shares remained under pressure, although broader U.S. indexes recovered by the close."
+  market_notes:
+    - "South Korea's Kospi fell 7.57% and Japan's Nikkei 225 lost 4.9%, while the S&P 500 and Nasdaq Composite recovered to close up 0.33% and 0.08%, respectively, and the Dow gained 1.08%."
+    - "September's Producer Price Index (PPI) rose 1.3% from August and 6.3% from a year earlier, adding to the inflation concerns raised by Wednesday's consumer price report."
+    - "Nvidia fell 1.8% as AI financing concerns persisted, while CoreWeave recovered from its morning decline to close 5.9% higher."
+    - "The Treasury's daily 10-year par yield fell to 5.10% from 5.19% Wednesday, while strong earnings outside technology helped broader stocks recover."
+    - "I expect political pressure ahead of the November 3 midterms to favor an October pause, even as inflation keeps another Federal Reserve rate increase on the table."
+
 - date: "2026-10-14"
   summary: "At their recorded openings, the S&P 500 (-0.40%) and Nasdaq-100 futures (-2.07%) declined, while the Dow Jones edged up 0.03%. VIX fell 0.65%, Bitcoin gained 0.18% from its 00:00 UTC reference, and gold futures declined 1.17%. WTI crude oil rose 1.12%, the 10-year Treasury yield fell 0.40% relative to its previous reading, and the U.S. dollar index gained 0.21%."
   key_observation: "U.S. stocks fell further as hotter inflation renewed rate-hike concerns and intensified pressure on AI financing and valuations, while global markets showed uneven performance."
