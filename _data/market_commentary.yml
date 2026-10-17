@@ -1,3 +1,13 @@
+- date: "2026-10-16"
+  summary: "The S&P 500 (+0.02%) and Dow Jones (+0.25%) rose at their recorded openings, while Nasdaq-100 futures fell 0.18%. VIX declined 2.67%, Bitcoin slipped 0.07% from its UTC reference, and gold gained 0.53%. The 10-year Treasury yield rose 0.49% relative to its previous reading, the U.S. dollar index edged up 0.04%, and WTI crude oil fell 1.87%."
+  key_observation: "Friday’s mixed opening gave way to a weaker close, with renewed selling in technology and semiconductor shares extending the week’s pullback."
+  market_notes:
+    - "The S&P 500 closed 1.1% lower, the Nasdaq Composite fell 2.1%, the Dow lost 0.3%, and the Russell 2000 dropped 1.7%, confirming weakness across major U.S. equity benchmarks."
+    - "Semiconductor losses were particularly pronounced, with Micron down 5.6%, AMD 6.0%, Intel 5.8%, and Broadcom 4.5%, as concerns about the sustainability of artificial intelligence (AI) investment weighed on the sector."
+    - "Reuters reported increasing scrutiny of debt financing for AI infrastructure, with investors questioning whether companies could sustain aggressive capital spending while borrowing costs remained elevated."
+    - "Stronger-than-expected inflation readings earlier in the week increased expectations of further Federal Reserve rate increases, adding a monetary-policy concern to the reassessment of technology stocks."
+    - "The Nasdaq lost 4.5% for the week and the S&P 500 fell 1.9%, while the Dow gained 0.7%, highlighting the heavier pressure on technology despite Friday’s broader decline."
+
 - date: "2026-10-15"
   summary: "At their recorded openings, the S&P 500 fell 0.41% and Nasdaq-100 futures declined 0.31%, while the Dow Jones rose 0.46%. VIX increased 4.03%, Bitcoin gained 0.05% from its 00:00 UTC reference, and gold futures rose 2.05%. The 10-year Treasury yield declined 2.10% relative to its previous reading, the U.S. dollar index fell 0.49%, and WTI crude oil rose 1.10%."
   key_observation: "Inflation keeps another rate increase on the table, but I expect political pressure ahead of the U.S. midterm elections to make Fed Chair Kevin Warsh reluctant to raise rates again in October."
