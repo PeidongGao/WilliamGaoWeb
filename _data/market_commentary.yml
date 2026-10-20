@@ -1,3 +1,12 @@
+- date: "2026-10-19"
+  summary: "The S&P 500 (+0.57%) and Nasdaq-100 futures (+1.20%) rose at their recorded openings, while the Dow Jones slipped 0.05%. VIX fell 8.10%, Bitcoin declined 0.43% from its UTC reference, and gold lost 0.45%. The 10-year Treasury yield decreased 0.16% relative to its previous reading, the U.S. dollar index rose 0.14%, and WTI crude oil fell 3.13%."
+  key_observation: "The market showed signs of stabilization, but Monday’s gains were concentrated in technology and did not yet establish a convincing recovery across the broader market."
+  market_notes:
+    - "The S&P 500 closed 0.41% higher and the Nasdaq Composite gained 1.11%, while the Dow fell 0.07% and the Russell 2000 added 0.3%, showing uneven gains across the major indexes."
+    - "Market participation remained weak, with 1,761 declining stocks against 945 advancing stocks on the New York Stock Exchange, while decliners also outnumbered gainers on the Nasdaq exchange."
+    - "Semiconductor shares rebounded 1.6% after eight consecutive declining sessions, with forthcoming technology earnings offering a test of whether heavy artificial intelligence (AI) investment was delivering adequate returns."
+    - "The 10-year Treasury yield rose about 4.2 basis points to 5.14% by late trading, reversing its lower opening reading and leaving borrowing costs elevated despite the equity rebound."
+
 - date: "2026-10-16"
   summary: "The S&P 500 (+0.02%) and Dow Jones (+0.25%) rose at their recorded openings, while Nasdaq-100 futures fell 0.18%. VIX declined 2.67%, Bitcoin slipped 0.07% from its UTC reference, and gold gained 0.53%. The 10-year Treasury yield rose 0.49% relative to its previous reading, the U.S. dollar index edged up 0.04%, and WTI crude oil fell 1.87%."
   key_observation: "Friday’s mixed opening gave way to a weaker close, with renewed selling in technology and semiconductor shares extending the week’s pullback."
