@@ -1,36 +1,21 @@
-# Base image: Ruby with necessary dependencies for Jekyll
-FROM ruby:3.2
+FROM node:26.12.1-bookworm-slim AS node
+FROM ruby:3.4.11-slim-bookworm
 
-# Install dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    nodejs \
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential \
     && rm -rf /var/lib/apt/lists/*
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+COPY --from=node /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/npm
+RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
+    && ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
 
-
-# Create a non-root user with UID 1000
-RUN groupadd -g 1000 vscode && \
-    useradd -m -u 1000 -g vscode vscode
-
-# Set the working directory
 WORKDIR /usr/src/app
+ENV BUNDLE_APP_CONFIG=/usr/local/bundle/config BUNDLE_FROZEN=true
+COPY Gemfile Gemfile.lock ./
+RUN gem install bundler -v 4.0.23 --no-document \
+    && bundle config set --local frozen true \
+    && bundle install
 
-# Set permissions for the working directory
-RUN chown -R vscode:vscode /usr/src/app
-
-# Switch to the non-root user
+RUN groupadd -g 1000 vscode && useradd -m -u 1000 -g vscode vscode \
+    && chown -R vscode:vscode /usr/src/app
 USER vscode
-
-# Copy Gemfile into the container (necessary for `bundle install`)
-COPY Gemfile ./
-
-
-
-# Install bundler and dependencies
-RUN gem install connection_pool:2.5.0
-RUN gem install bundler:2.3.26
-RUN bundle install
-
-# Command to serve the Jekyll site
-CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w"]
-
+CMD ["bundle", "exec", "jekyll", "serve", "--config", "_config.yml,_config.dev.yml", "--host", "0.0.0.0", "--watch"]

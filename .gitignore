@@ -10,12 +10,8 @@ local/
 # Ignore local editor/tooling config
 .claude/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
 # Ignore files created by npm
 node_modules
-package-lock.json
 
 # Ignore the vendor file and bundle for alternative installation
 vendor/
@@ -27,3 +23,4 @@ CONTRIBUTING-CONTENT.md
 .env.*
 *.pem
 *.key
+.jekyll-cache/

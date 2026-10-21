@@ -1,0 +1,90 @@
+name: Website security and Pages
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@824c0e29fdfc7d689c191c27acc969d2d04b7dd8 # v1
+        with:
+          bundler: 4.0.23
+          bundler-cache: true
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - name: Install locked JavaScript dependencies
+        run: npm ci --ignore-scripts
+      - name: Audit dependencies
+        run: |
+          bundle exec bundler-audit check --update
+          npm audit --audit-level=low
+      - name: Test Worker and build assets
+        run: |
+          npm test
+          npm run build:js
+          git diff --exit-code -- assets/js/main.min.js
+          npx --no-install wrangler deploy --dry-run --config workers/markdown-negotiation/wrangler.toml
+      - name: Build website
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+      - name: Check private and build files stay out of the website
+        run: |
+          for path in .git .github .mcp.json .env local vendor node_modules workers scripts Gemfile Gemfile.lock package.json package-lock.json Dockerfile docker-compose.yaml SECURITY.md; do
+            test ! -e "_site/$path" || { echo "Unexpected published path: $path"; exit 1; }
+          done
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        if: github.event_name != 'pull_request'
+        with:
+          path: _site
+
+  container:
+    name: Preview container
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Build the locked preview image
+        run: docker build --tag website-preview:check .
+      - name: Verify the container dependencies and runtime
+        run: |
+          docker run --rm website-preview:check ruby --version
+          docker run --rm website-preview:check node --version
+          docker run --rm website-preview:check bundle check
+
+  deploy:
+    name: Deploy Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: [build, container]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

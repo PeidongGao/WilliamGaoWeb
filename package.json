@@ -18,7 +18,7 @@
   },
   "homepage": "https://peidonggao.github.io/WilliamGaoWeb/",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">=26.12.1 <27"
   },
   "dependencies": {
     "fitvids": "^2.1.1",
@@ -27,14 +27,16 @@
     "magnific-popup": "^1.2.0"
   },
   "devDependencies": {
-    "onchange": "^7.1.0",
-    "uglify-js": "^3.17.4"
+    "uglify-js": "^3.17.4",
+    "wrangler": "4.151.3"
   },
   "scripts": {
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/magnific-popup/dist/jquery.magnific-popup.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "watch:js": "node scripts/watch-js.mjs",
     "build:js": "npm run uglify",
     "build": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll build",
-    "serve": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll serve --config _config.yml,_config.dev.yml"
-  }
+    "serve": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll serve --config _config.yml,_config.dev.yml",
+    "test": "node --test workers/markdown-negotiation/worker.test.mjs"
+  },
+  "private": true
 }
