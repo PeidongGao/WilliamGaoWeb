@@ -17,10 +17,11 @@ traffic is passed straight through.
 ## Deploy
 
 ```bash
-npm install -g wrangler        # once
-wrangler login                 # opens a browser to authorise
-cd workers/markdown-negotiation
-wrangler deploy
+scripts/site npm ci --ignore-scripts
+scripts/site npx --no-install wrangler login
+scripts/site npm test
+scripts/site npx --no-install wrangler deploy --dry-run --config workers/markdown-negotiation/wrangler.toml
+scripts/site npx --no-install wrangler deploy --keep-vars --config workers/markdown-negotiation/wrangler.toml
 ```
 
 ## Verify
@@ -62,4 +63,11 @@ Jekyll site depends on it.
 - The author sidebar, nav and footer are stripped; the article `<header>` is
   kept, since it carries the title, author list and co-first-author marker.
 - JSON-LD blocks are appended verbatim under a `## Structured data` heading.
-- Only `200` HTML responses are converted; everything else passes through.
+- Only public GET HTML responses are converted. Requests with cookies or
+  authorization, and responses with Set-Cookie, private, or no-store caching,
+  pass through unchanged apart from security and Vary headers.
+- Conversion is limited to 1 MiB. Larger bodies stream back as complete HTML
+  without cloning/teeing the full response or fetching the origin a second time.
+- HTTPS responses include HSTS for this hostname, without includeSubDomains.
+  HTML includes a report-only CSP; enforcement requires a separate policy review.
+- The dependency lockfile pins the Wrangler version used for validation/deploys.

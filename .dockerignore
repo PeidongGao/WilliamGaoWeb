@@ -1,0 +1,11 @@
+.git
+.github
+.bundle
+local
+node_modules
+vendor
+_site
+.env
+.env.*
+*.pem
+*.key

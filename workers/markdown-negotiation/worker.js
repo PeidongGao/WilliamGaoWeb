@@ -10,6 +10,66 @@
  */
 
 const MD_TYPES = ['text/markdown', 'application/markdown', 'text/x-markdown'];
+const MAX_HTML_BYTES = 1024 * 1024;
+
+function varyAccept(headers) {
+  const tokens = (headers.get('Vary') || '').split(',').map((s) => s.trim()).filter(Boolean);
+  if (!tokens.some((s) => ['*', 'accept'].includes(s.toLowerCase()))) tokens.push('Accept');
+  headers.set('Vary', tokens.join(', '));
+}
+
+function secure(response, url) {
+  const headers = new Headers(response.headers);
+  if (new URL(url).protocol === 'https:') headers.set('Strict-Transport-Security', 'max-age=31536000');
+  headers.set('X-Content-Type-Options', 'nosniff');
+  headers.set('X-Frame-Options', 'SAMEORIGIN');
+  headers.set('Referrer-Policy', 'same-origin');
+  headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  if ((headers.get('Content-Type') || '').includes('text/html')) {
+    headers.set('Content-Security-Policy-Report-Only', "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'");
+  }
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+}
+
+// Read a bounded prefix. On overflow, stream that prefix and the unread body
+// back to the client; a cloned/teed response could buffer the entire origin.
+async function readHtml(response) {
+  const declared = response.headers.get('Content-Length');
+  if (declared !== null && Number(declared) > MAX_HTML_BYTES) return { fallback: response };
+  const reader = response.body?.getReader();
+  if (!reader) return { html: '' };
+  const chunks = [];
+  let length = 0;
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+    length += value.byteLength;
+    if (length > MAX_HTML_BYTES) {
+      let index = 0;
+      const body = new ReadableStream({
+        async pull(controller) {
+          if (index < chunks.length) {
+            controller.enqueue(chunks[index]);
+            chunks[index++] = null;
+            return;
+          }
+          try {
+            const next = await reader.read();
+            if (next.done) controller.close();
+            else controller.enqueue(next.value);
+          } catch (error) { controller.error(error); }
+        },
+        cancel(reason) { return reader.cancel(reason); },
+      });
+      return { fallback: new Response(body, { status: response.status, statusText: response.statusText, headers: response.headers }) };
+    }
+  }
+  const bytes = new Uint8Array(length);
+  let offset = 0;
+  for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+  return { html: new TextDecoder().decode(bytes) };
+}
 
 function wantsMarkdown(request) {
   const accept = request.headers.get('Accept') || '';
@@ -194,13 +254,7 @@ function htmlToMarkdown(html, url) {
 
 export default {
   async fetch(request) {
-    try {
-      return await handle(request);
-    } catch (err) {
-      // Last resort: pass the request straight to the origin, so a defect in
-      // this Worker can never make the site unreachable.
-      return fetch(request);
-    }
+    return secure(await handle(request), request.url);
   },
 };
 
@@ -212,13 +266,7 @@ async function handle(request) {
     // to a browser, or the reverse.
     const withVary = (res) => {
       const h = new Headers(res.headers);
-      const prev = h.get('Vary');
-      // Compare complete tokens. A regex like /\baccept\b/ matches inside
-      // "Accept-Encoding" (the hyphen is a word boundary), which would skip
-      // adding "Accept" and let a cache serve Markdown to a browser.
-      const tokens = (prev || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
-      if (tokens.includes('*')) { /* already varies on everything */ }
-      else if (!tokens.includes('accept')) h.set('Vary', tokens.concat('Accept').join(', '));
+      varyAccept(h);
       return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
     };
 
@@ -236,12 +284,23 @@ async function handle(request) {
       return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
     };
 
-    if (!wantsMarkdown(request)) return withAlternate(withVary(response));
+    if (request.method !== 'GET' || !wantsMarkdown(request)) return withAlternate(withVary(response));
 
     const type = response.headers.get('Content-Type') || '';
     if (!response.ok || !type.includes('text/html')) return withVary(response);
 
-    const html = await response.text();
+    if (request.headers.has('Authorization') || request.headers.has('Cookie')
+      || response.headers.has('Set-Cookie')
+      || /(?:^|,)\s*(?:private|no-store)\b/i.test(response.headers.get('Cache-Control') || '')) {
+      return withVary(response);
+    }
+    const result = await readHtml(response);
+    if (result.fallback) {
+      const fallback = withVary(result.fallback);
+      fallback.headers.set('X-Markdown-Fallback', 'size-limit');
+      return fallback;
+    }
+    const html = result.html;
     const url = new URL(request.url).toString();
 
     // Never let a conversion bug take the site down. Any failure here falls
@@ -253,19 +312,19 @@ async function handle(request) {
       if (!markdown || markdown.length < 80) throw new Error('conversion produced no usable output');
     } catch (err) {
       const fallback = new Headers(response.headers);
-      fallback.set('Vary', 'Accept');
+      varyAccept(fallback);
       fallback.set('X-Markdown-Fallback', 'conversion-failed');
       return new Response(html, { status: response.status, statusText: response.statusText, headers: fallback });
     }
 
-    const headers = new Headers();
+    const headers = new Headers(response.headers);
+    for (const name of ['Content-Length', 'Content-Encoding', 'ETag', 'Last-Modified', 'Content-MD5', 'Content-Range', 'Accept-Ranges']) headers.delete(name);
     headers.set('Content-Type', 'text/markdown; charset=utf-8');
-    headers.set('Vary', 'Accept');
-    headers.set('Cache-Control', response.headers.get('Cache-Control') || 'public, max-age=600');
+    varyAccept(headers);
     headers.set('X-Markdown-Tokens', String(Math.ceil(markdown.length / 4)));
     headers.set('X-Original-Tokens', String(Math.ceil(html.length / 4)));
     headers.set('X-Content-Type-Options', 'nosniff');
 
-    return new Response(request.method === 'HEAD' ? null : markdown, { status: 200, headers });
+    return new Response(markdown, { status: response.status, headers });
   }
 }

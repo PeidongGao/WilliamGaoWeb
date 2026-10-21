@@ -1,0 +1,19 @@
+#!/bin/sh
+# Select the site's patched local tools without changing other projects' PATH.
+set -eu
+site_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+node_version=$(cat "$site_root/.node-version")
+if [ -x "$site_root/local/toolchains/node-v$node_version-darwin-arm64/bin/node" ]; then
+  PATH="$site_root/local/toolchains/node-v$node_version-darwin-arm64/bin:$PATH"
+fi
+if [ -x /opt/homebrew/opt/ruby@3.4/bin/ruby ]; then
+  PATH="/opt/homebrew/opt/ruby@3.4/bin:$PATH"
+fi
+export PATH
+cd "$site_root"
+if [ "$(ruby -e 'print RUBY_VERSION')" != "$(cat .ruby-version)" ]; then
+  echo "Install Ruby $(cat .ruby-version) before running the site tools." >&2
+  exit 1
+fi
+node -e 'const [major, minor, patch] = process.versions.node.split(".").map(Number); if (major !== 26 || minor < 12 || (minor === 12 && patch < 1)) { console.error("Node 26.12.1 or newer in the 26.x series is required."); process.exit(1); }'
+exec "$@"
