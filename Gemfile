@@ -14,7 +14,7 @@ end
 
 # Keep the existing renderer without the unused GitHub Pages theme/archive stack.
 gem 'activesupport', '~> 8.0.4', '>= 8.0.4.1'
-gem 'connection_pool', '~> 2.5'
+gem 'connection_pool', '~> 3.0'
 gem 'kramdown-parser-gfm', '~> 1.1'
 gem 'nokogiri', '>= 1.19.4', '< 2'
 gem 'rexml', '>= 3.4.4', '< 4'
