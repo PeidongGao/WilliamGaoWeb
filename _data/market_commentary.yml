@@ -1,3 +1,13 @@
+- date: "2026-10-20"
+  summary: "At their recorded openings, the S&P 500 fell 0.15%, Nasdaq-100 futures rose 0.68%, and the Dow slipped 0.01%. VIX declined 0.11%, Bitcoin gained 0.14% from its UTC reference, and gold fell 0.40%. The 10-year Treasury yield decreased 0.66% in relative terms, while the U.S. dollar index fell 0.20%. The tracker recorded a 5.28% West Texas Intermediate (WTI) crude decline, potentially affected by contract rollover."
+  key_observation: "The market continued a tentative recovery, with gains broadening beyond technology, although performance remained uneven across sectors."
+  market_notes:
+    - "The S&P 500 closed 0.28% higher and the Dow gained 1.02%, while the Nasdaq Composite slipped 0.02% and the Russell 2000 rose about 1.7%."
+    - "Healthcare led the advance as advancing stocks outnumbered decliners by roughly two to one on both major exchanges, indicating broader participation despite weakness in technology."
+    - "September pending home sales fell 7.3% month over month, while intraday pricing put the probability of a Federal Reserve hike next week at 14.9%, versus 22.1% a week earlier."
+    - "Corporate earnings offered support, with Equifax and Hasbro gaining more than 11% after strong results, while Hasbro raised its full-year revenue growth outlook."
+    - "Brent crude settled 0.69% lower as expectations of additional Russian fuel supplies eased some pressure, although persistent Middle East supply risks continued to complicate the inflation outlook."
+
 - date: "2026-10-19"
   summary: "The S&P 500 (+0.57%) and Nasdaq-100 futures (+1.20%) rose at their recorded openings, while the Dow Jones slipped 0.05%. VIX fell 8.10%, Bitcoin declined 0.43% from its UTC reference, and gold lost 0.45%. The 10-year Treasury yield decreased 0.16% relative to its previous reading, the U.S. dollar index rose 0.14%, and WTI crude oil fell 3.13%."
   key_observation: "The market showed signs of stabilization, but Monday’s gains were concentrated in technology and did not yet establish a convincing recovery across the broader market."
