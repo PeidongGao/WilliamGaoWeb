@@ -1,3 +1,14 @@
+- date: "2026-10-23"
+  summary: "VOO declined 0.43%, QQQ declined 0.76%, and SMH declined 2.33% for the week. Early-week gains gave way to renewed pressure from AI spending concerns and rising oil prices. The Dow gained 0.4% and the Russell 2000 rose 2.0%, showing uneven performance across the market."
+  key_observation: "The market showed signs of stabilization early in the week, but the recovery remained tentative and performance uneven across sectors."
+  market_notes:
+    - "VOO closed at $698.58 and remained 2.77% below its intraday 52-week high; QQQ closed at $704.40 and remained 7.66% below its high; SMH closed at $527.20 and remained 21.53% below its high."
+    - "Among major technology companies, Nvidia fell 1.48%, Microsoft 0.86%, Alphabet 5.98%, Amazon 0.80%, and Meta 9.40% for the week, while Apple gained 1.24% and Tesla rose 4.93%."
+    - "Technology earnings offered a test of whether heavy AI investment was delivering adequate returns. Meta reported negative quarterly free cash flow of $2.12 billion and forecast annual capital spending of $135 billion–$145 billion, adding to concerns about the cost of AI expansion."
+    - "October's flash composite PMI eased to 57.6 from 58.4, while businesses reported the fastest rise in selling prices in over four years. Initial unemployment claims fell to 194,000. Final Michigan consumer sentiment was 48.0, compared with 48.1 in September, and year-ahead inflation expectations were 4.7%."
+    - "Published capital-flow data showed strong demand for American assets without establishing that the United States was draining global dollar liquidity. August net TIC inflows totaled $199.8 billion; these lagged data do not identify October's flows."
+    - "The official 10-year Treasury yield declined from 5.09% to 5.00% over the week. Brent rose 3.1% on Friday to settle at $116.72, keeping energy supply risks relevant to the inflation outlook, while December gold futures settled at $4,007.90 per ounce."
+
 - date: "2026-10-16"
   summary: "This week was mainly down. VOO declined 1.95%, QQQ declined 5.52%, and SMH declined 10.53%. Renewed selling in technology and semiconductor shares extended the week's pullback."
   key_observation: "Inflation keeps another rate increase on the table, but I expect political pressure ahead of the U.S. midterm elections to make Fed Chair Kevin Warsh reluctant to raise rates again in October."
