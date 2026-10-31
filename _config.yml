@@ -201,6 +201,7 @@ exclude:
   - README
   - SECURITY.md
   - scripts
+  - tests
   - tmp
   - vendor
 keep_files:

@@ -10,6 +10,8 @@ status: published
 summary: "A weekly ETF dashboard tracking VOO, QQQ, and SMH through drawdown analysis, week-over-week returns, and personal market notes."
 ---
 
+<link rel="stylesheet" href="{{ '/assets/market/dashboard.css' | relative_url }}">
+
 {% assign weekly_entries = site.data.weekly_market_commentary | sort: "date" | reverse %}
 {% assign latest_week = weekly_entries | first %}
 
@@ -31,32 +33,20 @@ Rather than predicting where the market will go next, my goal is to build a cons
 
 <h3>Week ending {% if latest_week %}<time data-weekly-dashboard-date datetime="{{ latest_week.date }}">{{ latest_week.date | date: "%B %-d, %Y" }}</time>{% else %}<time data-weekly-dashboard-date>data pending</time>{% endif %}</h3>
 
-<p class="wg-market-remote-state" data-weekly-remote-state role="status" aria-live="polite">Latest weekly market data will load when JavaScript is available.</p>
+<p class="wg-market-remote-state" data-weekly-remote-state role="status" aria-live="polite">Loading weekly observations. The static dashboard remains available below.</p>
 
+<div data-weekly-explorer hidden></div>
+
+<details class="me-static" data-weekly-static open>
+  <summary>View static dashboard</summary>
 <figure class="wg-market-fingerprint-image">
   <a data-weekly-image-link href="{{ '/images/market/weekly-market-dashboard.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open the weekly ETF dashboard at full resolution">
     <img data-weekly-image src="{{ '/images/market/weekly-market-dashboard.png' | relative_url }}" alt="Weekly ETF dashboard showing drawdown from 52-week highs and week-over-week returns for VOO, QQQ, and SMH.">
   </a>
 </figure>
+</details>
 
-<h2>Current Snapshot</h2>
-
-The chart above shows the historical trend. The table below summarizes the latest values for the current reporting week.
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">ETF</th>
-      <th style="text-align: center">Current Drawdown</th>
-      <th style="text-align: center">This Week's Return</th>
-    </tr>
-  </thead>
-  <tbody data-weekly-snapshot>
-    <tr>
-      <td colspan="3" style="text-align: center">Latest weekly snapshot will load when JavaScript is available.</td>
-    </tr>
-  </tbody>
-</table>
+<noscript>Enable JavaScript to select dates and explore the charts. The static dashboard and weekly notes are available below.</noscript>
 
 <h2>My Notes This Week</h2>
 
@@ -140,4 +130,6 @@ It is intended for educational purposes only and should not be interpreted as in
 
 </div>
 
+<script src="{{ '/assets/market/echarts.min.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/market/dashboard.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/weekly-market.js' | relative_url }}" defer></script>
