@@ -146,3 +146,7 @@
 {% endif %}
 
 <!-- end custom head snippets -->
+
+{% if page.market_publication %}
+<link rel="stylesheet" href="{{ '/assets/css/market-publication.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+{% endif %}
