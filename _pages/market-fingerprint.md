@@ -119,6 +119,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 </div>
 
-<link rel="stylesheet" href="{{ '/assets/market/fingerprint.css' | relative_url }}">
-<script src="{{ '/assets/market/fingerprint.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/market-fingerprint.js' | relative_url }}" defer></script>
+{% assign fingerprint_asset_version = site.time | date: "%s" %}
+<link rel="stylesheet" href="{{ '/assets/market/fingerprint.css' | relative_url }}?v={{ fingerprint_asset_version }}">
+<script src="{{ '/assets/market/fingerprint.js' | relative_url }}?v={{ fingerprint_asset_version }}" defer></script>
+<script src="{{ '/assets/js/market-fingerprint.js' | relative_url }}?v={{ fingerprint_asset_version }}" defer></script>
