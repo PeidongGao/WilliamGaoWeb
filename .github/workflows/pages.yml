@@ -46,9 +46,11 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
+      - name: Validate dated daily and weekly editions
+        run: bundle exec ruby scripts/validate_market_editions.rb
       - name: Check private and build files stay out of the website
         run: |
-          for path in .git .github .mcp.json .env local vendor node_modules workers scripts tests Gemfile Gemfile.lock package.json package-lock.json Dockerfile docker-compose.yaml SECURITY.md; do
+          for path in .git .github .mcp.json .env _plugins local vendor node_modules workers scripts tests Gemfile Gemfile.lock package.json package-lock.json Dockerfile docker-compose.yaml SECURITY.md; do
             test ! -e "_site/$path" || { echo "Unexpected published path: $path"; exit 1; }
           done
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4

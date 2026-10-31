@@ -4,6 +4,9 @@
   if (!root) return;
   const status = root.querySelector("[data-market-remote-state]");
   const localDate = root.dataset.commentaryDate || "";
+  const editionDate = root.dataset.editionDate || localDate;
+  const editionSelect = root.querySelector("[data-market-edition-select]");
+  if (editionSelect) editionSelect.addEventListener("change", () => window.location.assign(editionSelect.value));
   const explorer = root.querySelector("[data-fingerprint-explorer]");
   const load = async () => {
     try {
@@ -12,13 +15,12 @@
       if (!response.ok) throw new Error("Tracker history unavailable.");
       const rows = FingerprintExplorer.parseCsv(await response.text());
       if (!rows.length) throw new Error("Tracker history is empty.");
-      const latest = rows.at(-1).date;
-      const initialDate = rows.some((row) => row.date === localDate) ? localDate : latest;
-      status.textContent = localDate
-        ? `The interactive chart can show any recorded date. Commentary on this page is for ${localDate}.${latest !== localDate ? ` Latest Tracker observation: ${latest}.` : ""}`
-        : `Latest Tracker observation: ${latest}. Commentary is pending.`;
+      const selected = rows.find((row) => row.date === editionDate);
+      if (!selected) throw new Error("No matching Tracker record for this daily report.");
+      const initialDate = selected.date;
+      status.textContent = `Report and fingerprint date: ${initialDate}. Use the report navigation above to change dates.`;
       await FingerprintExplorer.mount(explorer, {
-        rows, initialDate,
+        rows: [selected], initialDate, selectable: false,
         loadSvg: async (date) => {
           const result = await fetch(`${root.dataset.imageBase}${encodeURIComponent(date)}.svg?v=${Date.now()}`);
           if (!result.ok) throw new Error("The SVG is not available yet.");
@@ -26,7 +28,7 @@
         },
       }).ready;
     } catch (error) {
-      status.textContent = "Interactive Tracker data is unavailable. The published commentary remains available.";
+      status.textContent = "A matching interactive fingerprint is unavailable for this report. The dated commentary remains available.";
       if (!/^\d{4}-\d{2}-\d{2}$/.test(localDate)) return;
       const image = root.querySelector("[data-market-image]");
       const url = `${root.dataset.imageBase}${encodeURIComponent(localDate)}.png`;
