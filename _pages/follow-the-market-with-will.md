@@ -101,7 +101,7 @@ This dashboard combines two complementary metrics.
 
 ### Drawdown
 
-Drawdown measures how far an ETF's closing price is below its highest closing price during the previous 52 weeks.
+Drawdown measures how far an ETF's closing price is below the selected 52-week high. Current reports use the highest intraday price during the trailing 365 days; earlier observations may use closing-price highs.
 
 It answers a simple question:
 
