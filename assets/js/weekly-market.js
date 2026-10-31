@@ -9,6 +9,9 @@
   const image = root.querySelector("[data-weekly-image]");
   const imageLink = root.querySelector("[data-weekly-image-link]");
   const commentaryDate = root.dataset.commentaryDate || "";
+  const editionDate = root.dataset.editionDate || commentaryDate;
+  const editionSelect = root.querySelector("[data-weekly-edition-select]");
+  if (editionSelect) editionSelect.addEventListener("change", () => window.location.assign(editionSelect.value));
   const setStatus = (text) => { status.hidden = !text; status.textContent = text; };
 
   async function loadDashboard() {
@@ -19,24 +22,30 @@
       if (!response.ok) throw new Error("History unavailable");
       const reports = api.parseHistory(await response.text());
       const latest = reports[reports.length - 1];
-      dateLabel.dateTime = latest.date; dateLabel.textContent = api.formatDate(latest.date);
-      const currentImageUrl = `${root.dataset.imageUrl}?v=${encodeURIComponent(latest.date)}`;
-      image.src = currentImageUrl; image.alt = `Weekly ETF dashboard through ${api.formatDate(latest.date)}.`; imageLink.href = currentImageUrl;
+      const editionReports = reports.filter((report) => !editionDate || report.date <= editionDate);
+      const selected = editionReports[editionReports.length - 1];
+      if (!selected || (editionDate && selected.date !== editionDate)) throw new Error("No matching chart observation for this report.");
+      dateLabel.dateTime = selected.date; dateLabel.textContent = api.formatDate(selected.date);
+      if (image && imageLink) {
+        const sameWeek = selected.date === latest.date;
+        image.closest("figure").hidden = !sameWeek;
+        if (sameWeek) {
+          const currentImageUrl = `${root.dataset.imageUrl}?v=${encodeURIComponent(selected.date)}`;
+          image.src = currentImageUrl; image.alt = `Weekly ETF dashboard through ${api.formatDate(selected.date)}.`; imageLink.href = currentImageUrl;
+        }
+      }
       const byDate = new Map(reports.map((report) => [report.date, report]));
       root.querySelectorAll("[data-weekly-archive-snapshot]").forEach((el) => {
         const report = byDate.get(el.dataset.weeklyDate);
         el.textContent = report ? report.rows.map((row) => `${row.ticker} ${api.percent(row.drawdown)} drawdown / ${api.percent(row.week_over_week)} weekly change`).join("; ") : "Market data is unavailable for this week.";
       });
-      api.create(explorer, reports, window.echarts);
+      api.create(explorer, editionReports, window.echarts);
       fallback.open = false;
-      if (!commentaryDate || latest.date > commentaryDate) {
-        setStatus(`Data is available through ${api.formatDate(latest.date)}. Published notes below are ${commentaryDate ? `for ${api.formatDate(commentaryDate)}` : "pending"}.`);
-      } else if (latest.date < commentaryDate) {
-        setStatus(`Data is available through ${api.formatDate(latest.date)}. Published notes below are for ${api.formatDate(commentaryDate)}.`);
-      } else setStatus("");
+      setStatus(editionDate && selected.date < latest.date
+        ? `Viewing the report and chart for ${api.formatDate(selected.date)}. The chart includes only observations through this week.` : "");
     } catch (error) {
       explorer.hidden = true; fallback.open = true;
-      setStatus("The interactive chart is unavailable. The static dashboard and published weekly notes remain available below.");
+      setStatus("The interactive chart is unavailable for this report. Its recorded weekly snapshot and written notes remain available below.");
     }
   }
   loadDashboard();

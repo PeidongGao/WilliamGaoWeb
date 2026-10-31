@@ -1,0 +1,18 @@
+<nav class="mp-week-navigation" aria-label="Weekly report history">
+  {% if page.weekly_edition_previous %}
+  <a class="mp-week-step" data-weekly-previous href="{{ page.weekly_edition_previous.url | relative_url }}" rel="prev" aria-label="Previous weekly report: {{ page.weekly_edition_previous.date | date: '%B %-d, %Y' }}">← Previous week</a>
+  {% else %}<span class="mp-week-step" aria-disabled="true">← Previous week</span>{% endif %}
+  <label>Week ending
+    <select data-weekly-edition-select aria-label="Weekly report date">
+      {% for edition in weekly_entries %}
+      {% assign edition_day = edition.date | date: '%Y-%m-%d' %}
+      {% assign selected_day = selected_week.date | date: '%Y-%m-%d' %}
+      <option value="{{ '/follow-the-market-with-will/' | append: edition_day | append: '/' | relative_url }}"{% if edition_day == selected_day %} selected{% endif %}>{{ edition.date | date: '%B %-d, %Y' }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  {% if page.weekly_edition_next %}
+  <a class="mp-week-step" data-weekly-next href="{{ page.weekly_edition_next.url | relative_url }}" rel="next" aria-label="Next weekly report: {{ page.weekly_edition_next.date | date: '%B %-d, %Y' }}">Next week →</a>
+  {% else %}<span class="mp-week-step" aria-disabled="true">Next week →</span>{% endif %}
+  <a class="mp-week-latest" href="{{ '/follow-the-market-with-will/' | relative_url }}">Latest report</a>
+</nav>
