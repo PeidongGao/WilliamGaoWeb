@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "fitvids": "^2.1.1",
-    "jquery": "^3.7.1",
+    "jquery": "^4.0.0",
     "jquery-smooth-scroll": "^2.2.0",
     "magnific-popup": "^1.2.0"
   },
