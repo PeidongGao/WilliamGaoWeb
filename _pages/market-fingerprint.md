@@ -39,6 +39,9 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 <p class="wg-market-remote-state" data-market-remote-state role="status" aria-live="polite">Latest Tracker data will load when JavaScript is available.</p>
 
+<div data-fingerprint-explorer></div>
+<noscript><p>Enable JavaScript to explore historical fingerprints and inspect each indicator.</p></noscript>
+
 <figure class="wg-market-fingerprint-image" data-market-figure hidden>
   <a data-market-image-link href="#" target="_blank" rel="noopener noreferrer" aria-label="Open the current Overnight Market Fingerprint at full resolution">
     <img data-market-image alt="">
@@ -85,7 +88,7 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 <h3>Radar Chart</h3>
 
-<p>The radar chart shows the nine tracked indicators together. The dashed circle marks no overnight change; positions beyond or within it show the size and direction of each direction-adjusted move. Labels show the raw opening-gap percentage.</p>
+<p>The radar chart shows the nine tracked indicators together. The dashed circle marks no overnight change; positions beyond or within it show the size and direction of each direction-adjusted move. Labels show the raw gap/change percentage. Hover, focus, or tap a point or tile to inspect its baseline and opening/reference value. Select a historical date, switch between the full figure, radar, and heatmap, or zoom and drag to inspect the original chart more closely. The commentary remains dated separately below.</p>
 
 <h3>Heatmap</h3>
 
@@ -116,4 +119,6 @@ summary: "A daily overnight market read based on the latest Market Fingerprint."
 
 </div>
 
+<link rel="stylesheet" href="{{ '/assets/market/fingerprint.css' | relative_url }}">
+<script src="{{ '/assets/market/fingerprint.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/market-fingerprint.js' | relative_url }}" defer></script>
