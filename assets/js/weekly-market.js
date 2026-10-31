@@ -10,7 +10,7 @@
   const imageLink = root.querySelector("[data-weekly-image-link]");
   const commentaryDate = root.dataset.commentaryDate || "";
   const editionDate = root.dataset.editionDate || commentaryDate;
-  const editionSelect = root.querySelector("[data-weekly-edition-select]");
+  const editionSelect = root.querySelector("[data-market-edition-select]");
   if (editionSelect) editionSelect.addEventListener("change", () => window.location.assign(editionSelect.value));
   const setStatus = (text) => { status.hidden = !text; status.textContent = text; };
 

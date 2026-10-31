@@ -27,7 +27,7 @@
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
       {% endif %}
       {% if forloop.last %}
-        <li class="current">{{ page.title }}</li>
+        <li class="current">{% if page.market_edition_date %}{{ page.market_edition_date | date: "%B %-d, %Y" }}{% else %}{{ page.title }}{% endif %}</li>
       {% else %}
         {% assign i = i | plus: 1 %}
         {% assign crumb_url = crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path %}
@@ -35,7 +35,7 @@
           {% capture crumb_url %}/resources/{{ crumb | downcase | replace: '%20', '-' }}/{% endcapture %}
         {% endif %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="{{ base_path }}{{ crumb_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+          <a href="{{ base_path }}{{ crumb_url }}" itemprop="item"><span itemprop="name">{% if page.market_edition_date and forloop.index == 1 %}{% if page.market_edition_type == 'daily' %}Daily fingerprint{% else %}Weekly review{% endif %}{% else %}{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}{% endif %}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>

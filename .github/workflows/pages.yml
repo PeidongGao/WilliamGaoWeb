@@ -46,6 +46,8 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
+      - name: Validate dated daily and weekly editions
+        run: bundle exec ruby scripts/validate_market_editions.rb
       - name: Check private and build files stay out of the website
         run: |
           for path in .git .github .mcp.json .env _plugins local vendor node_modules workers scripts tests Gemfile Gemfile.lock package.json package-lock.json Dockerfile docker-compose.yaml SECURITY.md; do

@@ -1,0 +1,20 @@
+{% assign edition_kind = page.market_edition_type | default: 'weekly' %}
+{% assign edition_unit = 'week' %}{% if edition_kind == 'daily' %}{% assign edition_unit = 'day' %}{% endif %}
+<nav class="mp-edition-navigation" aria-label="{{ edition_kind | capitalize }} report history">
+  {% if page.market_edition_previous %}
+  <a class="mp-edition-step" data-market-edition-previous href="{{ page.market_edition_previous.url | relative_url }}" rel="prev" aria-label="Previous {{ edition_kind }} report: {{ page.market_edition_previous.date | date: '%B %-d, %Y' }}">← Previous {{ edition_unit }}</a>
+  {% else %}<span class="mp-edition-step" aria-disabled="true">← Previous {{ edition_unit }}</span>{% endif %}
+  <label>{% if edition_kind == 'weekly' %}Week ending{% else %}Report date{% endif %}
+    <select data-market-edition-select aria-label="{{ edition_kind | capitalize }} report date">
+      {% for edition in include.entries %}
+      {% assign edition_day = edition.date | date: '%Y-%m-%d' %}
+      {% assign selected_day = include.selected.date | date: '%Y-%m-%d' %}
+      <option value="{{ page.market_edition_root | append: edition_day | append: '/' | relative_url }}"{% if edition_day == selected_day %} selected{% endif %}>{{ edition.date | date: '%B %-d, %Y' }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  {% if page.market_edition_next %}
+  <a class="mp-edition-step" data-market-edition-next href="{{ page.market_edition_next.url | relative_url }}" rel="next" aria-label="Next {{ edition_kind }} report: {{ page.market_edition_next.date | date: '%B %-d, %Y' }}">Next {{ edition_unit }} →</a>
+  {% else %}<span class="mp-edition-step" aria-disabled="true">Next {{ edition_unit }} →</span>{% endif %}
+  <a class="mp-edition-latest" href="{{ page.market_edition_root | relative_url }}">Latest report</a>
+</nav>

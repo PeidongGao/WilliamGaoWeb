@@ -1,0 +1,25 @@
+{% if include.entries.size > 1 %}
+<details class="wg-market-archive">
+  <summary>{{ include.kind | capitalize }} report archive</summary>
+  {% if page.market_edition_date %}
+  <ul class="mp-edition-archive-links">
+    {% for entry in include.entries %}{% if entry.date != include.selected.date %}
+    <li><a href="{{ page.market_edition_root | append: entry.date | append: '/' | relative_url }}">{{ entry.date | date: "%B %-d, %Y" }}</a></li>
+    {% endif %}{% endfor %}
+  </ul>
+  {% else %}
+    {% for entry in include.entries %}{% if entry.date != include.selected.date %}
+    <details class="wg-market-archive__entry">
+      <summary>{% if include.kind == 'weekly' %}Week ending {% endif %}<time datetime="{{ entry.date }}">{{ entry.date | date: "%B %-d, %Y" }}</time></summary>
+      <p><a href="{{ page.market_edition_root | append: entry.date | append: '/' | relative_url }}">Open the full report and chart →</a></p>
+      <p><strong>Summary:</strong> {{ entry.summary | escape }}</p>
+      <p><strong>Key observation:</strong> {{ entry.key_observation | escape }}</p>
+      {% if include.kind == 'weekly' %}<p><strong>Snapshot:</strong> <span data-weekly-archive-snapshot data-weekly-date="{{ entry.date }}">Market data will load when JavaScript is available.</span></p>{% endif %}
+      {% for note in entry.market_notes %}
+        {% if include.kind == 'daily' %}{{ note | markdownify }}{% else %}<p>{{ note | escape }}</p>{% endif %}
+      {% endfor %}
+    </details>
+    {% endif %}{% endfor %}
+  {% endif %}
+</details>
+{% endif %}
