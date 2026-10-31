@@ -36,7 +36,7 @@
     "build:js": "npm run uglify",
     "build": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll build",
     "serve": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll serve --config _config.yml,_config.dev.yml",
-    "test": "node --test workers/markdown-negotiation/worker.test.mjs"
+    "test": "node --test workers/markdown-negotiation/worker.test.mjs tests/dashboard.test.cjs"
   },
   "private": true
 }
