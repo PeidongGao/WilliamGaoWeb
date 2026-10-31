@@ -26,6 +26,7 @@
 .market-publication-page .mp-section-head h2 { padding: 0; border: 0; margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
 .mp-section-head p { margin: 0; color: var(--color-text-muted); font-size: .7rem; font-variant-numeric: tabular-nums; }
 .mp-chart-section { margin: 0 0 2rem; }
+.market-publication-page .mp-chart-section .wg-market-fingerprint-image { width: 100%; max-width: 100%; margin-right: 0; }
 .market-publication-page .mp-chart-section > .wg-market-remote-state { margin: .15rem 0 .75rem; font-size: .7rem; max-width: 95ch; }
 .mp-caption { color: var(--color-text-muted); font-size: .68rem; line-height: 1.65; margin: .5rem 0 0; }
 .mp-reading-grid { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(230px, 1fr); gap: 3.5rem; padding-top: 1.5rem; border-top: 2px solid var(--color-text); }
