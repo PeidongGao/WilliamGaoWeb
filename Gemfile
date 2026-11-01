@@ -13,7 +13,7 @@ group :jekyll_plugins do
 end
 
 # Keep the existing renderer without the unused GitHub Pages theme/archive stack.
-gem 'activesupport', '~> 8.0.4', '>= 8.0.4.1'
+gem 'activesupport', '~> 8.1.4'
 gem 'connection_pool', '~> 2.5'
 gem 'kramdown-parser-gfm', '~> 1.1'
 gem 'nokogiri', '>= 1.19.4', '< 2'
