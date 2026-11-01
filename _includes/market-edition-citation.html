@@ -1,0 +1,8 @@
+{% assign citation_day = include.entry.date | date: '%Y-%m-%d' %}
+{% assign citation_date = include.entry.date | date: '%B %-d, %Y' %}
+{% assign citation_path = page.market_edition_root | append: citation_day | append: '/' %}
+{% assign citation_url = citation_path | absolute_url %}
+<aside class="mp-citation" aria-labelledby="market-citation-heading">
+  <h2 id="market-citation-heading">Cite this commentary as</h2>
+  <p data-market-citation>William Peidong Gao. “{% if page.market_edition_type == 'weekly' %}Follow the Market with Will: Week Ending {{ citation_date }}{% else %}Market Fingerprint: {{ citation_date }}{% endif %}.” WillGaoLab. <a data-market-citation-link href="{{ citation_url }}">{{ citation_url }}</a></p>
+</aside>
