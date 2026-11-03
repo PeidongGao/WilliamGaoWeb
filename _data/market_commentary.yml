@@ -1,3 +1,13 @@
+- date: "2026-11-02"
+  summary: "At their recorded openings, the S&P 500 rose 0.41%, Nasdaq-100 futures gained 0.19%, and the Dow advanced 0.46%. The Cboe Volatility Index (VIX) fell 1.91%, Bitcoin gained 0.05% from its UTC reference at collection, and gold futures declined 0.23%. The 10-year Treasury yield decreased 0.51% in relative terms, the U.S. dollar index rose 0.09%, and West Texas Intermediate (WTI) crude fell 1.66%."
+  key_observation: "Deepening losses across artificial intelligence (AI) and semiconductor stocks brought major technology funds close to July’s drawdown extremes, intensifying concerns about economic spillovers despite resilient U.S. manufacturing and uneven market breadth."
+  market_notes:
+    - "The S&P 500 fell 0.51% and the Nasdaq Composite lost 1.07% after an early rally faded, while the Dow rose 0.41% and the equal-weight S&P 500 fund gained 0.76%."
+    - "Intel, AMD and Micron fell 8.80%, 7.52% and 5.78%, respectively, amid renewed scrutiny of AI financing following Oracle’s plans to raise $20 billion through share and debt sales."
+    - "The Invesco QQQ Trust closed 10.34% below its October peak, while the VanEck Semiconductor exchange-traded fund stood 24.01% below its June peak, approaching July’s respective 11.32% and 24.62% drawdowns."
+    - "WTI crude settled 7.36% lower at $96.46 a barrel as hopes for U.S.–Iran peace talks eased supply fears, providing energy-price relief without preventing further technology losses."
+    - "The Institute for Supply Management’s U.S. manufacturing index rose to 55.5 in October as major Asian factory surveys signaled slower growth, leaving evidence of a broad economic contraction inconclusive despite deeper technology losses."
+
 - date: "2026-10-30"
   summary: "At their recorded openings, the S&P 500 fell 1.16% and Nasdaq-100 futures declined 1.29%, while the Dow rose 0.08%. VIX increased 7.15%, Bitcoin gained 0.11% from its UTC reference at collection, and gold futures rose 0.05%. The 10-year Treasury yield decreased 1.36% in relative terms, the U.S. dollar index slipped 0.15%, and West Texas Intermediate (WTI) crude gained 0.78%."
   key_observation: "Disappointing technology earnings and doubts about artificial intelligence (AI) investment returns drove sharp index losses, while gold and cryptocurrencies weakened despite demand for the safety of Treasury bonds."
