@@ -1,3 +1,13 @@
+- date: "2026-11-03"
+  summary: "At their recorded openings, the S&P 500 rose 0.15%, Nasdaq-100 futures gained 0.26%, and the Dow fell 0.10%. The Cboe Volatility Index (VIX) increased 2.41%, Bitcoin fell 0.88% from its UTC reference at collection, and gold futures declined 0.23%. The 10-year Treasury yield rose 0.76% in relative terms, the U.S. dollar index slipped 0.02%, and West Texas Intermediate (WTI) crude fell 0.17%."
+  key_observation: "The ongoing artificial intelligence (AI) selloff, weak market breadth and the midterm shift in congressional control kept investment and regulatory risks in focus, while evidence of a broad recession remained inconclusive."
+  market_notes:
+    - "The S&P 500 rose 0.36% and the Nasdaq Composite gained 0.83%, but the Dow fell 0.38% and the equal-weight S&P 500 fund lost 0.33%, showing limited participation in the gains."
+    - "Apple fell 1.90% after warning of memory-cost pressure on margins, while AMD’s after-close results showed 97% data-center revenue growth, underscoring the gap between strong infrastructure demand and uncertain investment returns."
+    - "The Invesco QQQ Trust and VanEck Semiconductor fund remained 9.79% and 18.20% below their October closing peaks, with their worst losses through November 3 still short of July’s 11.32% and 24.62% drawdowns."
+    - "South Korea’s and Taiwan’s benchmark indexes both fell 3.59%, while Europe’s STOXX 600 lost 0.58%, showing continuing international weakness even as several U.S. technology heavyweights advanced."
+    - "Results called after the November 3 cash close gave Democrats control of the House and Senate, raising the prospect of greater AI and data-center oversight under divided government."
+
 - date: "2026-11-02"
   summary: "At their recorded openings, the S&P 500 rose 0.41%, Nasdaq-100 futures gained 0.19%, and the Dow advanced 0.46%. The Cboe Volatility Index (VIX) fell 1.91%, Bitcoin gained 0.05% from its UTC reference at collection, and gold futures declined 0.23%. The 10-year Treasury yield decreased 0.51% in relative terms, the U.S. dollar index rose 0.09%, and West Texas Intermediate (WTI) crude fell 1.66%."
   key_observation: "Deepening losses across artificial intelligence (AI) and semiconductor stocks brought major technology funds close to July’s drawdown extremes, intensifying concerns about economic spillovers despite resilient U.S. manufacturing and uneven market breadth."
