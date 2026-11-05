@@ -1,3 +1,13 @@
+- date: "2026-11-04"
+  summary: "At their recorded openings, the S&P 500 rose 0.88%, Nasdaq-100 futures gained 0.37%, and the Dow advanced 1.20%. The Cboe Volatility Index (VIX) fell 7.83%, Bitcoin gained 0.27% from its UTC reference at collection, and gold futures edged up 0.01%. The 10-year Treasury yield declined 0.67% in relative terms, the U.S. dollar index fell 0.39%, and West Texas Intermediate (WTI) crude rose 0.75%."
+  key_observation: "Artificial intelligence (AI) stocks diverged sharply as established internet and cloud platforms rallied while memory suppliers and data-center operators sold off on expectations of a slower post-election infrastructure buildout."
+  market_notes:
+    - "The S&P 500 closed 1.58% higher, the Nasdaq Composite gained 1.44% and the Dow rose 3.03%, despite sharp losses in parts of the AI supply chain."
+    - "Microsoft gained 6.7%, Amazon 6.1%, Alphabet 3.2% and Meta 1.4%, as investors anticipated that slower construction could ease capital spending and increase the value of these companies’ existing computing capacity."
+    - "Micron fell 7.00% and SpaceX (SPCX) lost 3.81%, while data-center operators Hut 8 and IREN plunged 23% and 11%, respectively."
+    - "The Philadelphia semiconductor index fell 3.1%, although Advanced Micro Devices (AMD) rose 1% after forecasting stronger-than-expected 2027 growth, showing that the infrastructure selloff was substantial without being uniform across chipmakers."
+    - "Democratic victories in key data-center states raised concerns about approval delays and tighter oversight, making a slower buildout an investor expectation rather than evidence of an already confirmed industry contraction."
+
 - date: "2026-11-03"
   summary: "At their recorded openings, the S&P 500 rose 0.15%, Nasdaq-100 futures gained 0.26%, and the Dow fell 0.10%. The Cboe Volatility Index (VIX) increased 2.41%, Bitcoin fell 0.88% from its UTC reference at collection, and gold futures declined 0.23%. The 10-year Treasury yield rose 0.76% in relative terms, the U.S. dollar index slipped 0.02%, and West Texas Intermediate (WTI) crude fell 0.17%."
   key_observation: "The ongoing artificial intelligence (AI) selloff, weak market breadth and the midterm shift in congressional control kept investment and regulatory risks in focus, while evidence of a broad recession remained inconclusive."
