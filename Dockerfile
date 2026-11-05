@@ -1,4 +1,4 @@
-FROM node:26.12.1-bookworm-slim AS node
+FROM node:26.13.0-bookworm-slim AS node
 FROM ruby:3.4.11-slim-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential \
