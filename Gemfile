@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '3.4.11'
 
 group :jekyll_plugins do
-  gem 'jekyll', '~> 3.10.0'
+  gem 'jekyll', '~> 4.4.1'
   gem 'jekyll-feed', '~> 0.18'
   gem 'jekyll-gist', '~> 1.5'
   gem 'jekyll-paginate', '~> 1.1'
