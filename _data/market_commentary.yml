@@ -1,3 +1,12 @@
+- date: "2026-11-05"
+  summary: "The late-collected tracker recorded the S&P 500 at −0.13%, Nasdaq-100 futures −6.74%, Dow Jones +0.61%, Cboe Volatility Index (VIX) +3.19%, Bitcoin +0.16%, gold futures +0.63%, the 10-year Treasury yield +0.20% in relative terms, the U.S. dollar index −0.02% and West Texas Intermediate (WTI) crude +3.50%. Cash opening gaps, evening futures readings and Bitcoin’s November 6 UTC reference are mixed here, rather than synchronized November 5 opening moves or closing returns."
+  key_observation: "Today’s plunge exposes artificial intelligence (AI) valuation and financing risks amplified by expected regulation, while evidence remains insufficient to diagnose a systemic financial crisis."
+  market_notes:
+    - "The S&P 500 closed down 4.36%, the Nasdaq Composite 5.52% and the Dow 3.44%, turning yesterday’s sector split into broad selling and pushing the Nasdaq into correction territory."
+    - "The Philadelphia semiconductor index fell about 12%, with Nvidia down 9% and Advanced Micro Devices down 17%, while Qualcomm’s 9.5% decline also followed disappointing smartphone-chip sales."
+    - "Investors anticipated tougher Democratic oversight and state-level data-center restrictions, including a proposed Texas moratorium, while federal moratorium legislation introduced in March remained in committee rather than becoming a new nationwide ban."
+    - "CoreWeave’s five-year credit default swap spread, the premium for protection against default, reached a record 1,267.9 basis points, showing that AI financing concerns extend beyond falling share prices."
+
 - date: "2026-11-04"
   summary: "At their recorded openings, the S&P 500 rose 0.88%, Nasdaq-100 futures gained 0.37%, and the Dow advanced 1.20%. The Cboe Volatility Index (VIX) fell 7.83%, Bitcoin gained 0.27% from its UTC reference at collection, and gold futures edged up 0.01%. The 10-year Treasury yield declined 0.67% in relative terms, the U.S. dollar index fell 0.39%, and West Texas Intermediate (WTI) crude rose 0.75%."
   key_observation: "Artificial intelligence (AI) stocks diverged sharply as established internet and cloud platforms rallied while memory suppliers and data-center operators sold off on expectations of a slower post-election infrastructure buildout."
