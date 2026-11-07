@@ -1,3 +1,12 @@
+- date: "2026-11-06"
+  summary: "At their recorded openings, the S&P 500 rose 0.33%, Nasdaq-100 futures fell 0.42%, and the Dow declined 0.86%. The Cboe Volatility Index (VIX) fell 1.77%, Bitcoin rose 0.23% from its November 7 UTC reference at collection, and gold futures fell 0.36%. The 10-year Treasury yield rose 0.76% in relative terms, the U.S. dollar index fell 0.06%, and West Texas Intermediate (WTI) crude rose 0.75%."
+  key_observation: "Friday’s rebound recovered only part of the week’s artificial intelligence (AI) losses, while lawmakers’ calls to restrict development intensified regulatory fears without proving that one post caused the selloff."
+  market_notes:
+    - "The S&P 500 closed up 0.31% and the Nasdaq Composite gained 1.09%, while the Dow fell 0.46%, leaving the Nasdaq down 3.4% for its fourth consecutive weekly decline."
+    - "The Philadelphia semiconductor index rebounded 4.2%, with Advanced Micro Devices gaining 11% and Nvidia rising 2.8%, recovering only part of Thursday’s severe sector losses."
+    - "Representative Yassamin Ansari’s November 4 post called for an advanced-AI pause, industry regulation and a superintelligence ban, and Elon Musk amplified it before Thursday’s cash open."
+    - "Senator Bernie Sanders separately demanded a national data-center moratorium on November 4, while the federal moratorium and superintelligence-ban bills remained in committee, leaving these demands as proposals rather than enacted nationwide restrictions."
+
 - date: "2026-11-05"
   summary: "The late-collected tracker recorded the S&P 500 at −0.13%, Nasdaq-100 futures −6.74%, Dow Jones +0.61%, Cboe Volatility Index (VIX) +3.19%, Bitcoin +0.16%, gold futures +0.63%, the 10-year Treasury yield +0.20% in relative terms, the U.S. dollar index −0.02% and West Texas Intermediate (WTI) crude +3.50%. Cash opening gaps, evening futures readings and Bitcoin’s November 6 UTC reference are mixed here, rather than synchronized November 5 opening moves or closing returns."
   key_observation: "Today’s plunge exposes artificial intelligence (AI) valuation and financing risks amplified by expected regulation, while evidence remains insufficient to diagnose a systemic financial crisis."
