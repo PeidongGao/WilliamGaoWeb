@@ -1,3 +1,13 @@
+- date: "2026-11-13"
+  summary: "At their recorded openings, the S&P 500 rose 0.32%, Nasdaq-100 futures gained 0.05%, and the Dow advanced 0.37%. The Cboe Volatility Index (VIX) rose 0.43%, Bitcoin fell 4.24% from its UTC reference at collection, and gold futures slipped 0.05%. The 10-year Treasury yield rose 0.90% in relative terms, the U.S. dollar index gained 0.06%, and West Texas Intermediate (WTI) crude rose 0.06%."
+  key_observation: "Nvidia’s problems spread into a broader artificial intelligence (AI) and semiconductor selloff as persistent inflation sustained rate-hike concerns, although the major indexes recovered part of their intraday losses."
+  market_notes:
+    - "The S&P 500 closed down 0.40% and the Nasdaq Composite lost 0.91%, recovering from late-morning declines of 1.01% and 1.74%, respectively, while the Dow finished 0.10% higher."
+    - "Advanced Micro Devices (AMD) fell 8.75%, Broadcom lost 4.76%, and Nvidia declined 2.01%, reversing Thursday’s divergence as selling spread to competitors that had previously benefited from Nvidia’s turmoil."
+    - "Nvidia’s leadership disruption raised concerns about interconnected AI financing arrangements, including its existing revenue guarantees for cloud providers, although the board said operations, customer commitments and the product roadmap should continue uninterrupted."
+    - "October’s Producer Price Index (PPI) rose 0.3% monthly and 6.5% annually, the largest annual increase since November 2022, providing limited reassurance despite a slightly softer-than-expected headline reading."
+    - "New York Fed President John Williams said Thursday evening that inflation remained persistent and further rate increases were likely, reinforcing borrowing-cost concerns without specifying the timing or size of future moves."
+
 - date: "2026-11-12"
   summary: "At their recorded openings, the S&P 500 fell 0.90%, Nasdaq-100 futures declined 0.59%, and the Dow lost 0.11%. The Cboe Volatility Index (VIX) rose 4.97%, Bitcoin fell 3.30% from its UTC reference at collection, and gold futures slipped 0.16%. The 10-year Treasury yield rose 1.16% in relative terms, the U.S. dollar index fell 0.05%, and West Texas Intermediate (WTI) crude declined 0.03%."
   key_observation: "The market remained choppy rather than decisively trending, with modest large-cap index losses masking sharp swings across artificial intelligence (AI) and semiconductor stocks."
