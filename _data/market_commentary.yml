@@ -1,3 +1,13 @@
+- date: "2026-11-16"
+  summary: "At their recorded openings, the S&P 500 fell 0.63%, Nasdaq-100 futures rose 0.10%, and the Dow declined 0.15%. The Cboe Volatility Index (VIX) rose 3.63%, Bitcoin fell 0.53% from its UTC reference at collection, and gold slipped 0.43%. The 10-year Treasury yield fell 0.29% in relative terms, the U.S. dollar index edged up 0.001%, and West Texas Intermediate (WTI) crude rose 0.10%."
+  key_observation: "Broad equity losses and Bitcoin’s weekend plunge reflected weakening risk appetite, as artificial intelligence (AI) concerns, tighter chip controls and crypto deleveraging outweighed modest Treasury-yield relief."
+  market_notes:
+    - "The S&P 500 fell 1.92%, the Nasdaq Composite lost 2.49%, and the Dow declined 1.41%, with nine of eleven S&P sectors lower and the semiconductor index down 5.3%."
+    - "Nvidia fell 4.1% as leadership turmoil and concerns about AI investment returns pressured the sector ahead of Tuesday’s earnings, making its revenue outlook an important test of confidence."
+    - "Bitcoin touched approximately $62,100 on Sunday amid roughly $2 billion in crypto-wide liquidations, mostly longs, following seven consecutive sessions of U.S. spot Bitcoin exchange-traded fund (ETF) outflows totaling approximately $1.91 billion."
+    - "The Bureau of Industry and Security (BIS), the U.S. Commerce Department’s export-control agency, announced licensing restrictions targeting overseas data centers that provide substantial remote access to advanced chips for companies in restricted jurisdictions."
+    - "BIS also announced additional licensing requirements for specified advanced chips sent to Singapore, Malaysia, Indonesia, Thailand and Brazil, raising potential approval and customer-screening burdens rather than imposing a blanket semiconductor sales ban."
+
 - date: "2026-11-13"
   summary: "At their recorded openings, the S&P 500 rose 0.32%, Nasdaq-100 futures gained 0.05%, and the Dow advanced 0.37%. The Cboe Volatility Index (VIX) rose 0.43%, Bitcoin fell 4.24% from its UTC reference at collection, and gold futures slipped 0.05%. The 10-year Treasury yield rose 0.90% in relative terms, the U.S. dollar index gained 0.06%, and West Texas Intermediate (WTI) crude rose 0.06%."
   key_observation: "Nvidia’s problems spread into a broader artificial intelligence (AI) and semiconductor selloff as persistent inflation sustained rate-hike concerns, although the major indexes recovered part of their intraday losses."
