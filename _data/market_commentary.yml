@@ -1,3 +1,12 @@
+- date: "2026-11-17"
+  summary: "At their recorded openings, the S&P 500 slipped 0.08%, Nasdaq-100 futures rose 0.11%, and the Dow Jones Industrial Average fell 0.43%. The Cboe Volatility Index rose 0.87%, gold gained 0.17%, and West Texas Intermediate crude fell 0.65%. The U.S. dollar index edged up 0.05%, and the 10-year Treasury yield rose 0.4 basis points, a relative increase of 0.08%. Bitcoin was down 0.91% from its midnight UTC reference when the tracker collected prices."
+  key_observation: "Selling spread beyond artificial intelligence (AI) stocks as investors awaited Nvidia’s earnings. Banks and retailers also lost ground, and by the close roughly 17 of every 20 stocks in the S&P 500 had fallen."
+  market_notes:
+    - "The Dow closed down 1.64%, more than twice the Nasdaq Composite’s 0.74% decline, while the S&P 500 recovered part of a 1.7% intraday drop to finish down 1.03%."
+    - "Bank shares fell amid concerns that slower AI investment could weigh on the economy, and Home Depot dropped 2.4% despite reporting earnings slightly above expectations."
+    - "A stronger-than-expected measure of underlying retail spending helped lift the 10-year Treasury yield toward 5.15% in the morning, but demand for Treasuries as stocks fell brought the yield back to 5.10%, below Monday’s 5.12% close."
+    - "Nvidia traded lower ahead of its earnings release and reported after the bell that quarterly revenue had more than doubled from a year earlier to $115.8 billion."
+
 - date: "2026-11-16"
   summary: "At their recorded openings, the S&P 500 fell 0.63%, Nasdaq-100 futures rose 0.10%, and the Dow declined 0.15%. The Cboe Volatility Index (VIX) rose 3.63%, Bitcoin fell 0.53% from its UTC reference at collection, and gold slipped 0.43%. The 10-year Treasury yield fell 0.29% in relative terms, the U.S. dollar index edged up 0.001%, and West Texas Intermediate (WTI) crude rose 0.10%."
   key_observation: "Broad equity losses and Bitcoin’s weekend plunge reflected weakening risk appetite, as artificial intelligence (AI) concerns, tighter chip controls and crypto deleveraging outweighed modest Treasury-yield relief."
