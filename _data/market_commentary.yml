@@ -1,3 +1,12 @@
+- date: "2026-11-18"
+  summary: "At their recorded openings, Nasdaq-100 futures rose 1.13%, the S&P 500 gained 0.21%, and the Dow Jones Industrial Average fell 0.26%. The Cboe Volatility Index fell 4.87%, gold slipped 0.23%, and West Texas Intermediate crude declined 0.30%. The U.S. dollar index gained 0.17%, and the 10-year Treasury yield rose one basis point to 5.113%, a relative increase of 0.20%. At collection, Bitcoin was down 3.65% from its midnight UTC reference."
+  key_observation: "Nvidia gave up its early gains and closed lower despite reporting stronger earnings than analysts expected. The Nasdaq Composite still finished higher, even as the Dow suffered a second straight steep decline. Wednesday’s selling was more uneven than Tuesday’s broad retreat."
+  market_notes:
+    - "Wednesday was the first full trading session after Nvidia reported quarterly revenue of $115.8 billion, up 103% from a year earlier, and the stock ended the day down 2.9% after its initial rally faded."
+    - "The Dow lost another 561 points, or 1.11%, bringing its two-day decline to 1,410 points, while the Nasdaq Composite gained 0.42% after falling 0.74% on Tuesday."
+    - "The S&P 500 surrendered its modest opening gain and closed down 0.23% for its fifth consecutive decline, its longest losing streak since June."
+    - "The 10-year Treasury yield reversed its opening rise and ended near 5.06%, below Tuesday’s 5.10% close, as oil prices fell."
+
 - date: "2026-11-17"
   summary: "At their recorded openings, the S&P 500 slipped 0.08%, Nasdaq-100 futures rose 0.11%, and the Dow Jones Industrial Average fell 0.43%. The Cboe Volatility Index rose 0.87%, gold gained 0.17%, and West Texas Intermediate crude fell 0.65%. The U.S. dollar index edged up 0.05%, and the 10-year Treasury yield rose 0.4 basis points, a relative increase of 0.08%. Bitcoin was down 0.91% from its midnight UTC reference when the tracker collected prices."
   key_observation: "Selling spread beyond artificial intelligence (AI) stocks as investors awaited Nvidia’s earnings. Banks and retailers also lost ground, and by the close roughly 17 of every 20 stocks in the S&P 500 had fallen."
