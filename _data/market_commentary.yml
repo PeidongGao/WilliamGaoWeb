@@ -1,3 +1,12 @@
+- date: "2026-11-19"
+  summary: "The S&P 500 opened 0.90% higher and the Dow Jones Industrial Average gained 0.47% at the open, while Nasdaq-100 futures edged down 0.05%. The Cboe Volatility Index opened 10.18% lower, gold slipped 0.31%, and West Texas Intermediate crude fell 1.69%. The U.S. dollar index eased 0.05%, and the 10-year Treasury yield rose 3.5 basis points to 5.101%, a relative increase of 0.69%. Bitcoin fell 2.35% from its midnight UTC reference to the tracker’s collection price."
+  key_observation: "Anthropic closed its first trading day 17.1% above its offering price, but buyers at the opening trade saw a 12.9% loss by the close. The broader market also gave up its early gains as selling spread across more than 90% of S&P 500 stocks."
+  market_notes:
+    - "Anthropic (ANT) priced its initial public offering at $83 a share, opened at $111.50 and finished at $97.17 as other artificial intelligence stocks continued to fall."
+    - "The S&P 500 closed down 2.0% for its sixth consecutive loss, the Dow dropped 1,101 points (2.2%), and the Nasdaq Composite fell 2.3%."
+    - "Minutes of the Federal Reserve’s October meeting, released Wednesday, showed that nearly all participants expected further rate increases, and by Thursday markets had priced in a December hike."
+    - "Higher expected interest rates raise the opportunity cost of holding gold, which pays no interest, and a firm dollar added pressure as spot gold hit a 14-month low and silver, platinum and palladium also fell."
+
 - date: "2026-11-18"
   summary: "At their recorded openings, Nasdaq-100 futures rose 1.13%, the S&P 500 gained 0.21%, and the Dow Jones Industrial Average fell 0.26%. The Cboe Volatility Index fell 4.87%, gold slipped 0.23%, and West Texas Intermediate crude declined 0.30%. The U.S. dollar index gained 0.17%, and the 10-year Treasury yield rose one basis point to 5.113%, a relative increase of 0.20%. At collection, Bitcoin was down 3.65% from its midnight UTC reference."
   key_observation: "Nvidia gave up its early gains and closed lower despite reporting stronger earnings than analysts expected. The Nasdaq Composite still finished higher, even as the Dow suffered a second straight steep decline. Wednesday’s selling was more uneven than Tuesday’s broad retreat."
