@@ -1,3 +1,11 @@
+- date: "2026-11-20"
+  summary: "The S&P 500 opened 0.35% lower, Nasdaq-100 futures slipped 0.001%, and the Dow Jones Industrial Average edged down 0.05%. The Cboe Volatility Index rose 0.67% at its open, while gold fell 1.40% and West Texas Intermediate crude slipped 0.13%. The U.S. dollar index eased 0.01%, and the 10-year Treasury yield fell 7.2 basis points to 4.980%, a relative decline of 1.43%. Bitcoin fell 5.88% from its midnight UTC reference to $58,262 at collection."
+  key_observation: "Friday’s modest opening losses gave way to a sharper selloff as artificial intelligence stocks led the market lower. Anthropic, which had closed its debut 17.1% above its offering price on Thursday, gave back more than half that premium in its second session."
+  market_notes:
+    - "The S&P 500 closed down 3.7% for its seventh straight decline, while the Dow lost 950 points, or 1.9%, and the Nasdaq Composite dropped 5.3%, leaving it down 2.7% for the year."
+    - "Anthropic traded near $84 around midday and recovered to $88.91 by the close, down 8.5% from Thursday’s $97.17 close but still 7.1% above its $83 offering price."
+    - "Friday’s losses brought the weekly declines to 8.6% for the S&P 500, 8.0% for the Dow and 10.0% for the Nasdaq Composite."
+
 - date: "2026-11-19"
   summary: "The S&P 500 opened 0.90% higher and the Dow Jones Industrial Average gained 0.47% at the open, while Nasdaq-100 futures edged down 0.05%. The Cboe Volatility Index opened 10.18% lower, gold slipped 0.31%, and West Texas Intermediate crude fell 1.69%. The U.S. dollar index eased 0.05%, and the 10-year Treasury yield rose 3.5 basis points to 5.101%, a relative increase of 0.69%. Bitcoin fell 2.35% from its midnight UTC reference to the tracker’s collection price."
   key_observation: "Anthropic closed its first trading day 17.1% above its offering price, but buyers at the opening trade saw a 12.9% loss by the close. The broader market also gave up its early gains as selling spread across more than 90% of S&P 500 stocks."
