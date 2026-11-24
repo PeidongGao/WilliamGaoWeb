@@ -1,3 +1,12 @@
+- date: "2026-11-23"
+  summary: "The S&P 500 opened 4.59% above Friday’s close, the Dow Jones Industrial Average opened 2.27% higher, and Nasdaq-100 futures gained 1.73% at their recorded open. The Cboe Volatility Index fell 12.57% and gold rose 1.57% at their openings. The 10-year Treasury yield rose 2.2 basis points to 4.934%, a relative increase of 0.45%. The U.S. dollar index edged up 0.03%, West Texas Intermediate crude slipped 0.37%, and Bitcoin was down 0.02% from midnight UTC at collection."
+  key_observation: "U.S. stocks rebounded across large and small companies after seven straight S&P 500 declines. The S&P 500 held its opening gains through the close, while the Nasdaq Composite recovered Friday’s losses and returned to positive territory for the year."
+  market_notes:
+    - "The S&P 500 gained 4.7% to close at 7,237.17, just above its opening level of 7,227.41 after Friday’s 3.7% decline."
+    - "The Nasdaq Composite led with a 6.5% gain, lifting its year-to-date return to 3.6% from a 2.7% loss at Friday’s close."
+    - "The Dow added 1,448 points, or 3.0%, and the small-cap Russell 2000 rose 3.4%, extending the rebound beyond large technology stocks."
+    - "Nvidia rose about 31% after its board reinstated Jensen Huang as chief executive, helping lift other artificial intelligence stocks."
+
 - date: "2026-11-20"
   summary: "The S&P 500 opened 0.35% lower, Nasdaq-100 futures slipped 0.001%, and the Dow Jones Industrial Average edged down 0.05%. The Cboe Volatility Index rose 0.67% at its open, while gold fell 1.40% and West Texas Intermediate crude slipped 0.13%. The U.S. dollar index eased 0.01%, and the 10-year Treasury yield fell 7.2 basis points to 4.980%, a relative decline of 1.43%. Bitcoin fell 5.88% from its midnight UTC reference to $58,262 at collection."
   key_observation: "Friday’s modest opening losses gave way to a sharper selloff as artificial intelligence stocks led the market lower. Anthropic, which had closed its debut 17.1% above its offering price on Thursday, gave back more than half that premium in its second session."
