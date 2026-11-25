@@ -1,3 +1,12 @@
+- date: "2026-11-24"
+  summary: "The S&P 500 opened 0.90% below Monday’s close and the Dow Jones Industrial Average opened 0.20% lower, while Nasdaq-100 futures edged up 0.30% at their recorded open. The Cboe Volatility Index fell 0.38% and gold slipped 0.41% at their openings. The 10-year Treasury yield fell 2.8 basis points to 4.890%, a relative decline of 0.57%. The U.S. dollar index edged down 0.01%, West Texas Intermediate crude rose 0.24%, and Bitcoin fell 2.34% from midnight UTC to $59,781 at collection."
+  key_observation: "The Dow and small caps extended Monday’s gains, while chip stocks pulled the Nasdaq Composite lower. The S&P 500 gave back only 36 points of Monday’s 327-point advance, leaving most of the broad rebound intact."
+  market_notes:
+    - "The Dow reversed its opening decline to gain 423 points, or 0.85%, closing above 50,000, and the small-cap Russell 2000 rose 0.57%."
+    - "Nvidia fell 5.86% after Monday’s roughly 31% surge, and losses in Micron and Advanced Micro Devices added to the pressure on chip stocks as the Nasdaq Composite fell 1.48%."
+    - "The S&P 500 recovered part of its opening loss to finish at 7,201.09, down 0.50% from Monday’s close."
+    - "Anthropic fell 6.5% to $81.91, erasing its first-day premium and closing 1.3% below its $83 initial public offering price."
+
 - date: "2026-11-23"
   summary: "The S&P 500 opened 4.59% above Friday’s close, the Dow Jones Industrial Average opened 2.27% higher, and Nasdaq-100 futures gained 1.73% at their recorded open. The Cboe Volatility Index fell 12.57% and gold rose 1.57% at their openings. The 10-year Treasury yield rose 2.2 basis points to 4.934%, a relative increase of 0.45%. The U.S. dollar index edged up 0.03%, West Texas Intermediate crude slipped 0.37%, and Bitcoin was down 0.02% from midnight UTC at collection."
   key_observation: "U.S. stocks rebounded across large and small companies after seven straight S&P 500 declines. The S&P 500 held its opening gains through the close, while the Nasdaq Composite recovered Friday’s losses and returned to positive territory for the year."
