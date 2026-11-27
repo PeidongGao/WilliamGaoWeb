@@ -1,3 +1,12 @@
+- date: "2026-11-25"
+  summary: "The S&P 500 opened 1.95% below Tuesday’s close and the Dow Jones Industrial Average opened 1.10% lower. Nasdaq-100 futures were nearly flat at their recorded open, up 0.01%. The Cboe Volatility Index opened 6.83% higher, while gold slipped 0.07% and West Texas Intermediate crude fell 0.45%. The 10-year Treasury yield fell 6 basis points to 4.844%, a relative decline of 1.22%. The U.S. dollar index rose 0.05%, and Bitcoin gained 0.69% from midnight UTC to $60,157 at collection."
+  key_observation: "The Nasdaq Composite recovered most of its early losses as selling in artificial intelligence (AI) stocks eased, and the Dow closed higher. At its low, the Nasdaq was down 4.6%. By the closing bell, its loss had narrowed to 0.6%."
+  market_notes:
+    - "The Dow reversed its opening decline to gain 164 points, or 0.3%, while the S&P 500 trimmed a 3.2% intraday loss to 0.3% at the close."
+    - "Nvidia finished down 3.9%, but Broadcom pared its loss to 0.1% and Anthropic recovered to close 1.1% higher, still below its $83 offering price."
+    - "The October Personal Consumption Expenditures price index rose 3.8% from a year earlier, keeping a possible December Federal Reserve rate increase in focus."
+    - "The U.S. Trade Representative proposed additional tariffs after investigating excess manufacturing capacity in 14 economies, raising uncertainty about future import costs."
+
 - date: "2026-11-24"
   summary: "The S&P 500 opened 0.90% below Monday’s close and the Dow Jones Industrial Average opened 0.20% lower, while Nasdaq-100 futures edged up 0.30% at their recorded open. The Cboe Volatility Index fell 0.38% and gold slipped 0.41% at their openings. The 10-year Treasury yield fell 2.8 basis points to 4.890%, a relative decline of 0.57%. The U.S. dollar index edged down 0.01%, West Texas Intermediate crude rose 0.24%, and Bitcoin fell 2.34% from midnight UTC to $59,781 at collection."
   key_observation: "The Dow and small caps extended Monday’s gains, while chip stocks pulled the Nasdaq Composite lower. The S&P 500 gave back only 36 points of Monday’s 327-point advance, leaving most of the broad rebound intact."
