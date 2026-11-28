@@ -1,3 +1,11 @@
+- date: "2026-11-27"
+  summary: "The S&P 500 opened 1.11% above Wednesday’s close and the Dow Jones Industrial Average opened 0.55% higher. Nasdaq-100 futures slipped 0.12% at their recorded open. The Cboe Volatility Index opened 7.13% lower, while gold gained 2.38% and West Texas Intermediate crude rose 0.49%. The 10-year Treasury yield rose 5.4 basis points to 4.902%, a relative increase of 1.11%. The U.S. dollar index gained 0.15%, and Bitcoin fell 1.17% from midnight UTC to $59,787 at collection."
+  key_observation: "Friday’s broad rebound helped the S&P 500 recover about 59% of the previous week’s losses. The index regained 387 of the 651 points it had lost, with advances across technology stocks, blue chips and small caps during the shortened session."
+  market_notes:
+    - "The S&P 500 extended its opening gain to close 1.6% higher at 7,297.49, finishing the week up 5.6% but still 264 points below its November 13 close."
+    - "The Nasdaq Composite led Friday’s advance with a 2.3% gain, while the small-cap Russell 2000 rose 1.7% and the Dow gained 592 points, or 1.2%."
+    - "Anthropic climbed 11% to $91.88, putting it back above its $83 initial public offering price after it ended Wednesday below that level."
+
 - date: "2026-11-25"
   summary: "The S&P 500 opened 1.95% below Tuesday’s close and the Dow Jones Industrial Average opened 1.10% lower. Nasdaq-100 futures were nearly flat at their recorded open, up 0.01%. The Cboe Volatility Index opened 6.83% higher, while gold slipped 0.07% and West Texas Intermediate crude fell 0.45%. The 10-year Treasury yield fell 6 basis points to 4.844%, a relative decline of 1.22%. The U.S. dollar index rose 0.05%, and Bitcoin gained 0.69% from midnight UTC to $60,157 at collection."
   key_observation: "The Nasdaq Composite recovered most of its early losses as selling in artificial intelligence (AI) stocks eased, and the Dow closed higher. At its low, the Nasdaq was down 4.6%. By the closing bell, its loss had narrowed to 0.6%."
